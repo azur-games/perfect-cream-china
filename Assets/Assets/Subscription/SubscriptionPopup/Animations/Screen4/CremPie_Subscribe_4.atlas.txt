@@ -1,0 +1,20 @@
+
+CremPie_Subscribe_4.png
+size: 1031,613
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 66
+  rotate: false
+  xy: 2, 2
+  size: 729, 609
+  orig: 795, 633
+  offset: 39, 24
+  index: -1
+Layer 1811
+  rotate: false
+  xy: 733, 313
+  size: 296, 298
+  orig: 296, 298
+  offset: 0, 0
+  index: -1

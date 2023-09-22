@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 0e29288da8c25ed489033a00ee50b592
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Cylinder_base_01
+    100012: Cylinder_base_02
+    100014: Cylinder_base_03
+    100016: Cylinder_base_04
+    100018: Cylinder_base_05
+    100020: Cylinder_base_06
+    100022: Cylinder_base_08
+    100024: Cylinder_base_09
+    100026: //RootNode
+    100028: Cylinder_base_00
+    100030: Cylinder_base_07
+    100032: balloon_Tube
+    100034: canister_Tube
+    100036: cat_Tuber
+    100038: gun_Tube
+    100040: toothpaste_Tube
+    100042: unicorn_Tube
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Cylinder_base_01
+    400012: Cylinder_base_02
+    400014: Cylinder_base_03
+    400016: Cylinder_base_04
+    400018: Cylinder_base_05
+    400020: Cylinder_base_06
+    400022: Cylinder_base_08
+    400024: Cylinder_base_09
+    400026: //RootNode
+    400028: Cylinder_base_00
+    400030: Cylinder_base_07
+    400032: balloon_Tube
+    400034: canister_Tube
+    400036: cat_Tuber
+    400038: gun_Tube
+    400040: toothpaste_Tube
+    400042: unicorn_Tube
+    2100000: Fon_base
+    2100002: 01 - Default
+    2100004: Cylinder_baseMetall
+    2100006: Cylinder_baseDiff
+    2100008: balloonTube
+    2100010: metall
+    2100012: lambert3
+    2100014: lambert1
+    2100016: Cylinder_base_11
+    2100018: lambert2
+    2300000: Cylinder_base_05
+    2300002: Cylinder_base_08
+    2300004: Cylinder_base_09
+    3300000: Cylinder_base_05
+    3300002: Cylinder_base_08
+    3300004: Cylinder_base_09
+    4300000: Cylinder_base_01
+    4300002: Cylinder_base_02
+    4300004: Cylinder_base_03
+    4300006: Cylinder_base_04
+    4300008: Cylinder_base_05
+    4300010: Cylinder_base_06
+    4300012: Cylinder_base_08
+    4300014: Cylinder_base_09
+    4300016: Cylinder_base_07
+    4300018: Cylinder_base_00
+    4300020: unicorn_Tube
+    4300022: gun_Tube
+    4300024: balloon_Tube
+    4300026: cat_Tuber
+    4300028: toothpaste_Tube
+    4300030: canister_Tube
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Cylinder_base_01
+    13700002: Cylinder_base_02
+    13700004: Cylinder_base_03
+    13700006: Cylinder_base_04
+    13700008: Cylinder_base_06
+    13700010: Cylinder_base_00
+    13700012: Cylinder_base_07
+    13700014: Cylinder_base_05
+    13700016: Cylinder_base_08
+    13700018: Cylinder_base_09
+    13700020: balloon_Tube
+    13700022: canister_Tube
+    13700024: cat_Tuber
+    13700026: gun_Tube
+    13700028: toothpaste_Tube
+    13700030: unicorn_Tube
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

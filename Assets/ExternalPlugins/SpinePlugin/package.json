@@ -1,0 +1,20 @@
+{
+  "name": "com.playgendary.modules.spine",
+  "version": "1.0.2",
+  "displayName": "Spine",
+  "description": "Spine module",
+  "unity": "2019.3",
+  "author": {
+    "name": "Playgendary Development"
+  },
+  "type": "library",
+  "dependencies": {
+    "com.playgendary.modules.general": "1.0.0"
+  },
+  "hideInEditor": false,
+  "internal":[
+    {
+      "spine_package": "3.8"
+    }
+  ]
+}

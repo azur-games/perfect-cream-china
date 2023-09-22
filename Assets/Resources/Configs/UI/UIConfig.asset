@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc021544b73930e429b0df4b85872694, type: 3}
+  m_Name: UIConfig
+  m_EditorClassIdentifier: 
+  startupOverlayColor: {r: 1, g: 1, b: 1, a: 1}
+  overlayColor: {r: 1, g: 1, b: 1, a: 1}
+  overlayCameraDepth: 1000
+  messagesCameraDepth: 101
+  messagesPopUpCameraDepth: 110
+  overlayChangingSpeed: 4
+  overlayBackground: {fileID: 8440646156908420752, guid: c48cb7d82c623ce42a22d8245d7bbd4e,
+    type: 3}
+  messageBoxes:
+  - {fileID: 7286806993833210176, guid: b4c4973f4c4a28f40b67ca612f81fa36, type: 3}
+  - {fileID: 7894438711143304330, guid: 9a2416f3557baf74399fb964501ff547, type: 3}
+  - {fileID: 1509195330770093978, guid: 74d0bc62880df0445be7bea753de86da, type: 3}
+  - {fileID: 7684020294386649952, guid: 65b7bee2178023a4b9c707df6de4e87f, type: 3}
+  - {fileID: 5573859695916106170, guid: b0fbcfd229d3c4b4594f531886bef9ca, type: 3}
+  - {fileID: 6137682959300769386, guid: c8abc06e57d82f341b77950bf16ed84b, type: 3}
+  - {fileID: 7321562502114689368, guid: ead1826083f21d2499127eb954795b5b, type: 3}
+  - {fileID: 3582011153099811976, guid: b4bb0167bc94bed43a12aed87f5b5a44, type: 3}
+  - {fileID: 6717662606674105812, guid: 3407679163d264b02b4b3e3f4da20a59, type: 3}
+  - {fileID: 3647259726998566178, guid: 5a95e160b5e15054397d98fc3b50ee69, type: 3}
+  - {fileID: 4530970585156568034, guid: 812dd3ebe45ab4ce1a1e544c5bfaebf9, type: 3}
+  - {fileID: 2269137463574571825, guid: 21cdd6069aee203479febbb0e19ae6be, type: 3}
+  - {fileID: 315378224966420336, guid: 08961a21fc47e47f68db615486f1acd5, type: 3}
+  - {fileID: 4854676385908210560, guid: bfae3bf1e300211419a271d5ca3f72f8, type: 3}
+  - {fileID: 7068113004851929867, guid: 7ce62c6778007b4448682e279002c01d, type: 3}
+  - {fileID: 4691952993266009891, guid: d141a05e256a6ea4b888572a40a30a0a, type: 3}
+  - {fileID: 2405920785796163485, guid: 13da3efb4e773444a8cf5a5927f5b88f, type: 3}
+  ChestAnimatedScale:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.00055138546
+      value: 0.19942203
+      inSlope: 4.7441125
+      outSlope: 4.7441125
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.1813862
+      value: 1.0573227
+      inSlope: -0.049673844
+      outSlope: -0.049673844
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.22400193
+    - serializedVersion: 3
+      time: 0.26553726
+      value: 0.96659344
+      inSlope: -0.32069764
+      outSlope: -0.32069764
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3449132
+      value: 1.0034559
+      inSlope: 0.46440303
+      outSlope: 0.46440303
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

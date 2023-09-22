@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b61d1656cdfbc4199a955806fc3bf2, type: 3}
+  m_Name: marshmellow_green
+  m_EditorClassIdentifier: 
+  info:
+    name: Marshmellow Green
+    cannotBeReceived: 0
+    isPremiumItem: 0
+    priceOverride: 0
+    assetType: 5
+    tags: []
+    order: 7
+    subCategory: 
+  asset: {fileID: 5327346360314296248, guid: be643afbbed53ba4c81a39a96985d40e, type: 3}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b32f7f6bbd0f4240bd3887c5c02520c, type: 3}
+  m_Name: SoundContainerInGame
+  m_EditorClassIdentifier: 
+  soundConfigsAssetsLink:
+  - assetGUID: e3ac63406376d2641a451756125cdb4e
+  - assetGUID: a8558d7d73d1f68479ba6cf020331ab9
+  - assetGUID: e46281f512b22d04c94042b3fc0ab17a
+  - assetGUID: 546840d0a02888f47b1dce11203c20ac
+  - assetGUID: e550ff3e5fab115478f438d12f7a0006
+  - assetGUID: a687b7e45916c414581c23115691cc79
+  - assetGUID: dcdca686569e14841931c13254777791
+  - assetGUID: 3a35a78791157cf4ebeeaf64f9dd2401
+  - assetGUID: 01efe0112804bfc4ebda1d942a5f7c94
+  - assetGUID: 5deb00e98beb8aa4a92f2aae44c4b930
+  - assetGUID: 73f82f26bd262864dbc82edd4c705ed5
+  - assetGUID: 0a64281b51f8f7648afbd5bd94fc3468

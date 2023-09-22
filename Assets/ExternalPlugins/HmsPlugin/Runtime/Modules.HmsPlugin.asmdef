@@ -1,0 +1,23 @@
+{
+    "name": "Modules.HmsPlugin",
+    "references": [
+        "GUID:58d4668e32aa143a1b9905f94a515b0f",
+        "GUID:ff7faa2871224164c8612bf2cd4495c7",
+        "GUID:60bfecf5cb232594891bc622f40d6bed",
+        "GUID:c8e85cdf07fb64035940b15f79a895d2",
+        "GUID:6f5f722568ac84204832bac733c64bce",
+        "GUID:8b739dab98e6acd48837a93248d87cfd"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

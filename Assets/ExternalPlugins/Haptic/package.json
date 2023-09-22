@@ -1,0 +1,19 @@
+{
+  "name": "com.playgendary.modules.haptic",
+  "version": "1.1.2",
+  "displayName": "Haptic",
+  "description": "Haptic module",
+  "unity": "2018.3",
+  "author": {
+    "name": "Playgendary Development"
+  },
+  "type": "library",
+  "dependencies": {
+
+  },
+  "hideInEditor": false,
+  "internal": {
+    "ios": "1.0.0",
+    "android": "1.0.0"
+  }
+}

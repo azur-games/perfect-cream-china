@@ -1,0 +1,272 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a05b98b762807f4ea4c03c58fe80d3e, type: 3}
+  m_Name: UserConsentLocalization
+  m_EditorClassIdentifier: 
+  localizations:
+  - languageIso: en
+    GDPRDescription: "By using this app I agree to Azur Games\u2019 Terms of Use
+      and confirm that I have read Privacy Policy"
+    GDPRAcceptButton: Accept
+    GDPRHeader: We've updated our Terms
+    GDPRTermsButton: 'Terms of Use '
+    GDPRPrivacyButton: Privacy Policy
+  - languageIso: en
+    GDPRDescription: "By using this app I agree to Azur Games\u2019 Terms of Use
+      and confirm that I have read Privacy Policy"
+    GDPRAcceptButton: Accept
+    GDPRHeader: We've updated our Terms
+    GDPRTermsButton: 'Terms of Use '
+    GDPRPrivacyButton: Privacy Policy
+  - languageIso: es-ES
+    GDPRDescription: "Al usar esta app estoy de acuerdo con los T\xE9rminos de Uso
+      de Azur Games y confirmo haber le\xEDdo la Pol\xEDtica de Privacidad"
+    GDPRAcceptButton: Aceptar
+    GDPRHeader: Hemos actualizado nuestras condiciones de uso.
+    GDPRTermsButton: Condiciones de uso
+    GDPRPrivacyButton: "Pol\xEDtica de privacidad"
+  - languageIso: es-US
+    GDPRDescription: "Al usar esta aplicaci\xF3n, acepto los T\xE9rminos de Uso de
+      Azur Games y confirmo haber le\xEDdo la Pol\xEDtica de Privacidad"
+    GDPRAcceptButton: Aceptar
+    GDPRHeader: Hemos actualizado nuestras condiciones de uso.
+    GDPRTermsButton: Condiciones de uso
+    GDPRPrivacyButton: "Pol\xEDtica de privacidad"
+  - languageIso: es-MX
+    GDPRDescription: "Al usar esta aplicaci\xF3n, acepto los T\xE9rminos de Uso de
+      Azur Games y confirmo haber le\xEDdo la Pol\xEDtica de Privacidad"
+    GDPRAcceptButton: Aceptar
+    GDPRHeader: Hemos actualizado nuestras condiciones de uso.
+    GDPRTermsButton: Condiciones de uso
+    GDPRPrivacyButton: "Pol\xEDtica de privacidad"
+  - languageIso: es-419
+    GDPRDescription: "Al usar esta aplicaci\xF3n, acepto los T\xE9rminos de Uso de
+      Azur Games y confirmo haber le\xEDdo la Pol\xEDtica de Privacidad"
+    GDPRAcceptButton: Aceptar
+    GDPRHeader: Hemos actualizado nuestras condiciones de uso.
+    GDPRTermsButton: Condiciones de uso
+    GDPRPrivacyButton: "Pol\xEDtica de privacidad"
+  - languageIso: fr-FR
+    GDPRDescription: "En utilisant cette application, j'accepte les Conditions d'utilisation
+      d'Azur Games et je confirme avoir lu la Politique de confidentialit\xE9"
+    GDPRAcceptButton: Accepter
+    GDPRHeader: "Nous avons mis \xE0 jour nos conditions g\xE9n\xE9rales."
+    GDPRTermsButton: Conditions d'utilisation
+    GDPRPrivacyButton: "Politique de confidentialit\xE9"
+  - languageIso: de-DE
+    GDPRDescription: "Durch die Benutzung dieser App stimme ich den Nutzungsbedingungen
+      von Azur Games zu und best\xE4tige, dass ich die Datenschutzerkl\xE4rung gelesen
+      habe."
+    GDPRAcceptButton: Annehmen
+    GDPRHeader: "Unsere Nutzungsbedingungen haben sich ge\xE4ndert."
+    GDPRTermsButton: Nutzungsbedingungen
+    GDPRPrivacyButton: "Datenschutzerkl\xE4rung"
+  - languageIso: ja-JP
+    GDPRDescription: "\u3053\u306E\u30A2\u30D7\u30EA\u3092\u4F7F\u7528\u3059\u308B\u3053\u3068\u3067Azur
+      Games\u306E\u5229\u7528\u898F\u7D04\u306B\u540C\u610F\u3057\u3001 \u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC  
+      \u3092\u8AAD\u4E86\u3057\u305F\u3053\u3068\u306B\u306A\u308A\u307E\u3059"
+    GDPRAcceptButton: "\u627F\u8A8D"
+    GDPRHeader: "\u5F53\u793E\u306E\u5229\u7528\u898F\u7D04\u304C\u66F4\u65B0\u3055\u308C\u307E\u3057\u305F\u3002"
+    GDPRTermsButton: "\u5229\u7528\u898F\u7D04"
+    GDPRPrivacyButton: "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC"
+  - languageIso: ko-KR
+    GDPRDescription: "\uC774 \uC571\uC744 \uC0AC\uC6A9\uD568\uC73C\uB85C\uC368 Azur
+      Games\uC758 \uC774\uC6A9 \uC57D\uAD00\uC5D0 \uB3D9\uC758\uD558\uACE0 \uAC1C\uC778\uC815\uBCF4
+      \uBCF4\uD638\uC815\uCC45\uC744 \uC77D\uC5C8\uC74C\uC744 \uD655\uC778\uD569\uB2C8\uB2E4"
+    GDPRAcceptButton: "\uC218\uB77D"
+    GDPRHeader: "\uC57D\uAD00\uC744 \uC5C5\uB370\uC774\uD2B8\uD588\uC2B5\uB2C8\uB2E4."
+    GDPRTermsButton: "\uC0AC\uC6A9 \uC57D\uAD00"
+    GDPRPrivacyButton: "\uAC1C\uC778 \uC815\uBCF4 \uADDC\uC815"
+  - languageIso: zh-CN
+    GDPRDescription: "\u4F7F\u7528\u6B64\u5E94\u7528\u7A0B\u5E8F\uFF0C\u5373\u8868\u793A\u6211\u5DF2\u540C\u610FAzur
+      Games\u7684\u4F7F\u7528\u6761\u6B3E\uFF0C\u5E76\u786E\u8BA4\u5DF2\u9605\u8BFB\u9690\u79C1\u653F\u7B56"
+    GDPRAcceptButton: "\u63A5\u53D7"
+    GDPRHeader: "\u6761\u6B3E\u548C\u6761\u4EF6\u5DF2\u66F4\u65B0\u3002"
+    GDPRTermsButton: "\u4F7F\u7528\u6761\u6B3E"
+    GDPRPrivacyButton: "\u9690\u79C1\u6761\u6B3E"
+  - languageIso: zh-HANS
+    GDPRDescription: "\u4F7F\u7528\u6B64\u5E94\u7528\u7A0B\u5E8F\uFF0C\u5373\u8868\u793A\u6211\u5DF2\u540C\u610FAzur
+      Games\u7684\u4F7F\u7528\u6761\u6B3E\uFF0C\u5E76\u786E\u8BA4\u5DF2\u9605\u8BFB\u9690\u79C1\u653F\u7B56"
+    GDPRAcceptButton: "\u63A5\u53D7"
+    GDPRHeader: "\u6761\u6B3E\u548C\u6761\u4EF6\u5DF2\u66F4\u65B0\u3002"
+    GDPRTermsButton: "\u4F7F\u7528\u6761\u6B3E"
+    GDPRPrivacyButton: "\u9690\u79C1\u6761\u6B3E"
+  - languageIso: zh-HANT
+    GDPRDescription: "\u4F7F\u7528\u6B64\u61C9\u7528\u7A0B\u5F0F\uFF0C\u5373\u8868\u793A\u6211\u540C\u610F\u4E86
+      Azur Games \u7684\u4F7F\u7528\u689D\u6B3E\uFF0C\u4E26\u78BA\u8A8D\u5DF2\u8A73\u8B80\u96B1\u79C1\u6B0A\u653F\u7B56"
+    GDPRAcceptButton: "\u63A5\u53D7"
+    GDPRHeader: "\u6211\u5011\u66F4\u65B0\u4E86\u6211\u5011\u7684\u5408\u7D04\u689D\u6B3E."
+    GDPRTermsButton: "\u4F7F\u7528\u689D\u6B3E"
+    GDPRPrivacyButton: "\u96B1\u79C1\u689D\u6B3E"
+  - languageIso: zh-TW
+    GDPRDescription: "\u4F7F\u7528\u6B64\u61C9\u7528\u7A0B\u5F0F\uFF0C\u5373\u8868\u793A\u6211\u540C\u610F\u4E86
+      Azur Games \u7684\u4F7F\u7528\u689D\u6B3E\uFF0C\u4E26\u78BA\u8A8D\u5DF2\u8A73\u8B80\u96B1\u79C1\u6B0A\u653F\u7B56"
+    GDPRAcceptButton: "\u63A5\u53D7"
+    GDPRHeader: "\u6211\u5011\u66F4\u65B0\u4E86\u6211\u5011\u7684\u5408\u7D04\u689D\u6B3E."
+    GDPRTermsButton: "\u4F7F\u7528\u689D\u6B3E"
+    GDPRPrivacyButton: "\u96B1\u79C1\u689D\u6B3E"
+  - languageIso: zh-HK
+    GDPRDescription: "\u4F7F\u7528\u6B64\u61C9\u7528\u7A0B\u5F0F\uFF0C\u5373\u8868\u793A\u6211\u540C\u610F\u4E86
+      Azur Games \u7684\u4F7F\u7528\u689D\u6B3E\uFF0C\u4E26\u78BA\u8A8D\u5DF2\u8A73\u8B80\u96B1\u79C1\u6B0A\u653F\u7B56"
+    GDPRAcceptButton: "\u63A5\u53D7"
+    GDPRHeader: "\u6211\u5011\u66F4\u65B0\u4E86\u6211\u5011\u7684\u5408\u7D04\u689D\u6B3E."
+    GDPRTermsButton: "\u4F7F\u7528\u689D\u6B3E"
+    GDPRPrivacyButton: "\u96B1\u79C1\u689D\u6B3E"
+  - languageIso: pt-PT
+    GDPRDescription: "Ao utilizar esta aplica\xE7\xE3o, fica impl\xEDcito que concordo
+      com os Termos de Utiliza\xE7\xE3o da Azur Games e que li a Pol\xEDtica de Privacidade."
+    GDPRAcceptButton: Aceitar
+    GDPRHeader: "Atualiz\xE1mos os nossos termos e condi\xE7\xF5es."
+    GDPRTermsButton: "Termos de Utiliza\xE7\xE3o"
+    GDPRPrivacyButton: "Pol\xEDtica de privacidad"
+  - languageIso: pt-BR
+    GDPRDescription: "Ao utilizar este aplicativo, eu concordo com os Termos de Uso
+      da Azur Games e confirmo que li a Pol\xEDtica de Privacidade."
+    GDPRAcceptButton: Aceitar
+    GDPRHeader: "Atualizamos nossos termos e condi\xE7\xF5es."
+    GDPRTermsButton: Termos de Uso
+    GDPRPrivacyButton: "Pol\xEDtica de privacidade"
+  - languageIso: it-IT
+    GDPRDescription: Utilizzando quest'app acconsento alle Condizioni d'uso di Azur
+      Games e confermo di aver letto l'Informativa sulla privacy.
+    GDPRAcceptButton: Accetta
+    GDPRHeader: Abbiamo aggiornato i nostri termini e condizioni.
+    GDPRTermsButton: Condizioni di utilizzo
+    GDPRPrivacyButton: Informativa sulla privacy
+  - languageIso: pl-PL
+    GDPRDescription: "Korzystaj\u0105c z tej aplikacji zgadzam si\u0119 na obowi\u0105zywanie
+      Regulaminu u\u017Cytkowania Azur Games i potwierdzam przeczytanie Polityki
+      prywatno\u015Bci"
+    GDPRAcceptButton: Akceptuj
+    GDPRHeader: "Zaktualizowali\u015Bmy nasze warunki"
+    GDPRTermsButton: "Warunki \u015Bwiadczenia us\u0142ug"
+    GDPRPrivacyButton: "Polityka prywatno\u015Bci"
+  - languageIso: tr-TR
+    GDPRDescription: "Bu uygulamay\u0131 kullanmakla Azur Games'in Kullan\u0131m
+      \u015Eartlar\u0131n\u0131 kabul ediyor ve Gizlilik Politikas\u0131n\u0131 onayl\u0131yorum."
+    GDPRAcceptButton: Kabul et
+    GDPRHeader: "Ko\u015Fullar\u0131m\u0131z g\xFCncellendi."
+    GDPRTermsButton: "Hizmet Ko\u015Fullar\u0131"
+    GDPRPrivacyButton: "Gizlilik politikas\u0131"
+  - languageIso: th
+    GDPRDescription: "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E41\u0E2D\u0E1B\u0E19\u0E35\u0E49
+      \u0E16\u0E37\u0E2D\u0E27\u0E48\u0E32\u0E09\u0E31\u0E19\u0E22\u0E2D\u0E21\u0E23\u0E31\u0E1A
+      \u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E01\u0E32\u0E23\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19
+      \u0E02\u0E2D\u0E07 Azur Games \u0E41\u0E25\u0E30\u0E22\u0E37\u0E19\u0E22\u0E31\u0E19\u0E27\u0E48\u0E32\u0E09\u0E31\u0E19\u0E44\u0E14\u0E49\u0E2D\u0E48\u0E32\u0E19
+      \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27
+      \u0E41\u0E25\u0E49\u0E27"
+    GDPRAcceptButton: "\u0E22\u0E2D\u0E21\u0E23\u0E31\u0E1A"
+    GDPRHeader: "\u0E40\u0E23\u0E32\u0E44\u0E14\u0E49\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E43\u0E19\u0E01\u0E32\u0E23\u0E43\u0E2B\u0E49\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23\u0E40\u0E01\u0E21\u0E41\u0E25\u0E49\u0E27"
+    GDPRTermsButton: "\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E43\u0E19\u0E01\u0E32\u0E23\u0E43\u0E2B\u0E49\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23"
+    GDPRPrivacyButton: "\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27"
+  - languageIso: hi
+    GDPRDescription: "\u0907\u0938 \u0910\u092A \u0915\u093E \u0909\u092A\u092F\u094B\u0917
+      \u0915\u0930\u0915\u0947 \u092E\u0948\u0902 Azur Games \u0915\u0940 Terms of
+      Use \u0938\u0947 \u0938\u0939\u092E\u0924 \u0939\u0942\u0901 \u0914\u0930 \u092A\u0941\u0937\u094D\u091F\u093F
+      \u0915\u0930\u0924\u093E \u0939\u0942\u0901 \u0915\u093F \u092E\u0948\u0902\u0928\u0947
+      Privacy Policy \u092A\u0922\u093C \u0932\u0940 \u0939\u0948"
+    GDPRAcceptButton: "\u0938\u094D\u0935\u0940\u0915\u093E\u0930 \u0915\u0930\u0947\u0902"
+    GDPRHeader: "\u0939\u092E\u0928\u0947 \u0905\u092A\u0928\u0940 \u0936\u0930\u094D\u0924\u094B\u0902
+      \u0915\u094B \u0905\u092A\u0921\u0947\u091F \u0915\u0930 \u0926\u093F\u092F\u093E
+      \u0939\u0948\u0964"
+    GDPRTermsButton: "\u0938\u0947\u0935\u093E \u0915\u0940 \u0936\u0930\u094D\u0924\u0947\u0902"
+    GDPRPrivacyButton: "\u0917\u094B\u092A\u0928\u0940\u092F\u0924\u093E \u0928\u0940\u0924\u093F"
+  - languageIso: vi
+    GDPRDescription: "Khi s\u1EED d\u1EE5ng \u1EE9ng d\u1EE5ng n\xE0y, t\xF4i \u0111\u1ED3ng
+      \xFD v\u1EDBi \u0110i\u1EC1u kho\u1EA3n S\u1EED d\u1EE5ng c\u1EE7a Azur Games
+      v\xE0 x\xE1c nh\u1EADn r\u1EB1ng t\xF4i \u0111\xE3 \u0111\u1ECDc Ch\xEDnh s\xE1ch
+      Quy\u1EC1n ri\xEAng t\u01B0"
+    GDPRAcceptButton: "Ch\u1EA5p nh\u1EADn"
+    GDPRHeader: "Ch\xFAng t\xF4i \u0111\xE3 c\u1EADp nh\u1EADt c\xE1c \u0110i\u1EC1u
+      kho\u1EA3n"
+    GDPRTermsButton: "\u0110i\u1EC1u kho\u1EA3n d\u1ECBch v\u1EE5"
+    GDPRPrivacyButton: "Ch\xEDnh s\xE1ch b\u1EA3o m\u1EADt"
+  - languageIso: in-ID
+    GDPRDescription: Dengan menggunakan aplikasi ini, saya menyetujui Ketentuan Penggunaan
+      Azur Games dan mengonfirmasi bahwa saya sudah membaca Kebijakan Privasi
+    GDPRAcceptButton: Terima
+    GDPRHeader: Kami sudah memperbarui Ketentuan kami
+    GDPRTermsButton: Ketentuan Layanan
+    GDPRPrivacyButton: Kebijakan Privasi
+  - languageIso: id
+    GDPRDescription: Dengan menggunakan aplikasi ini, saya menyetujui Ketentuan Penggunaan
+      Azur Games dan mengonfirmasi bahwa saya sudah membaca Kebijakan Privasi
+    GDPRAcceptButton: Terima
+    GDPRHeader: Kami sudah memperbarui Ketentuan kami
+    GDPRTermsButton: Ketentuan Layanan
+    GDPRPrivacyButton: Kebijakan Privasi
+  - languageIso: iw-IL
+    GDPRDescription: "\u05D9\u05E0\u05D0 ,\u05D5\u05D6 \u05D4\u05D9\u05E6\u05E7\u05D9\u05DC\u05E4\u05D0\u05D1
+      \u05E9\u05D5\u05DE\u05D9\u05E9 \u05D9\u05D3\u05D9 \u05DC\u05E2 \u05E9\u05D5\u05DE\u05D9\u05E9\u05D4
+      \u05D9\u05D0\u05E0\u05EA\u05DC \u05D9\u05EA\u05DE\u05DB\u05E1\u05D4 \u05EA\u05D0
+      \u05E2\u05D9\u05D1\u05DE \u05E8\u05E9\u05D0\u05DE\u05D5 Azur Games \u05DC\u05E9
+      .\u05EA\u05D5\u05D9\u05D8\u05E8\u05E4\u05D4 \u05EA\u05D5\u05D9\u05E0\u05D9\u05D3\u05DE
+      \u05EA\u05D0 \u05D9\u05EA\u05D0\u05E8\u05E9"
+    GDPRAcceptButton: "\u05DC\u05E7\u05D1\u05DC"
+    GDPRHeader: "\u05E2\u05D3\u05DB\u05E0\u05D5 \u05D0\u05EA \u05EA\u05E0\u05D0\u05D9
+      \u05D4\u05E9\u05D9\u05DE\u05D5\u05E9 \u05E9\u05DC\u05E0\u05D5"
+    GDPRTermsButton: "\u05EA\u05E0\u05D0\u05D9 \u05D4\u05E9\u05D9\u05DE\u05D5\u05E9"
+    GDPRPrivacyButton: "\u05DE\u05D3\u05D9\u05E0\u05D9\u05D5\u05EA \u05D4\u05E4\u05E8\u05D8\u05D9\u05D5\u05EA"
+  - languageIso: he
+    GDPRDescription: "\u05E2\u05DC \u05D9\u05D3\u05D9 \u05E9\u05D9\u05DE\u05D5\u05E9
+      \u05D1\u05D0\u05E4\u05DC\u05D9\u05E7\u05E6\u05D9\u05D4 \u05D6\u05D5, \u05D0\u05E0\u05D9
+      \u05DE\u05D1\u05D9\u05E2 \u05D0\u05EA \u05D4\u05E1\u05DB\u05DE\u05EA\u05D9
+      \u05DC\u05EA\u05E0\u05D0\u05D9 \u05D4\u05E9\u05D9\u05DE\u05D5\u05E9 \u05E9\u05DC
+      Azur Games \u05D5\u05DE\u05D0\u05E9\u05E8 \u05E9\u05E7\u05E8\u05D0\u05EA\u05D9
+      \u05D0\u05EA \u05DE\u05D3\u05D9\u05E0\u05D9\u05D5\u05EA \u05D4\u05E4\u05E8\u05D8\u05D9\u05D5\u05EA."
+    GDPRAcceptButton: "\u05DC\u05E7\u05D1\u05DC"
+    GDPRHeader: "\u05E2\u05D3\u05DB\u05E0\u05D5 \u05D0\u05EA \u05EA\u05E0\u05D0\u05D9
+      \u05D4\u05E9\u05D9\u05DE\u05D5\u05E9 \u05E9\u05DC\u05E0\u05D5"
+    GDPRTermsButton: "\u05EA\u05E0\u05D0\u05D9 \u05D4\u05E9\u05D9\u05DE\u05D5\u05E9"
+    GDPRPrivacyButton: "\u05DE\u05D3\u05D9\u05E0\u05D9\u05D5\u05EA \u05D4\u05E4\u05E8\u05D8\u05D9\u05D5\u05EA"
+  - languageIso: uk
+    GDPRDescription: "\u0412\u0438\u043A\u043E\u0440\u0438\u0441\u0442\u043E\u0432\u0443\u044E\u0447\u0438
+      \u0446\u044E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0443, \u044F \u043F\u043E\u0433\u043E\u0434\u0436\u0443\u044E\u0441\u044F
+      \u043D\u0430 \u0423\u043C\u043E\u0432\u0438 \u0432\u0438\u043A\u043E\u0440\u0438\u0441\u0442\u0430\u043D\u043D\u044F
+      Azur Games \u0442\u0430 \u043F\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u044E,
+      \u0449\u043E \u043C\u043D\u043E\u044E \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u043D\u043E
+      \u041F\u043E\u043B\u0456\u0442\u0438\u043A\u0443 \u043A\u043E\u043D\u0444\u0456\u0434\u0435\u043D\u0446\u0456\u0439\u043D\u043E\u0441\u0442\u0456."
+    GDPRAcceptButton: "\u041F\u0440\u0438\u0439\u043D\u044F\u0442\u0438"
+    GDPRHeader: "\u041C\u0438 \u0432\u043D\u0435\u0441\u043B\u0438 \u0437\u043C\u0456\u043D\u0438
+      \u0434\u043E \u043D\u0430\u0448\u0438\u0445 \u0443\u043C\u043E\u0432"
+    GDPRTermsButton: "\u0423\u043C\u043E\u0432\u0438 \u043E\u0431\u0441\u043B\u0443\u0433\u043E\u0432\u0443\u0432\u0430\u043D\u043D\u044F"
+    GDPRPrivacyButton: "\u041F\u043E\u043B\u0456\u0442\u0438\u043A\u0430 \u043F\u0440\u0438\u0432\u0430\u0442\u043D\u043E\u0441\u0442\u0456"
+  - languageIso: ar
+    GDPRDescription: "\u0628\u0627\u0633\u062A\u062E\u062F\u0627\u0645 \u0647\u0630\u0627
+      \u0627\u0644\u062A\u0637\u0628\u064A\u0642\u060C \u0623\u0648\u0627\u0641\u0642
+      \u0639\u0644\u0649 \u0634\u0631\u0648\u0637 \u0627\u0644\u0627\u0633\u062A\u062E\u062F\u0627\u0645
+      \u0627\u0644\u062A\u064A \u062A\u0641\u0631\u0636\u0647\u0627 \u0634\u0631\u0643\u0629
+      Azur Games \u0648\u0623\u064F\u0642\u0651\u0650\u0631 \u0628\u0623\u0646\u0646\u064A
+      \u0642\u0631\u0623\u062A \u0633\u064A\u0627\u0633\u0629 \u0627\u0644\u062E\u0635\u0648\u0635\u064A\u0629"
+    GDPRAcceptButton: "\u0642\u0628\u0648\u0644"
+    GDPRHeader: "\u0644\u0642\u062F \u062D\u062F\u062B\u0646\u0627 \u0634\u0631\u0648\u0637\u0646\u0627"
+    GDPRTermsButton: "\u0634\u0631\u0648\u0637 \u0627\u0644\u0627\u0633\u062A\u062E\u062F\u0627\u0645"
+    GDPRPrivacyButton: "\u0633\u064A\u0627\u0633\u0629 \u0627\u0644\u062E\u0635\u0648\u0635\u064A\u0629"
+  - languageIso: ru-RU
+    GDPRDescription: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044F \u044D\u0442\u043E
+      \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435, \u044F \u043F\u0440\u0438\u043D\u0438\u043C\u0430\u044E
+      \u0423\u0441\u043B\u043E\u0432\u0438\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
+      Azur Games \u0438 \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u044E,
+      \u0447\u0442\u043E \u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u043B\u0441\u044F
+      \u0441 \u041F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+    GDPRAcceptButton: "\u041F\u0440\u0438\u043D\u044F\u0442\u044C"
+    GDPRHeader: "\u041C\u044B \u043E\u0431\u043D\u043E\u0432\u0438\u043B\u0438 \u043D\u0430\u0448\u0438
+      \u0443\u0441\u043B\u043E\u0432\u0438\u044F"
+    GDPRTermsButton: "\u0423\u0441\u043B\u043E\u0432\u0438\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F"
+    GDPRPrivacyButton: "\u041F\u043E\u043B\u0438\u0442\u0438\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+  - languageIso: ms
+    GDPRDescription: Dengan menggunakan aplikasi ini saya bersetuju menerima Syarat
+      Penggunaan Azur Games dan mengesahkan bahawa saya telah membaca Dasar Privasi
+    GDPRAcceptButton: Terima
+    GDPRHeader: Kami telah mengemas kini Terma kami
+    GDPRTermsButton: Terma Perkhidmatan
+    GDPRPrivacyButton: Dasar privasi

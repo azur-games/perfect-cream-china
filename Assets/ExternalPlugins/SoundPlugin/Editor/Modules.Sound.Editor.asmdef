@@ -1,0 +1,16 @@
+{
+    "name": "Modules.Sound.Editor",
+    "references": [
+        "Modules.General",
+        "Modules.General.Editor",
+        "Modules.Sound"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

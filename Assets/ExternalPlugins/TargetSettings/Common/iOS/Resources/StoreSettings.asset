@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ed97063d4c428488ba9f55784c9adf, type: 3}
+  m_Name: StoreSettings
+  m_EditorClassIdentifier: 
+  appStoreAppId: 1494449873
+  googlePlayAppPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoX41niML7DAqFV8hf2XZGHArVVyof+rb6gKqxlekE4dWcHJ6kRTvH0b1B2tWuQoDyuhCm8VYR5D8rjfwia8Jjnc3GVg0Fya2svEelsYtjW45q6AxSW0z96e4CyfnQapvvnVozzwcUzyBeobpKgs66P9PTpS/b6WDjMtoSnrJyFkI2/kcOY4Aoep7g0soLdVaub0V7RN/B4UXp3Jg4FT9VWEho3I0E52yCY4chN6fNthXnw28h09VmFqh7KQK2TIPzlYi9hhNIK2CjoyQ5GBjTIslrRa17yFwk7PH4CCcB83h5qOu6Q6RF+hHl2dzXqMaxUdaCwtFUgkHoU5vSf6BeQIDAQAB
+  storeItemsSettings:
+  - id: noads
+    storeSpecificIds: []
+    priceTier: 2
+    itemType: 1
+    subscriptionType: 0
+  - id: diamondweekly
+    storeSpecificIds: []
+    priceTier: 6
+    itemType: 2
+    subscriptionType: 1

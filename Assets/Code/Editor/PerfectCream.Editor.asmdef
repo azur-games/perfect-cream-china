@@ -1,0 +1,24 @@
+{
+    "name": "PerfectCream.Editor",
+    "references": [
+        "GUID:58d4668e32aa143a1b9905f94a515b0f",
+        "GUID:e94a55de40b2f4670aa95e2792df31eb",
+        "GUID:ff7faa2871224164c8612bf2cd4495c7",
+        "GUID:b7945be0daf3c3742a8fc954d9de9ba4",
+        "GUID:34bfb62b0168e468396edfdcd4d7090c",
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:08467aac8579a48a7b2a0b4f23f47d2c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

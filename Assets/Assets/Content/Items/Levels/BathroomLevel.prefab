@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7309968671902548302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282977025503904818}
+  - component: {fileID: 615144204677064715}
+  - component: {fileID: 7412930310378293677}
+  m_Layer: 20
+  m_Name: BathroomLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &282977025503904818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309968671902548302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &615144204677064715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309968671902548302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964560599251a374cae759c19fb8d2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: 616bb4ba7e17ad14bbf5c0d8a00c444f, type: 3}
+  AlternativeIcon: {fileID: 0}
+  AlternativeIcon2: {fileID: 0}
+  Name: BathroomLevel
+  SubCategory: 
+  CannotBeReceived: 0
+  IsPremiumItem: 0
+  PriceOverride: 0
+  levelBalanceData: {fileID: 11400000, guid: e81f457d2d9b6b44395391fd9fcac1d4, type: 2}
+  Generator: {fileID: 7412930310378293677}
+  FinishAnimationObject: {fileID: 7219083726037159462, guid: fab6d313e9135b948a3b0d6e326903a0,
+    type: 3}
+  TypeOfDeliveredObject: 2
+  FinalJar: {fileID: 0}
+  ValveAssetOverrideName: duckValve
+  ColorSchemes:
+  - BackgroundBright: {r: 0.23985407, g: 0.9245283, b: 0.73550826, a: 1}
+    BackgroundDark: {r: 0.10588234, g: 0.74976206, b: 0.90588236, a: 1}
+  CreamSkinName: CreamSkinBathroomLevel
+  OverrideCoinsReward: -1
+  MinStarsCount: 0
+  BaseUIColor: {r: 0.099012084, g: 0.79381156, b: 0.8396226, a: 1}
+--- !u!114 &7412930310378293677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309968671902548302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230cdfde38b00a441a537c6a51aeaa1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _availableShapes:
+  - {fileID: 3751679693953757743, guid: b65cb513d84f7234489c5b6a933ca73e, type: 3}
+  - {fileID: 3751679693953757743, guid: d5b336ef711432c45b7e50f710e38875, type: 3}
+  - {fileID: 3751679693953757743, guid: 70d711e93f39ef345ba5c7147144a5f8, type: 3}
+  _feverModeShapes: []
+  _feverModeStartPrefab: {fileID: 0}
+  _obstaclePrefab: {fileID: 9025176467039674450, guid: dc0845d40fbbbde4ea2049fce987a8a2,
+    type: 3}
+  _preFinalPrefab: {fileID: 4618182978257768105, guid: 0d9bd46a244607b46b1ae9dc5bdfc764,
+    type: 3}
+  _finalPrefab: {fileID: 4009163745205768874, guid: b93c6038be9c43a40aa3cbafcecb474b,
+    type: 3}
+  paperForFinalShape: {fileID: 0}
+  _minCountInSet: 3
+  _maxCountInSet: 7
+  AdditionalInterval: 0

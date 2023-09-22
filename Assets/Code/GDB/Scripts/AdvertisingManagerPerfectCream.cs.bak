@@ -1,0 +1,155 @@
+using System;
+using Modules.General.Abstraction;
+using BoGD.UI.PERFECTCREAM;
+using Modules.General;
+using Modules.Networking;
+<<<<<<< HEAD
+using System.Collections.Generic;
+=======
+>>>>>>> Version_1.11.24_Bug_Fixes
+using UnityEngine;
+
+namespace Modules.Advertising
+{
+    public class AdvertisingManagerPerfectCream : AdvertisingManager
+    {
+        protected override void Init()
+        {
+            base.Init();
+            
+            Modules.Analytics.CommonEvents.AvailabilityCheck += OnAvailabilityCheck;
+        }
+
+        private WindowWarningInterstitial warningInterstitial = null;
+
+        public override void TryShowAdByModule(AdModule module, string adShowingPlacement, Action<AdActionResultType> callback = null)
+        {
+            if (BoGD.CheatController.Instance.CheatBuid)
+            {
+                if (!BoGD.CheatController.Instance.HasCheat(BoGD.CONSOLE.Cheat.EnableAds))
+                {
+                    callback?.Invoke(AdActionResultType.Success);
+                    return;
+                }
+            }
+
+            base.TryShowAdByModule(module, adShowingPlacement, callback);
+        }
+
+        protected override void ActivityUpdater_OnUpdateInactivityTimer()
+        {
+            if(Application.platform != RuntimePlatform.Android)
+            {
+                base.ActivityUpdater_OnUpdateInactivityTimer();
+                return;
+            }
+
+            if (!IsAdModuleByPlacementAvailable(AdModule.Interstitial, AdPlacementType.Inactivity))
+            {
+                return;
+            }
+
+            if (!IsAdModuleByPlacementAvailable(AdModule.Interstitial, AdPlacementType.Background))
+            {
+                return;
+            }
+
+            if(ReachabilityHandler.Instance.NetworkStatus == NetworkStatus.NotReachable)
+            {
+                return;
+            }
+
+            if (warningInterstitial != null)
+            {
+                return;
+            }
+
+            warningInterstitial = Env.Instance.UI.Messages.ShowWarningInterstitial("inactivity", OnCloseWarningTimer);
+        }
+
+        private void OnCloseWarningTimer(bool value)
+        {
+            CustomDebug.Log("OnCloseWarningTimer");
+            Scheduler.Instance.CallMethodWithDelay(this, () =>
+            {
+                TryShowAdByModule(AdModule.Interstitial, AdPlacementType.Background, actionResultType =>
+                {
+                    if (InactivityTimer.HasFoundInstance)
+                    {
+                        InactivityTimer.Instance.ResetInactivityTimer();
+                    }
+                });
+            }, 0.0f);
+            warningInterstitial = null;
+        }
+
+        private void OnCloseWarningBack(bool value)
+        {
+            CustomDebug.Log("OnCloseWarningBack");
+            Scheduler.Instance.CallMethodWithDelay(this, () =>
+            {
+                TryShowAdByModule(AdModule.Interstitial, AdPlacementType.Background);
+            }, 0.0f);
+            warningInterstitial = null;
+        }
+
+        protected override void LLApplicationStateRegister_OnApplicationEnteredBackground(bool isEntered)
+        {
+            if (Application.platform != RuntimePlatform.Android)
+            {
+                base.LLApplicationStateRegister_OnApplicationEnteredBackground(isEntered);
+                return;
+            }
+
+            if (!IsAdModuleByPlacementAvailable(AdModule.Interstitial, AdPlacementType.Background))
+            {
+                return;
+            }
+
+            if (ReachabilityHandler.Instance.NetworkStatus == NetworkStatus.NotReachable)
+            {
+                return;
+            }
+
+            if (warningInterstitial != null)
+            {
+                return;
+            }
+
+            if (!isEntered)
+            {
+                warningInterstitial = Env.Instance.UI.Messages.ShowWarningInterstitial("background", OnCloseWarningBack);
+            }
+        }
+
+        protected override void Controller_OnAdShow(AdModule adModule, AdActionResultType responseResultType, int delay, string errorDescription, string adIdentifier, string advertisingPlacement)
+        {
+            SenAnalytics("video_ads_started", adIdentifier, "start", adModule.ToString().ToLower());
+            base.Controller_OnAdShow(adModule, responseResultType, delay, errorDescription, adIdentifier, advertisingPlacement);
+        }
+
+        protected override void Controller_OnAdHide(AdModule adModule, AdActionResultType responseResultType, string errorDescription, string adIdentifier)
+        {
+            base.Controller_OnAdHide(adModule, responseResultType, errorDescription, adIdentifier);
+            SenAnalytics("video_ads_watched", adIdentifier, "watched", adModule.ToString().ToLower());
+        }
+
+        private void OnAvailabilityCheck(string adModule, string placement, bool result)
+        {
+            SenAnalytics("video_ads_available", placement, result ? "success" : "not available", adModule.ToLower());
+        }
+
+        private void SenAnalytics(string eventName, string placementName, string result, string adModule)
+        {
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary["placement"] = placementName;
+            dictionary["result"] = result;
+            dictionary["ad_type"] = adModule;
+            dictionary["type"] = "applovin";
+            dictionary["connection"] = Application.internetReachability == NetworkReachability.NotReachable ? 0 : 1;
+            //dictionary["connection"] = DevelopmentInfo.ControlInternetConnect();
+
+            BoGD.MonoBehaviourBase.Analytics.SendEvent(eventName, dictionary);
+        }
+    }    
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>977776543915-qaerkvga6iq6rer7jce1jf52icg4n1ir.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.977776543915-qaerkvga6iq6rer7jce1jf52icg4n1ir</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>977776543915-biavorrvmjlenossqcdbdtvlea7h3tif.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDwdg4G8ZDOPgfotQUcMkwTK1F31IfR7t8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>977776543915</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.playgendary.creammaster</string>
+	<key>PROJECT_ID</key>
+	<string>perfect-cream-f8012</string>
+	<key>STORAGE_BUCKET</key>
+	<string>perfect-cream-f8012.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:977776543915:ios:e0a0caa5fbe4fc7a61cfee</string>
+	<key>DATABASE_URL</key>
+	<string>https://perfect-cream-f8012-default-rtdb.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-7663884898922975~7460814744</string>
+</dict>
+</plist>

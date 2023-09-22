@@ -1,0 +1,62 @@
+
+CremPie_Subscribe_1.png
+size: 1922,1187
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 72
+  rotate: false
+  xy: 340, 473
+  size: 1242, 712
+  orig: 1242, 755
+  offset: 0, 15
+  index: -1
+Vector Smart Object
+  rotate: false
+  xy: 2, 122
+  size: 63, 63
+  orig: 63, 63
+  offset: 0, 0
+  index: -1
+creame
+  rotate: false
+  xy: 1114, 64
+  size: 683, 407
+  orig: 683, 407
+  offset: 0, 0
+  index: -1
+ekler
+  rotate: false
+  xy: 340, 2
+  size: 772, 469
+  orig: 772, 469
+  offset: 0, 0
+  index: -1
+shadow2
+  rotate: true
+  xy: 2, 277
+  size: 908, 336
+  orig: 917, 347
+  offset: 4, 4
+  index: -1
+star'2
+  rotate: false
+  xy: 2, 187
+  size: 84, 88
+  orig: 84, 88
+  offset: 0, 0
+  index: -1
+star1
+  rotate: true
+  xy: 2, 73
+  size: 47, 46
+  orig: 47, 47
+  offset: 0, 0
+  index: -1
+tube
+  rotate: false
+  xy: 1584, 485
+  size: 336, 700
+  orig: 336, 700
+  offset: 0, 0
+  index: -1

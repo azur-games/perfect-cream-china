@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9204b6c7545af45a0e5d4e38ab3c28, type: 3}
+  m_Name: GreenApple_iconRef
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: 74e987fb40c9ad743b97fd7ea947c328, type: 3}
+  AlternativeIcon: {fileID: 21300000, guid: 09c6eb8d685c93946858e7fb7a0a43d6, type: 3}
+  AlternativeIcon2: {fileID: 21300000, guid: 7795267cc9213984e8c73e94facd9cc4, type: 3}

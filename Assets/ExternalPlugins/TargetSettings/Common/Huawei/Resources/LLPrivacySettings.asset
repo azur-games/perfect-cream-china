@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e1fa20bc2824afd92e68da68d44031, type: 3}
+  m_Name: LLPrivacySettings
+  m_EditorClassIdentifier: 
+  appID: com.playgendary.creamaster.huawei
+  developmentSecretKey: e038e33e-a951-4519-ac1f-50de65239b1a
+  productionSecretKey: 83cba75a-826c-450f-885a-ae870d0197b8
+  termsOfUseUri: https://www.playgendary.com/terms_and_policy
+  secondsForSendDataOnServer: 10
+  publisherID: pub-2426838779592611
+  maxSecondsBeforeEeaLocationResponse: 2
+  additionalDelayBeforeFirstGDPRPopup: -1
+  consentApiClassesNamesIncludingAssemblies:
+  - Modules.AppsFlyer.LLAppsFlyerManager, Modules.AppsFlyer
+  - Modules.Max.LLMaxManager, Modules.Max
+  - Modules.Firebase.FirebaseManager, Modules.Firebase

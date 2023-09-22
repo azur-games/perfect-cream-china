@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b61d1656cdfbc4199a955806fc3bf2, type: 3}
+  m_Name: InteriorChair
+  m_EditorClassIdentifier: 
+  info:
+    name: Chair2
+    cannotBeReceived: 0
+    isPremiumItem: 0
+    priceOverride: 0
+    assetType: 6
+    tags: []
+    order: 14
+    subCategory: interior_chair
+  asset: {fileID: 2079290462694624562, guid: badac25c3c9a3b042b38f15f73a501fd, type: 3}

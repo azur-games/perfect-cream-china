@@ -1,0 +1,88 @@
+**/obj/
+**/bin/
+**/Temp/
+**/Temp.meta
+/.vs/
+/.vscode/
+/.idea/
+/Library/
+/Builds/
+/Logs/
+/*.htm
+/*.html
+*.csproj
+*.sln.ide
+*.sln
+*.tmproj
+*.unityproj
+*.suo
+*.mdb
+*.mdb.meta
+*.user
+*.pidb
+*.userprefs
+*.DotSettings
+Thumbs.db
+Thumbs.db.meta
+.DS_Store
+.DS_Store.meta
+
+# JetBrains Rider IDE
+**/JetBrains
+**/JetBrains.meta
+
+# Toolkit 2D exclusions
+/Assets/-tk2d*
+/Assets/Resources/tk2d/tk2dSystem.*
+
+# Autogenera VsCode debug file
+*.vscode-janus-debug
+
+# Gradle cache directory
+/.gradle/
+
+# Unity3D generated files
+*.pidb.meta
+/Assets/StreamingAssets/guids
+/Assets/StreamingAssets/guids.meta
+/Assets/StreamingAssets/Licenses
+/Assets/StreamingAssets/Licenses.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# Builds
+*.aab
+*.apk
+*.unitypackage
+guids*
+/PerfectCream_Build/
+/build/
+
+# Android Studio intermediates and builds
+Sources/Android/*/**/build/**/*
+
+# CSharp 6.0 compile log
+CSharp60Support/compilation.log
+
+# Unity3D hide Framework files meta
+**/*.bundle/**/*.meta
+**/*.framework/**/*.meta
+guids*
+
+# Remote settings
+/Assets/RemoteSettings/Editor/link.xml.meta
+
+# Odin AOT generated dll
+**/Sirenix/Assemblies/AOT
+**/Sirenix/Assemblies/AOT.meta
+
+# Entitas Jenny
+*.userproperties
+
+# AB-tests
+ab_test_data.json
+ab_test_manifest.json
+
+# xpromo
+xpromo-cache/

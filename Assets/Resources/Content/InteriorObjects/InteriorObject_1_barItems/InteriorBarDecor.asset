@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b61d1656cdfbc4199a955806fc3bf2, type: 3}
+  m_Name: InteriorBarDecor
+  m_EditorClassIdentifier: 
+  info:
+    name: Bar Decor
+    cannotBeReceived: 0
+    isPremiumItem: 0
+    priceOverride: 0
+    assetType: 6
+    tags: []
+    order: 1
+    subCategory: interior_baritems
+  asset: {fileID: 537380824675917227, guid: c3fbd30b9cfa34a72adbb4f039159b1b, type: 3}

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2445670946265970756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3995518346134943730}
+  - component: {fileID: 7321953108682057312}
+  m_Layer: 0
+  m_Name: PopupManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3995518346134943730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2445670946265970756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7321953108682057312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2445670946265970756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56cc122941124fd0ae61492c0e3779d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startSubscriptionExtendedPopupPrefab: {fileID: 5569974679341717030, guid: aa0567a3ac4aed946b7d6df02f38a4fa,
+    type: 3}
+  startSubscriptionPopupPrefab: {fileID: 6187055373355381201, guid: 44391beef2307466ab9fe294cc3c2150,
+    type: 3}
+  successfulSubscriptionPopupPrefab: {fileID: 165009353013027049, guid: 69c03bb3b74015a46b016ca91bd18cd8,
+    type: 3}
+  rewardSubscriptionPopupPrefab: {fileID: 4076948344663086269, guid: 4cf57d4e337e64f68bf08a6d2462d1c5,
+    type: 3}
+  messagePopupPrefab: {fileID: 5564668675642099514, guid: 37473e63646d54028941abbd4848ddc0,
+    type: 3}
+  noInternetPopupPrefab: {fileID: 3451025388256784967, guid: 920cdedd0449215418fed756d283e861,
+    type: 3}

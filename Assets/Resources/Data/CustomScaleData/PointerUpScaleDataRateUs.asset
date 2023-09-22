@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b9e217925f02499f8b53e143c2e9c56, type: 3}
+  m_Name: PointerUpScaleDataRateUs
+  m_EditorClassIdentifier: 
+  ease:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 7.624727
+      outSlope: 7.624727
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.17310221
+      value: 1.3198571
+      inSlope: -0.0043974565
+      outSlope: -0.0043974565
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.14856446
+      outWeight: 0.1389265
+    - serializedVersion: 3
+      time: 0.29417366
+      value: 0.88227713
+      inSlope: 0.12737505
+      outSlope: 0.12737505
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.20837025
+    - serializedVersion: 3
+      time: 0.42694423
+      value: 1.0546703
+      inSlope: -0.0047234735
+      outSlope: -0.0047234735
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.1886176
+    - serializedVersion: 3
+      time: 0.5800744
+      value: 0.96655506
+      inSlope: -0.028577318
+      outSlope: -0.028577318
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.0977611
+    - serializedVersion: 3
+      time: 0.6716064
+      value: 1.000293
+      inSlope: -0.0067237453
+      outSlope: -0.0067237453
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.08220706
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.02110757
+      outSlope: -0.02110757
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.090326324
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  duration: 0.7
+  scale: {x: 0.8, y: 0.8, z: 0}

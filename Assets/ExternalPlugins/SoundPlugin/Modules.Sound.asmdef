@@ -1,0 +1,16 @@
+{
+    "name": "Modules.Sound",
+    "references": [
+        "Modules.General",
+        "Modules.General.Obsolete"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,1325 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8250e6b8c648e94297e5f151665ed4b, type: 3}
+  m_Name: ContentItemsLibrary
+  m_EditorClassIdentifier: 
+  elements:
+  - RelativePath: /Confiture/01_MarmaladeBear/marmaladeBear
+    Info:
+      name: Marmalade Bear
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 1
+      subCategory: 
+  - RelativePath: /Confiture/02_CandyTablet/candyTablet
+    Info:
+      name: Candy Tablet
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 2
+      subCategory: 
+  - RelativePath: /Confiture/03_ChocoBalls/chocoBalls
+    Info:
+      name: Choco Balls
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 3
+      subCategory: 
+  - RelativePath: /Confiture/04_CornFlakes/cornFlakes
+    Info:
+      name: Corn Flakes
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 4
+      subCategory: 
+  - RelativePath: /Confiture/05_Kiwi/kiwiSlice
+    Info:
+      name: Kiwi Slice
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 5
+      subCategory: 
+  - RelativePath: /Confiture/06_MarshmellowBlue/marshmellow_blue
+    Info:
+      name: Marshmellow Blue
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 6
+      subCategory: 
+  - RelativePath: /Confiture/07_MarshmellowGreen/marshmellow_green
+    Info:
+      name: Marshmellow Green
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 7
+      subCategory: 
+  - RelativePath: /Confiture/08_MarshmellowYellow/marshmellow_yellow
+    Info:
+      name: Marshmellow Yellow
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 8
+      subCategory: 
+  - RelativePath: /Confiture/09_Peanut/Peanut
+    Info:
+      name: Peanut
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 9
+      subCategory: 
+  - RelativePath: /Confiture/10_Popcorn/Popcorn
+    Info:
+      name: Popcorn
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 10
+      subCategory: 
+  - RelativePath: /Confiture/11_StrawberrySlice/strawberrySlice
+    Info:
+      name: Strawberry Slice
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 11
+      subCategory: 
+  - RelativePath: /Confiture/12_CandyBalls/candyBalls
+    Info:
+      name: Candy Balls
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 12
+      subCategory: 
+  - RelativePath: "/Confiture/13_Heart\u0421ookie/heart\u0421ookie"
+    Info:
+      name: "heart\u0421ookie"
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 13
+      subCategory: 
+  - RelativePath: /Confiture/14_Star/star
+    Info:
+      name: Star
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 14
+      subCategory: 
+  - RelativePath: /Confiture/15_Tangerine/tangerine
+    Info:
+      name: Tangerine
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 15
+      subCategory: 
+  - RelativePath: /Confiture/16_TreeCookie/treeCookie
+    Info:
+      name: TreeCookie
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 5
+      tags: []
+      order: 16
+      subCategory: 
+  - RelativePath: /CreamSkins/01_SkinStar/Skin
+    Info:
+      name: WhiteStar
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 1
+      subCategory: 
+  - RelativePath: /CreamSkins/02_SkinToothpaste/Skin
+    Info:
+      name: Toothpaste
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 2
+      subCategory: 
+  - RelativePath: /CreamSkins/03_Hubabuba/Skin
+    Info:
+      name: Hubabuba
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 3
+      subCategory: 
+  - RelativePath: /CreamSkins/04_Chocolate/Skin
+    Info:
+      name: choco
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 4
+      subCategory: 
+  - RelativePath: /CreamSkins/05_Raspberries/Skin
+    Info:
+      name: Raspberries
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 5
+      subCategory: 
+  - RelativePath: /CreamSkins/06_Green/Skin
+    Info:
+      name: Pistachio
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 6
+      subCategory: 
+  - RelativePath: /CreamSkins/07_ToothepasteSecond/Skin
+    Info:
+      name: Toothepaste2
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 7
+      subCategory: 
+  - RelativePath: /CreamSkins/08_NewCream/Skin
+    Info:
+      name: NewCream1
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 8
+      subCategory: 
+  - RelativePath: /CreamSkins/09_NewCream/Skin
+    Info:
+      name: NewCream2
+      cannotBeReceived: 0
+      isPremiumItem: 1
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 9
+      subCategory: 
+  - RelativePath: /CreamSkins/10_NewCream/Skin
+    Info:
+      name: NewCream3
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 10
+      subCategory: 
+  - RelativePath: /CreamSkins/11_NewCream/Skin
+    Info:
+      name: NewCream4
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 11
+      subCategory: 
+  - RelativePath: /CreamSkins/12_NewCream/Skin
+    Info:
+      name: NewCream5
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 12
+      subCategory: 
+  - RelativePath: /CreamSkins/13_NewCream/Skin
+    Info:
+      name: NewCream6
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 13
+      subCategory: 
+  - RelativePath: /CreamSkins/14_NewCream/Skin
+    Info:
+      name: NewCream7
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 14
+      subCategory: 
+  - RelativePath: /CreamSkins/15_NewCream/Skin
+    Info:
+      name: NewCream8
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 15
+      subCategory: 
+  - RelativePath: /CreamSkins/16_DebugThreeColors/Skin
+    Info:
+      name: DebugThreeColors
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 16
+      subCategory: 
+  - RelativePath: /CreamSkins/17_DebugTwoColors/Skin
+    Info:
+      name: DebugTwoColors
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 17
+      subCategory: 
+  - RelativePath: /CreamSkins/18_Rainbow/Skin
+    Info:
+      name: Rainbow
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 18
+      subCategory: 
+  - RelativePath: /CreamSkins/50_CreamCleaningLevel/Skin
+    Info:
+      name: CreamCleaningLevel
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 50
+      subCategory: 
+  - RelativePath: /CreamSkins/51_CreamGoldenLevel/Skin
+    Info:
+      name: CreamGoldenLevel
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 51
+      subCategory: 
+  - RelativePath: /CreamSkins/52_CreamSkin_PizzaLevel/Skin
+    Info:
+      name: PizzaCreamSkin
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 52
+      subCategory: 
+  - RelativePath: /CreamSkins/53_CreamSkin_BathroomLevel/Skin
+    Info:
+      name: CreamSkinBathroomLevel
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 3
+      tags: []
+      order: 53
+      subCategory: 
+  - RelativePath: /InteriorObjects/InteriorObject_0_bar/InteriorBar
+    Info:
+      name: Bar
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 0
+      subCategory: interior_bar
+  - RelativePath: /InteriorObjects/InteriorObject_0_chair/InteriorChair
+    Info:
+      name: Chair
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 0
+      subCategory: interior_chair
+  - RelativePath: /InteriorObjects/InteriorObject_1_barItems/InteriorBarDecor
+    Info:
+      name: Bar Decor
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 1
+      subCategory: interior_baritems
+  - RelativePath: /InteriorObjects/InteriorObject_2_lights/InteriorLights
+    Info:
+      name: Lights
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 2
+      subCategory: lights
+  - RelativePath: /InteriorObjects/InteriorObject_3_pictA/InteriorPicture_01
+    Info:
+      name: Picture_01
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 3
+      subCategory: interior_pictA
+  - RelativePath: /InteriorObjects/InteriorObject_4_pictB/InteriorPicture_02
+    Info:
+      name: Picture_02
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 4
+      subCategory: interior_pictB
+  - RelativePath: /InteriorObjects/InteriorObject_5_lights/InteriorLights
+    Info:
+      name: Lights2
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 5
+      subCategory: lights
+  - RelativePath: /InteriorObjects/InteriorObject_6_bar/InteriorBar
+    Info:
+      name: BarUp2
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 6
+      subCategory: interior_bar
+  - RelativePath: /InteriorObjects/InteriorObject_7_plant/InteriorPlant
+    Info:
+      name: Plant
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 7
+      subCategory: interior_plant
+  - RelativePath: /InteriorObjects/InteriorObject_8_barItems/InteriorBarDecor
+    Info:
+      name: Bar Decor2
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 8
+      subCategory: interior_baritems
+  - RelativePath: /InteriorObjects/InteriorObject_9_lights/InteriorLights
+    Info:
+      name: Lights3
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 9
+      subCategory: lights
+  - RelativePath: /InteriorObjects/InteriorObject_10_plant/InteriorPlant
+    Info:
+      name: Plant2
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 10
+      subCategory: interior_plant
+  - RelativePath: /InteriorObjects/InteriorObject_11_bar/InteriorBar
+    Info:
+      name: BarUp3
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 11
+      subCategory: interior_bar
+  - RelativePath: /InteriorObjects/InteriorObject_12_plant/InteriorPlant
+    Info:
+      name: Plant3
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 12
+      subCategory: interior_plant
+  - RelativePath: /InteriorObjects/InteriorObject_13_lights/InteriorLights
+    Info:
+      name: Lights4
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 13
+      subCategory: lights
+  - RelativePath: /InteriorObjects/InteriorObject_14_chair/InteriorChair
+    Info:
+      name: Chair2
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 14
+      subCategory: interior_chair
+  - RelativePath: /InteriorObjects/InteriorObject_15_pictA/InteriorPicture_01
+    Info:
+      name: Picture_03
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 15
+      subCategory: interior_pictA
+  - RelativePath: /InteriorObjects/InteriorObject_16_lights/InteriorLights
+    Info:
+      name: Lights5
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 16
+      subCategory: lights
+  - RelativePath: /InteriorObjects/InteriorObject_17_iosA/ItemOnShelf1
+    Info:
+      name: ItemOnShelf1
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 17
+      subCategory: itemonshelf1
+  - RelativePath: /InteriorObjects/InteriorObject_18_lights/InteriorLights
+    Info:
+      name: Lights6
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 18
+      subCategory: lights
+  - RelativePath: /InteriorObjects/InteriorObject_19_iosB/ItemOnShelf2
+    Info:
+      name: ItemOnShelf2
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 6
+      tags: []
+      order: 19
+      subCategory: itemonshelf2
+  - RelativePath: /Levels/Level1/Level
+    Info:
+      name: TutorialLevel
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 1
+      tags: []
+      order: 1
+      subCategory: 
+  - RelativePath: /Levels/Level2/Level
+    Info:
+      name: CommonLevel
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 1
+      tags: []
+      order: 2
+      subCategory: 
+  - RelativePath: /Levels/Level3_Golden/GoldenLevel
+    Info:
+      name: GoldenLevel
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 1
+      tags: []
+      order: 3
+      subCategory: 
+  - RelativePath: /Levels/Level4_Cleaning/CleaningLevel
+    Info:
+      name: CleaningLevel
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 1
+      tags: []
+      order: 4
+      subCategory: 
+  - RelativePath: /Levels/Level5_Pizza/PizzaLevel
+    Info:
+      name: PizzaLevel
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 1
+      tags: []
+      order: 5
+      subCategory: 
+  - RelativePath: /Levels/Level6_Bathroom/BathroomLevel
+    Info:
+      name: BathroomLevel
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 1
+      tags: []
+      order: 6
+      subCategory: 
+  - RelativePath: /Shapes/Shape0/Waffle_3
+    Info:
+      name: waffle_3
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 0
+      subCategory: waffle
+  - RelativePath: /Shapes/Shape1/Waffle_5
+    Info:
+      name: waffle_5
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 1
+      subCategory: waffle
+  - RelativePath: /Shapes/Shape2/Waffle_7
+    Info:
+      name: waffle_7
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 2
+      subCategory: waffle
+  - RelativePath: /Shapes/Shape3/Waffle_9
+    Info:
+      name: waffle_9
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 3
+      subCategory: waffle
+  - RelativePath: /Shapes/Shape4/Waffle_11
+    Info:
+      name: waffle_11
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 4
+      subCategory: waffle
+  - RelativePath: /Shapes/Shape5/Waffle_21
+    Info:
+      name: waffle_21
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 5
+      subCategory: 
+  - RelativePath: /Shapes/Shape6/Cake_7
+    Info:
+      name: cake_7
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 6
+      subCategory: 
+  - RelativePath: /Shapes/Shape8/Cake_9
+    Info:
+      name: cake_9
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 8
+      subCategory: 
+  - RelativePath: /Shapes/Shape9/Strawberry
+    Info:
+      name: strawberry
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 3
+      assetType: 4
+      tags: []
+      order: 9
+      subCategory: 
+  - RelativePath: /Shapes/Shape10/Eclair
+    Info:
+      name: eclair
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 9
+      assetType: 4
+      tags: []
+      order: 10
+      subCategory: 
+  - RelativePath: /Shapes/Shape11/Blueberry
+    Info:
+      name: blueberry
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 11
+      subCategory: 
+  - RelativePath: /Shapes/Shape12_macarons/Macarons
+    Info:
+      name: macarons
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 12
+      subCategory: 
+  - RelativePath: /Shapes/Shape13_Peach/Peach
+    Info:
+      name: Peach
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 13
+      subCategory: 
+  - RelativePath: /Shapes/Shape14/EclairMint
+    Info:
+      name: eclairmint
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 14
+      subCategory: 
+  - RelativePath: /Shapes/Shape15/Raspberry
+    Info:
+      name: raspberry
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 15
+      subCategory: 
+  - RelativePath: /Shapes/Shape16/Cake_7_yellow
+    Info:
+      name: cake_7_yellow
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 16
+      subCategory: 
+  - RelativePath: /Shapes/Shape17/Waffle_3
+    Info:
+      name: waffle_3_dark
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 17
+      subCategory: waffle_dark
+  - RelativePath: /Shapes/Shape18/Waffle_5
+    Info:
+      name: waffle_5_dark
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 18
+      subCategory: waffle_dark
+  - RelativePath: /Shapes/Shape19/Waffle_7
+    Info:
+      name: waffle_7_dark
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 19
+      subCategory: waffle_dark
+  - RelativePath: /Shapes/Shape20/Waffle_9
+    Info:
+      name: waffle_9_dark
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 20
+      subCategory: waffle_dark
+  - RelativePath: /Shapes/Shape21/Waffle_11
+    Info:
+      name: waffle_11_dark
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 21
+      subCategory: waffle_dark
+  - RelativePath: /Shapes/Shape22/Banana
+    Info:
+      name: banana
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 22
+      subCategory: 
+  - RelativePath: /Shapes/Shape23/Kivi
+    Info:
+      name: kiwi
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 23
+      subCategory: 
+  - RelativePath: /Shapes/Shape24/Blackberry
+    Info:
+      name: blackberry
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 24
+      subCategory: 
+  - RelativePath: /Shapes/Shape26/Pancake
+    Info:
+      name: pancake
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 26
+      subCategory: subcat_pancake
+  - RelativePath: /Shapes/Shape30_Dragon/Dragon
+    Info:
+      name: dragon
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 30
+      subCategory: 
+  - RelativePath: /Shapes/Shape31/EclairCrimson
+    Info:
+      name: eclaircrimson
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 31
+      subCategory: 
+  - RelativePath: /Shapes/Shape32_GreenApple/GreenApple
+    Info:
+      name: GreenApple
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 32
+      subCategory: 
+  - RelativePath: /Shapes/Shape35/EclairVanilla
+    Info:
+      name: eclairvanilla
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 35
+      subCategory: 
+  - RelativePath: /Shapes/Shape36_RedApple/RedApple
+    Info:
+      name: RedApple
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 36
+      subCategory: 
+  - RelativePath: /Shapes/Shape38_roll/Roll
+    Info:
+      name: roll
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 38
+      subCategory: 
+  - RelativePath: /Shapes/Shape40_LongCake/CakeLong
+    Info:
+      name: cake_long
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 40
+      subCategory: 
+  - RelativePath: /Shapes/Shape41_ShortCake/CakeShort
+    Info:
+      name: cake_short
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 41
+      subCategory: 
+  - RelativePath: /Shapes/Shape42_LongPancake/PancakeLong
+    Info:
+      name: pancake_long
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 42
+      subCategory: subcat_pancake
+  - RelativePath: /Shapes/Shape43_ShortPancake/PancakeShort
+    Info:
+      name: pancake_short
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 43
+      subCategory: subcat_pancake
+  - RelativePath: /Shapes/Shape_50_CleaningLevel/CleaningShape
+    Info:
+      name: CleaningShape
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 50
+      subCategory: 
+  - RelativePath: /Shapes/Shape_51_CleaningLevel/CleaningShape4
+    Info:
+      name: CleaningShape4
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 51
+      subCategory: 
+  - RelativePath: /Shapes/Shape_52_CleaningLevel/CleaningShape16
+    Info:
+      name: CleaningShape16
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 52
+      subCategory: 
+  - RelativePath: /Shapes/Shape_60_GoldenLevel/GoldenShape
+    Info:
+      name: GoldenShape
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 60
+      subCategory: 
+  - RelativePath: /Shapes/Shape_70_PizzaLevel/PizzaShape
+    Info:
+      name: PizzaShape
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 70
+      subCategory: 
+  - RelativePath: /Shapes/Shape_71_PizzaLevel/FriedPotatoesShape
+    Info:
+      name: FriedPotatoesShape
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 71
+      subCategory: 
+  - RelativePath: /Shapes/Shape_72_PizzaLevel/HotDogShape
+    Info:
+      name: HotDogShape
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 72
+      subCategory: 
+  - RelativePath: /Shapes/Shape_80_BathroomLevel/FrogShape
+    Info:
+      name: FrogShape
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 80
+      subCategory: 
+  - RelativePath: /Shapes/Shape_81_BathroomLevel/SoapShape
+    Info:
+      name: SoapShape
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 81
+      subCategory: 
+  - RelativePath: /Shapes/Shape_82_BathroomLevel/SpongeShape
+    Info:
+      name: SpongeShape
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 82
+      subCategory: 
+  - RelativePath: /Shapes/Shape_90_FeverLevel_a/FeverShapeA
+    Info:
+      name: FeverShapeA
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 90
+      subCategory: 
+  - RelativePath: /Shapes/Shape_91_FeverLevel_b/FeverShapeB
+    Info:
+      name: FeverShapeB
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 91
+      subCategory: 
+  - RelativePath: /Shapes/Shape_92_FeverLevel_c/FeverShapeC
+    Info:
+      name: FeverShapeC
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 4
+      tags: []
+      order: 92
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve0/Cylinder_base_00
+    Info:
+      name: v0
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 0
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve1_Pony/Cylinder_pony
+    Info:
+      name: pony
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 1
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve2_Toothpaste/Cylinder_toothpaste
+    Info:
+      name: toothpaste
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 2
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve3/Cylinder_base_01
+    Info:
+      name: v1
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 3
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve4_Canister/Cylinder_canister
+    Info:
+      name: canister
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 4
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve5_Cat/Cylinder_cat
+    Info:
+      name: cat
+      cannotBeReceived: 0
+      isPremiumItem: 1
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 5
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve6_Gun/Cylinder_gun
+    Info:
+      name: gun
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 6
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve7/Cylinder_base_02
+    Info:
+      name: v2
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 7
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve8/Cylinder_base_03
+    Info:
+      name: v3
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 8
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve9/Cylinder_base_04
+    Info:
+      name: v4
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 9
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve10/Cylinder_base_05
+    Info:
+      name: v5
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 10
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve11/Cylinder_base_06
+    Info:
+      name: v6
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 11
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve12/Cylinder_base_07
+    Info:
+      name: v7
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 12
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve13/Cylinder_base_08
+    Info:
+      name: v8
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 13
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve14/Cylinder_base_09
+    Info:
+      name: v9
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 14
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve15_Balloon/Cylinder_balloon
+    Info:
+      name: balloon
+      cannotBeReceived: 0
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 15
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve16_Ketchup/Cylinder_ketchup
+    Info:
+      name: ketchupValve
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 16
+      subCategory: 
+  - RelativePath: /ValveSkins/Valve17_Duck/Cylinder_duck
+    Info:
+      name: duckValve
+      cannotBeReceived: 1
+      isPremiumItem: 0
+      priceOverride: 0
+      assetType: 2
+      tags: []
+      order: 17
+      subCategory: 

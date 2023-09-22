@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b61d1656cdfbc4199a955806fc3bf2, type: 3}
+  m_Name: Waffle_3
+  m_EditorClassIdentifier: 
+  info:
+    name: waffle_3_dark
+    cannotBeReceived: 0
+    isPremiumItem: 0
+    priceOverride: 0
+    assetType: 4
+    tags: []
+    order: 17
+    subCategory: waffle_dark
+  asset: {fileID: 4049286413403473859, guid: 414412957c23b414cb6f35cd21671453, type: 3}

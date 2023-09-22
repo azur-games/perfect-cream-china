@@ -1,0 +1,4499 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7411005578745901360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154404372514838634}
+  - component: {fileID: -5399153803200568281}
+  m_Layer: 0
+  m_Name: Localization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1154404372514838634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411005578745901360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5399153803200568281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411005578745901360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ad28c7876b4b649a2d8d7bee76c1c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 1
+  language: 10
+  editorLanguage: 30
+  items:
+  - key: label_open_now
+    values:
+    - language: 10
+      value: OPEN NOW
+    - language: 30
+      value: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C \u0421\u0415\u0419\u0427\u0410\u0421"
+    - language: 40
+      value: "\u7ACB\u5373\u5F00\u542F"
+    - language: 0
+      value: "\u7ACB\u5373\u5F00\u542F"
+    - language: 15
+      value: "JETZT \xD6FFNEN"
+    - language: 34
+      value: ABRIR AHORA
+    - language: 5
+      value: ABRIR AHORA
+    - language: 14
+      value: OUVRIR
+    - language: 22
+      value: "\u4ECA\u3059\u3050\u958B\u304F"
+    - language: 23
+      value: "\uC9C0\uAE08 \uC5F4\uAE30"
+    - language: 28
+      value: "ABRIR J\xC1"
+    - language: 42
+      value: ABRIR
+    - language: 36
+      value: "\u0E40\u0E1B\u0E34\u0E14\u0E40\u0E25\u0E22"
+    - language: 37
+      value: "\u015E\u0130MD\u0130 A\xC7"
+  - key: label_creme
+    values:
+    - language: 10
+      value: CREAM
+    - language: 30
+      value: "\u041A\u0420\u0415\u041C"
+    - language: 40
+      value: "\u5976\u6CB9"
+    - language: 0
+      value: "\u5976\u6CB9"
+    - language: 15
+      value: SAHNE
+    - language: 34
+      value: CREMA
+    - language: 5
+      value: CREMA
+    - language: 14
+      value: "CR\xC8ME"
+    - language: 22
+      value: "\u30AF\u30EA\u30FC\u30E0"
+    - language: 23
+      value: "\uD06C\uB9BC"
+    - language: 28
+      value: COBERTURA
+    - language: 42
+      value: CREME
+    - language: 36
+      value: "\u0E04\u0E23\u0E35\u0E21"
+    - language: 37
+      value: KREMA
+  - key: label_food
+    values:
+    - language: 10
+      value: FOOD
+    - language: 30
+      value: "\u0415\u0414\u0410"
+    - language: 40
+      value: "\u98DF\u7269"
+    - language: 0
+      value: "\u98DF\u7269"
+    - language: 15
+      value: NAHRUNG
+    - language: 34
+      value: COMIDA
+    - language: 5
+      value: COMIDA
+    - language: 14
+      value: NOURRITURE
+    - language: 22
+      value: "\u98DF\u3079\u7269"
+    - language: 23
+      value: "\uC74C\uC2DD"
+    - language: 28
+      value: COMIDA
+    - language: 42
+      value: COMIDA
+    - language: 36
+      value: "\u0E2D\u0E32\u0E2B\u0E32\u0E23"
+    - language: 37
+      value: YEMEK
+  - key: label_valves
+    values:
+    - language: 10
+      value: NOZZLES
+    - language: 30
+      value: "\u041A\u041B\u0410\u041F\u0410\u041D\u042B"
+    - language: 40
+      value: "\u88F1\u82B1\u5634"
+    - language: 0
+      value: "\u88F1\u82B1\u5634"
+    - language: 15
+      value: "D\xDCSEN"
+    - language: 34
+      value: BOQUILLAS
+    - language: 5
+      value: BOQUILLAS
+    - language: 14
+      value: DOUILLES
+    - language: 22
+      value: "\u30CE\u30BA\u30EB"
+    - language: 23
+      value: "\uB178\uC990"
+    - language: 28
+      value: BICOS
+    - language: 42
+      value: BOCAIS
+    - language: 36
+      value: "\u0E2B\u0E31\u0E27\u0E09\u0E35\u0E14"
+    - language: 37
+      value: "BA\u015ELIKLAR"
+  - key: label_confiture
+    values:
+    - language: 10
+      value: CONFITURE
+    - language: 30
+      value: "\u041A\u041E\u041D\u0424\u0418\u0422\u042E\u0420"
+    - language: 40
+      value: "\u679C\u9171"
+    - language: 0
+      value: "\u679C\u9171"
+    - language: 15
+      value: "KONFIT\xDCRE"
+    - language: 34
+      value: CONFITURA
+    - language: 5
+      value: CONFITURA
+    - language: 14
+      value: CONFITURE
+    - language: 22
+      value: "\u30B8\u30E3\u30E0"
+    - language: 23
+      value: "\uC124\uD0D5 \uC808\uC784"
+    - language: 28
+      value: CONFEITARIA
+    - language: 42
+      value: COMPOTA
+    - language: 36
+      value: "\u0E41\u0E22\u0E21"
+    - language: 37
+      value: "\u015EEKERLEME"
+  - key: label_start
+    values:
+    - language: 10
+      value: START
+    - language: 30
+      value: "\u0421\u0422\u0410\u0420\u0422"
+    - language: 40
+      value: "\u5F00\u59CB"
+    - language: 0
+      value: "\u5F00\u59CB"
+    - language: 15
+      value: START
+    - language: 34
+      value: EMPEZAR
+    - language: 5
+      value: EMPEZAR
+    - language: 14
+      value: "D\xC9MARRER"
+    - language: 22
+      value: "\u30B9\u30BF\u30FC\u30C8"
+    - language: 23
+      value: "\uC2DC\uC791"
+    - language: 28
+      value: INICIAR
+    - language: 42
+      value: INICIAR
+    - language: 36
+      value: "\u0E40\u0E23\u0E34\u0E48\u0E21"
+    - language: 37
+      value: "BA\u015ELA"
+  - key: label_bonus_level
+    values:
+    - language: 10
+      value: BONUS LEVEL
+    - language: 30
+      value: "\u0411\u041E\u041D\u0423\u0421"
+    - language: 40
+      value: "\u5956\u52B1\u5173\u5361"
+    - language: 0
+      value: "\u5956\u52B1\u5173\u5361"
+    - language: 15
+      value: BONUSLEVEL
+    - language: 34
+      value: "NIVEL DE BONIFICACI\xD3N"
+    - language: 5
+      value: "NIVEL DE BONIFICACI\xD3N"
+    - language: 14
+      value: NIVEAU BONUS
+    - language: 22
+      value: "\u30DC\u30FC\u30CA\u30B9\u30B9\u30C6\u30FC\u30B8"
+    - language: 23
+      value: "\uBCF4\uB108\uC2A4 \uB808\uBCA8"
+    - language: 28
+      value: "N\xCDVEL DE B\xD3NUS"
+    - language: 42
+      value: FASE EXTRA
+    - language: 36
+      value: "\u0E14\u0E48\u0E32\u0E19\u0E42\u0E1A\u0E19\u0E31\u0E2A"
+    - language: 37
+      value: "BONUS SEV\u0130YE"
+  - key: label_options
+    values:
+    - language: 10
+      value: SETTINGS
+    - language: 30
+      value: "\u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418"
+    - language: 40
+      value: "\u8BBE\u7F6E"
+    - language: 0
+      value: "\u8BBE\u7F6E"
+    - language: 15
+      value: EINSTELLUNGEN
+    - language: 34
+      value: AJUSTES
+    - language: 5
+      value: "CONFIGURACI\xD3N"
+    - language: 14
+      value: "PARAM\xC8TRES"
+    - language: 22
+      value: "\u8A2D\u5B9A"
+    - language: 23
+      value: "\uC124\uC815"
+    - language: 28
+      value: "DEFINI\xC7\xD5ES"
+    - language: 42
+      value: "CONFIGURA\xC7\xD5ES"
+    - language: 36
+      value: "\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32"
+    - language: 37
+      value: AYARLAR
+  - key: label_remove_ads
+    values:
+    - language: 10
+      value: REMOVE ADS
+    - language: 30
+      value: "\u041E\u0422\u041A\u041B\u042E\u0427\u0418\u0422\u042C \u0420\u0415\u041A\u041B\u0410\u041C\u0423"
+    - language: 40
+      value: "\u79FB\u9664\u5E7F\u544A"
+    - language: 0
+      value: "\u79FB\u9664\u5E7F\u544A"
+    - language: 15
+      value: KEINE WERBUNG
+    - language: 34
+      value: ELIMINAR ANUNCIOS
+    - language: 5
+      value: ELIMINAR ANUNCIOS
+    - language: 14
+      value: SUPPRIMER LES ANNONCES
+    - language: 22
+      value: "\u5E83\u544A\u3092\u8868\u793A\u3057\u306A\u3044"
+    - language: 23
+      value: "\uAD11\uACE0 \uC81C\uAC70\uD558\uAE30"
+    - language: 28
+      value: "REMOVER AN\xDANCIOS"
+    - language: 42
+      value: "REMOVER AN\xDANCIOS"
+    - language: 36
+      value: "\u0E25\u0E1A\u0E42\u0E06\u0E29\u0E13\u0E32"
+    - language: 37
+      value: REKLAMLARI KALDIR
+  - key: label_vibro
+    values:
+    - language: 10
+      value: VIBRO
+    - language: 30
+      value: "\u0412\u0418\u0411\u0420\u041E"
+    - language: 40
+      value: "\u9707\u52A8"
+    - language: 0
+      value: "\u9707\u52A8"
+    - language: 15
+      value: VIBRO
+    - language: 34
+      value: "VIBRACI\xD3N"
+    - language: 5
+      value: "VIBRACI\xD3N"
+    - language: 14
+      value: VIBRO
+    - language: 22
+      value: "\u632F\u52D5"
+    - language: 23
+      value: "\uC9C4\uB3D9"
+    - language: 28
+      value: "VIBRA\xC7\xC3O"
+    - language: 42
+      value: "VIBRA\xC7\xC3O"
+    - language: 36
+      value: "\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E48\u0E19"
+    - language: 37
+      value: "T\u0130TRE\u015E\u0130M"
+  - key: label_sound
+    values:
+    - language: 10
+      value: SOUND
+    - language: 30
+      value: "\u0417\u0412\u0423\u041A"
+    - language: 40
+      value: "\u58F0\u97F3"
+    - language: 0
+      value: "\u58F0\u97F3"
+    - language: 15
+      value: TON
+    - language: 34
+      value: SONIDO
+    - language: 5
+      value: SONIDO
+    - language: 14
+      value: SON
+    - language: 22
+      value: "\u30B5\u30A6\u30F3\u30C9"
+    - language: 23
+      value: "\uC0AC\uC6B4\uB4DC"
+    - language: 28
+      value: SOM
+    - language: 42
+      value: SOM
+    - language: 36
+      value: "\u0E40\u0E2A\u0E35\u0E22\u0E07"
+    - language: 37
+      value: SES
+  - key: label_restore
+    values:
+    - language: 10
+      value: RESTORE PURCHASES
+    - language: 30
+      value: "\u0412\u041E\u0421\u0421\u0422\u0410\u041D\u041E\u0412\u0418\u0422\u042C
+        \u041F\u041E\u041A\u0423\u041F\u041A\u0418"
+    - language: 40
+      value: "\u6062\u590D\u8D2D\u4E70"
+    - language: 0
+      value: "\u6062\u590D\u8D2D\u4E70"
+    - language: 15
+      value: "K\xC4UFE WIEDERHERSTELLEN"
+    - language: 34
+      value: RESTAURAR COMPRAS
+    - language: 5
+      value: RESTAURAR COMPRAS
+    - language: 14
+      value: "R\xC9TABLIR LES ACHATS"
+    - language: 22
+      value: "\u8CFC\u5165\u3092\u5FA9\u5143"
+    - language: 23
+      value: "\uAD6C\uB9E4 \uBCF5\uAD6C"
+    - language: 28
+      value: REPOR COMPRAS
+    - language: 42
+      value: RESTAURAR COMPRAS
+    - language: 36
+      value: "\u0E40\u0E23\u0E35\u0E22\u0E01\u0E04\u0E37\u0E19\u0E01\u0E32\u0E23\u0E0B\u0E37\u0E49\u0E2D"
+    - language: 37
+      value: "SATIN ALIMLARI YEN\u0130LE"
+  - key: label_terms
+    values:
+    - language: 10
+      value: TERMS OF USE
+    - language: 30
+      value: "\u041F\u0420\u0410\u0412\u0418\u041B\u0410 \u0418\u0421\u041F\u041E\u041B\u042C\u0417\u041E\u0412\u0410\u041D\u0418\u042F"
+    - language: 40
+      value: "\u4F7F\u7528\u6761\u6B3E"
+    - language: 0
+      value: "\u4F7F\u7528\u6761\u6B3E"
+    - language: 15
+      value: NUTZUNGSBEDINGUNGEN
+    - language: 34
+      value: CONDICIONES DE USO
+    - language: 5
+      value: CONDICIONES DE USO
+    - language: 14
+      value: CONDITIONS D'UTILISATION
+    - language: 22
+      value: "\u5229\u7528\u898F\u7D04"
+    - language: 23
+      value: "\uC0AC\uC6A9 \uC57D\uAD00"
+    - language: 28
+      value: "TERMOS DE UTILIZA\xC7\xC3O"
+    - language: 42
+      value: TERMOS DE USO
+    - language: 36
+      value: "\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E01\u0E32\u0E23\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19"
+    - language: 37
+      value: "KULLANIM \u015EARTLARI"
+  - key: label_no_video
+    values:
+    - language: 10
+      value: No video available
+    - language: 30
+      value: "\u0412\u0438\u0434\u0435\u043E \u043D\u0435\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E"
+    - language: 40
+      value: "\u6682\u65E0\u53EF\u89C2\u770B\u89C6\u9891"
+    - language: 0
+      value: "\u6682\u65E0\u53EF\u89C2\u770B\u89C6\u9891"
+    - language: 15
+      value: "Kein Video verf\xFCgbar"
+    - language: 34
+      value: "V\xEDdeo no disponible"
+    - language: 5
+      value: Video no disponible
+    - language: 14
+      value: "Aucune vid\xE9o disponible"
+    - language: 22
+      value: "\u8996\u8074\u53EF\u80FD\u306A\u52D5\u753B\u304C\u3042\u308A\u307E\u305B\u3093"
+    - language: 23
+      value: "\uC774\uC6A9 \uAC00\uB2A5\uD55C \uC601\uC0C1\uC774 \uC5C6\uC2B5\uB2C8\uB2E4"
+    - language: 28
+      value: "Nenhum v\xEDdeo dispon\xEDvel"
+    - language: 42
+      value: "Nenhum v\xEDdeo dispon\xEDvel"
+    - language: 36
+      value: "\u0E44\u0E21\u0E48\u0E21\u0E35\u0E27\u0E34\u0E14\u0E35\u0E42\u0E2D"
+    - language: 37
+      value: Video yok
+  - key: label_purchase_complete
+    values:
+    - language: 10
+      value: Purchase completed successfully
+    - language: 30
+      value: "\u041F\u043E\u043A\u0443\u043F\u043A\u0430 \u0443\u0441\u043F\u0435\u0448\u043D\u043E
+        \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0430"
+    - language: 40
+      value: "\u6210\u529F\u8D2D\u4E70\u5B8C\u6210"
+    - language: 0
+      value: "\u6210\u529F\u8D2D\u4E70\u5B8C\u6210"
+    - language: 15
+      value: Kauf erfolgreich abgeschlossen
+    - language: 34
+      value: "La compra se ha completado con \xE9xito"
+    - language: 5
+      value: "La compra se complet\xF3 correctamente"
+    - language: 14
+      value: "Achat effectu\xE9"
+    - language: 22
+      value: "\u8CFC\u5165\u306B\u6210\u529F\u3057\u307E\u3057\u305F"
+    - language: 23
+      value: "\uAD6C\uB9E4\uAC00 \uC131\uACF5\uC801\uC73C\uB85C \uC644\uB8CC\uB418\uC5C8\uC2B5\uB2C8\uB2E4"
+    - language: 28
+      value: "Compra conclu\xEDda"
+    - language: 42
+      value: Compra efetuada
+    - language: 36
+      value: "\u0E01\u0E32\u0E23\u0E0B\u0E37\u0E49\u0E2D\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E2A\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C"
+    - language: 37
+      value: "Sat\u0131n al\u0131m ba\u015Far\u0131yla tamamland\u0131"
+  - key: label_piggy_bank
+    values:
+    - language: 10
+      value: TIPS PIGGY BANK
+    - language: 30
+      value: "\u041A\u041E\u041F\u0418\u041B\u041A\u0410"
+    - language: 40
+      value: "\u6253\u8D4F\u5B58\u94B1\u7F50"
+    - language: 0
+      value: "\u5C0F\u8D39\u5B58\u94B1\u7F50"
+    - language: 15
+      value: TIPPS-SPARSCHWEIN
+    - language: 34
+      value: PROPINAS DE LA HUCHA
+    - language: 5
+      value: PROPINAS DE LA HUCHA
+    - language: 14
+      value: "TIRELIRE \xC0 POURBOIRES"
+    - language: 22
+      value: "\u8CAF\u91D1\u7BB1\u306E\u30D2\u30F3\u30C8"
+    - language: 23
+      value: "\uB3FC\uC9C0 \uC800\uAE08\uD1B5"
+    - language: 28
+      value: MEALHEIRO DAS GORJETAS
+    - language: 42
+      value: PORQUINHO DE GORJETAS
+    - language: 36
+      value: "\u0E01\u0E25\u0E48\u0E2D\u0E07\u0E17\u0E34\u0E1B"
+    - language: 37
+      value: "T\u0130P KUTUSU"
+  - key: label_get
+    values:
+    - language: 10
+      value: GET
+    - language: 30
+      value: "\u0412\u0417\u042F\u0422\u042C"
+    - language: 40
+      value: "\u83B7\u5F97"
+    - language: 0
+      value: "\u83B7\u5F97"
+    - language: 15
+      value: BEKOMMEN
+    - language: 34
+      value: CONSIGUE
+    - language: 5
+      value: "OBT\xC9N"
+    - language: 14
+      value: OBTENIR
+    - language: 22
+      value: "\u5165\u624B"
+    - language: 23
+      value: "\uD68D\uB4DD"
+    - language: 28
+      value: OBTER
+    - language: 42
+      value: OBTER
+    - language: 36
+      value: "\u0E23\u0E31\u0E1A"
+    - language: 37
+      value: AL
+  - key: label_get_x2
+    values:
+    - language: 10
+      value: GET X2
+    - language: 30
+      value: "\u0412\u0417\u042F\u0422\u042C X2"
+    - language: 40
+      value: "\u83B7\u5F97X2"
+    - language: 0
+      value: "\u83B7\u5F97X2"
+    - language: 15
+      value: 2X BEKOMMEN
+    - language: 34
+      value: CONSIGUE X2
+    - language: 5
+      value: "OBT\xC9N X2"
+    - language: 14
+      value: OBTENIR X2
+    - language: 22
+      value: "\u5165\u624B\u91CF2\u500D"
+    - language: 23
+      value: "2\uBC30 \uD68D\uB4DD"
+    - language: 28
+      value: OBTER X2
+    - language: 42
+      value: GANHE X2
+    - language: 36
+      value: "\u0E23\u0E31\u0E1A 2 \u0E40\u0E17\u0E48\u0E32"
+    - language: 37
+      value: X2 AL
+  - key: label_every_day
+    values:
+    - language: 10
+      value: '{0} EVERY DAY!'
+    - language: 30
+      value: "{0} \u041A\u0410\u0416\u0414\u042B\u0419 \u0414\u0415\u041D\u042C!"
+    - language: 40
+      value: "{0} \u6BCF\u4E00\u5929\uFF01"
+    - language: 0
+      value: "{0} \u6BCF\u4E00\u5929\uFF01"
+    - language: 15
+      value: "{0} T\xC4GLICH!"
+    - language: 34
+      value: "\xA1{0} TODOS LOS D\xCDAS!"
+    - language: 5
+      value: "{0} TODOS LOS D\xCDAS!"
+    - language: 14
+      value: '{0} PAR JOUR !'
+    - language: 22
+      value: "\u6BCE\u65E5{0}\uFF01"
+    - language: 23
+      value: "\uB9E4\uC77C {0}!"
+    - language: 28
+      value: '{0} TODOS OS DIAS!'
+    - language: 42
+      value: '{0} TODOS OS DIAS!'
+    - language: 36
+      value: "{0} \u0E17\u0E38\u0E01\u0E27\u0E31\u0E19!"
+    - language: 37
+      value: "HER G\xDCN {0}!"
+  - key: label_restore_sub
+    values:
+    - language: 10
+      value: Restore Purchases
+    - language: 30
+      value: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
+        \u043F\u043E\u043A\u0443\u043F\u043A\u0438"
+    - language: 40
+      value: "\u6062\u590D\u8D2D\u4E70"
+    - language: 0
+      value: "\u6062\u590D\u8D2D\u4E70"
+    - language: 15
+      value: "K\xE4ufe wiederherstellen"
+    - language: 34
+      value: Restaurar compras
+    - language: 5
+      value: Restaurar compras
+    - language: 14
+      value: "R\xE9tablir les achats"
+    - language: 22
+      value: "\u8CFC\u5165\u3092\u5FA9\u5143"
+    - language: 23
+      value: "\uAD6C\uB9E4 \uBCF5\uAD6C"
+    - language: 28
+      value: Repor compras
+    - language: 42
+      value: Restaurar compras
+    - language: 36
+      value: "\u0E40\u0E23\u0E35\u0E22\u0E01\u0E04\u0E37\u0E19\u0E01\u0E32\u0E23\u0E0B\u0E37\u0E49\u0E2D"
+    - language: 37
+      value: "Sat\u0131n al\u0131mlar\u0131 yenile"
+  - key: label_no_more
+    values:
+    - language: 10
+      value: No more ADS!
+    - language: 30
+      value: "\u041D\u0438\u043A\u0430\u043A\u043E\u0439 \u0420\u0415\u041A\u041B\u0410\u041C\u042B!"
+    - language: 40
+      value: "\u4E0D\u518D\u6709\u5E7F\u544A\uFF01"
+    - language: 0
+      value: "\u4E0D\u518D\u6709\u5E7F\u544A\uFF01"
+    - language: 15
+      value: Keine WERBUNGEN mehr!
+    - language: 34
+      value: "\xA1Sin anuncios!"
+    - language: 5
+      value: "\xA1No m\xE1s anuncios!"
+    - language: 14
+      value: Fini les PUBS !
+    - language: 22
+      value: "\u5E83\u544A\u8868\u793A\u306A\u3057\uFF01"
+    - language: 23
+      value: "\uB354 \uC774\uC0C1 \uAD11\uACE0 \uC5C6\uC74C!"
+    - language: 28
+      value: "Basta de AN\xDANCIOS!"
+    - language: 42
+      value: "Sem an\xFAncios!"
+    - language: 36
+      value: "\u0E44\u0E21\u0E48\u0E21\u0E35\u0E42\u0E06\u0E29\u0E13\u0E32\u0E2D\u0E35\u0E01\u0E15\u0E48\u0E2D\u0E44\u0E1B!"
+    - language: 37
+      value: "Art\u0131k reklam yok!"
+  - key: label_exclusive_cream
+    values:
+    - language: 10
+      value: Exclusive cream!
+    - language: 30
+      value: "\u042D\u043A\u0441\u043A\u043B\u044E\u0437\u0438\u0432\u043D\u044B\u0439
+        \u043A\u0440\u0435\u043C!"
+    - language: 40
+      value: "\u4E13\u5C5E\u5976\u6CB9"
+    - language: 0
+      value: "\u4E13\u5C5E\u5976\u6CB9"
+    - language: 15
+      value: Exklusive Sahne!
+    - language: 34
+      value: "\xA1Crema exclusiva!"
+    - language: 5
+      value: "\xA1Crema exclusiva!"
+    - language: 14
+      value: "Cr\xE8me exclusive !"
+    - language: 22
+      value: "\u9650\u5B9A\u30AF\u30EA\u30FC\u30E0\uFF01"
+    - language: 23
+      value: "\uB3C5\uC810 \uD06C\uB9BC!"
+    - language: 28
+      value: Cobertura exclusiva!
+    - language: 42
+      value: Creme exclusivo!
+    - language: 36
+      value: "\u0E04\u0E23\u0E35\u0E21\u0E1E\u0E34\u0E40\u0E28\u0E29!"
+    - language: 37
+      value: "\xD6zel krema!"
+  - key: label_exclusive_nozzle
+    values:
+    - language: 10
+      value: Exclusive nozzle!
+    - language: 30
+      value: "\u042D\u043A\u0441\u043A\u043B\u044E\u0437\u0438\u0432\u043D\u044B\u0439
+        \u043A\u043B\u0430\u043F\u0430\u043D!"
+    - language: 40
+      value: "\u4E13\u5C5E\u88F1\u82B1\u5634\uFF01"
+    - language: 0
+      value: "\u4E13\u5C5E\u88F1\u82B1\u5634\uFF01"
+    - language: 15
+      value: "Exklusive D\xFCse!"
+    - language: 34
+      value: "\xA1Boquilla exclusiva!"
+    - language: 5
+      value: "\xA1Boquilla exclusiva!"
+    - language: 14
+      value: Douille exclusive !
+    - language: 22
+      value: "\u9650\u5B9A\u30CE\u30BA\u30EB\uFF01"
+    - language: 23
+      value: "\uB3C5\uC810 \uB178\uC990!"
+    - language: 28
+      value: Bico exclusivo!
+    - language: 42
+      value: Bocal exclusivo!
+    - language: 36
+      value: "\u0E2B\u0E31\u0E27\u0E09\u0E35\u0E14\u0E1E\u0E34\u0E40\u0E28\u0E29!"
+    - language: 37
+      value: "\xD6zel ba\u015Fl\u0131k!"
+  - key: label_subscribe
+    values:
+    - language: 10
+      value: SUBSCRIBE NOW
+    - language: 30
+      value: "\u041F\u041E\u0414\u041F\u0418\u0421\u0410\u0422\u042C\u0421\u042F"
+    - language: 40
+      value: "\u7ACB\u5373\u8BA2\u9605"
+    - language: 0
+      value: "\u7ACB\u5373\u8BA2\u9605"
+    - language: 15
+      value: JETZT ABONNIEREN
+    - language: 34
+      value: "SUSCR\xCDBETE AHORA"
+    - language: 5
+      value: "SUSCR\xCDBETE AHORA"
+    - language: 14
+      value: JE M'ABONNE
+    - language: 22
+      value: "\u4ECA\u3059\u3050\u30B5\u30D6\u30B9\u30AF\u30E9\u30A4\u30D6"
+    - language: 23
+      value: "\uC9C0\uAE08 \uAD6C\uB3C5"
+    - language: 28
+      value: "SUBSCREVER J\xC1"
+    - language: 42
+      value: ASSINE AGORA
+    - language: 36
+      value: "\u0E2A\u0E21\u0E31\u0E04\u0E23\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01\u0E40\u0E25\u0E22"
+    - language: 37
+      value: ABONE OL
+  - key: label_privacy_sub
+    values:
+    - language: 10
+      value: Privacy Policy
+    - language: 30
+      value: "\u041F\u043E\u043B\u0438\u0442\u0438\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+    - language: 40
+      value: "\u9690\u79C1\u653F\u7B56"
+    - language: 0
+      value: "\u9690\u79C1\u653F\u7B56"
+    - language: 15
+      value: Datenschutzbestimmungen
+    - language: 34
+      value: "Pol\xEDtica de privacidad"
+    - language: 5
+      value: "Pol\xEDtica de privacidad"
+    - language: 14
+      value: "Politique de confidentialit\xE9"
+    - language: 22
+      value: "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC"
+    - language: 23
+      value: "\uAC1C\uC778\uC815\uBCF4\uBCF4\uD638\uC815\uCC45"
+    - language: 28
+      value: "Pol\xEDtica de Privacidade"
+    - language: 42
+      value: "Pol\xEDtica de Privacidade"
+    - language: 36
+      value: "\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27"
+    - language: 37
+      value: "Gizlilik Politikas\u0131"
+  - key: label_terms_of_use_sub
+    values:
+    - language: 10
+      value: Terms of Use
+    - language: 30
+      value: "\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F"
+    - language: 40
+      value: "\u4F7F\u7528\u6761\u6B3E"
+    - language: 0
+      value: "\u4F7F\u7528\u6761\u6B3E"
+    - language: 15
+      value: Nutzungsbedingungen
+    - language: 34
+      value: Condiciones de uso
+    - language: 5
+      value: "T\xE9rminos de uso"
+    - language: 14
+      value: Conditions d'utilisation
+    - language: 22
+      value: "\u5229\u7528\u898F\u7D04"
+    - language: 23
+      value: "\uC0AC\uC6A9 \uC57D\uAD00"
+    - language: 28
+      value: "Termos de Utiliza\xE7\xE3o"
+    - language: 42
+      value: Termos de Uso
+    - language: 36
+      value: "\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E01\u0E32\u0E23\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19"
+    - language: 37
+      value: "Kullan\u0131m \u015Eartlar\u0131"
+  - key: label_price_trial_sub
+    values:
+    - language: 10
+      value: Then {0}/week
+    - language: 30
+      value: "\u0417\u0430\u0442\u0435\u043C \u2013 {0} \u0432 \u043D\u0435\u0434\u0435\u043B\u044E"
+    - language: 40
+      value: "\u7136\u540E{0}/\u5468"
+    - language: 0
+      value: "\u7136\u540E{0}/\u5468"
+    - language: 15
+      value: Dann {0}/Woche
+    - language: 34
+      value: "Despu\xE9s {0}/semana"
+    - language: 5
+      value: Luego {0}/semana
+    - language: 14
+      value: Puis {0}/semaine
+    - language: 22
+      value: "\u6BCE\u9031{0}"
+    - language: 23
+      value: "\uADF8 \uD6C4, {0}/\uC8FC"
+    - language: 28
+      value: Depois, pagas {0}/semana
+    - language: 42
+      value: 'Depois: {0}/semana'
+    - language: 36
+      value: "\u0E08\u0E32\u0E01\u0E19\u0E31\u0E49\u0E19\u0E0A\u0E33\u0E23\u0E30
+        {0}/\u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C"
+    - language: 37
+      value: "Ard\u0131ndan haftal\u0131k {0}"
+  - key: label_trial
+    values:
+    - language: 10
+      value: Start your 3-day free trial
+    - language: 30
+      value: "3 \u0434\u043D\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E"
+    - language: 40
+      value: "\u5F00\u59CB3\u5929\u514D\u8D39\u8BD5\u7528"
+    - language: 0
+      value: "\u5F00\u59CB3\u5929\u514D\u8D39\u8BD5\u7528"
+    - language: 15
+      value: "Starte deine 3-t\xE4gige kostenlose Testphase"
+    - language: 34
+      value: "Comienza tu prueba gratuita de 3 d\xEDas"
+    - language: 5
+      value: "Comienza tu prueba gratuita de 3 d\xEDas"
+    - language: 14
+      value: Lancer vos 3 jours d'essai gratuit
+    - language: 22
+      value: "3\u65E5\u9593\u306E\u7121\u6599\u304A\u8A66\u3057\u671F\u9593\u3092\u59CB\u3081\u308B"
+    - language: 23
+      value: "3\uC77C \uBB34\uB8CC \uD2B8\uB77C\uC774\uC5BC\uC744 \uC2DC\uC791\uD558\uC138\uC694"
+    - language: 28
+      value: "Come\xE7a a tua avalia\xE7\xE3o gratuita de 3 dias"
+    - language: 42
+      value: "Comece o per\xEDodo gratuito de 3 dias"
+    - language: 36
+      value: "\u0E40\u0E23\u0E34\u0E48\u0E21\u0E0A\u0E48\u0E27\u0E07\u0E17\u0E14\u0E25\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E1F\u0E23\u0E35
+        3 \u0E27\u0E31\u0E19"
+    - language: 37
+      value: "3 g\xFCnl\xFCk denemeye ba\u015Fla"
+  - key: label_description_sub
+    values:
+    - language: 10
+      value: Weekly Premium automatically renews for {0} per week after the 3-day
+        free trial. Payment will be charged to your {1} account at the end of the
+        trial period of purchase. The subscription automatically renews unless auto-renew
+        is turned off at least 24 hours before the end of the current period. Your
+        account will be charged for renewal within 24 hours prior to the end of the
+        current period. You can manage and turn off auto-renewal of the subscription
+        by going to your account settings on {2} after the purchase. Any unused portion
+        of a free trial period will be forfeited when the user purchases subscription
+        to that publication, where applicable.
+    - language: 30
+      value: "\u0415\u0436\u0435\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u044B\u0439
+        \u041F\u0440\u0435\u043C\u0438\u0443\u043C \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438
+        \u043F\u0440\u043E\u0434\u043B\u0435\u0432\u0430\u0435\u0442\u0441\u044F
+        \u043D\u0430 {0} \u0432 \u043D\u0435\u0434\u0435\u043B\u044E \u043F\u043E\u0441\u043B\u0435
+        \u0438\u0441\u0442\u0435\u0447\u0435\u043D\u0438\u044F \u0442\u0440\u0435\u0445\u0434\u043D\u0435\u0432\u043D\u043E\u0439
+        \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0439 \u043F\u0440\u043E\u0431\u043D\u043E\u0439
+        \u0432\u0435\u0440\u0441\u0438\u0438. \u041F\u043B\u0430\u0442\u0430 \u0431\u0443\u0434\u0435\u0442
+        \u0441\u043D\u044F\u0442\u0430 \u0441 \u0432\u0430\u0448\u0435\u0439 \u0443\u0447\u0435\u0442\u043D\u043E\u0439
+        \u0437\u0430\u043F\u0438\u0441\u0438 {1} \u0432 \u043A\u043E\u043D\u0446\u0435
+        \u043F\u0440\u043E\u0431\u043D\u043E\u0433\u043E \u043F\u0435\u0440\u0438\u043E\u0434\u0430
+        \u043F\u043E\u043A\u0443\u043F\u043A\u0438. \u041F\u043E\u0434\u043F\u0438\u0441\u043A\u0430
+        \u043F\u0440\u043E\u0434\u043B\u0435\u0432\u0430\u0435\u0442\u0441\u044F
+        \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438,
+        \u0435\u0441\u043B\u0438 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435
+        \u043F\u0440\u043E\u0434\u043B\u0435\u043D\u0438\u0435 \u043D\u0435 \u0431\u0443\u0434\u0435\u0442
+        \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E \u043F\u043E \u043A\u0440\u0430\u0439\u043D\u0435\u0439
+        \u043C\u0435\u0440\u0435 \u0437\u0430 24 \u0447\u0430\u0441\u0430 \u0434\u043E
+        \u043E\u043A\u043E\u043D\u0447\u0430\u043D\u0438\u044F \u0442\u0435\u043A\u0443\u0449\u0435\u0433\u043E
+        \u043F\u0435\u0440\u0438\u043E\u0434\u0430. \u0421 \u0432\u0430\u0448\u0435\u0433\u043E
+        \u0430\u043A\u043A\u0430\u0443\u043D\u0442\u0430 \u0431\u0443\u0434\u0435\u0442
+        \u0432\u0437\u0438\u043C\u0430\u0442\u044C\u0441\u044F \u043F\u043B\u0430\u0442\u0430
+        \u0437\u0430 \u043F\u0440\u043E\u0434\u043B\u0435\u043D\u0438\u0435 \u0432
+        \u0442\u0435\u0447\u0435\u043D\u0438\u0435 24 \u0447\u0430\u0441\u043E\u0432
+        \u0434\u043E \u043E\u043A\u043E\u043D\u0447\u0430\u043D\u0438\u044F \u0442\u0435\u043A\u0443\u0449\u0435\u0433\u043E
+        \u043F\u0435\u0440\u0438\u043E\u0434\u0430. \u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435
+        \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C \u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0430\u0442\u044C
+        \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435
+        \u043F\u0440\u043E\u0434\u043B\u0435\u043D\u0438\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438,
+        \u043F\u0435\u0440\u0435\u0439\u0434\u044F \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438
+        \u0441\u0432\u043E\u0435\u0439 \u0443\u0447\u0435\u0442\u043D\u043E\u0439
+        \u0437\u0430\u043F\u0438\u0441\u0438 \u043D\u0430 {2} \u043F\u043E\u0441\u043B\u0435
+        \u043F\u043E\u043A\u0443\u043F\u043A\u0438. \u041B\u044E\u0431\u0430\u044F
+        \u043D\u0435\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u043D\u0430\u044F
+        \u0447\u0430\u0441\u0442\u044C \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0439
+        \u043F\u0440\u043E\u0431\u043D\u043E\u0439 \u0432\u0435\u0440\u0441\u0438\u0438
+        \u0431\u0443\u0434\u0435\u0442 \u0430\u043D\u043D\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u043D\u0430,
+        \u043A\u043E\u0433\u0434\u0430 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C
+        \u043F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0435\u0442 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0443
+        \u043D\u0430 \u044D\u0442\u0443 \u043F\u0443\u0431\u043B\u0438\u043A\u0430\u0446\u0438\u044E,
+        \u0433\u0434\u0435 \u044D\u0442\u043E \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u043C\u043E."
+    - language: 40
+      value: "{0} \u6BCF\u5468\u8C6A\u534E\u793C\u5305\u5C06\u5728\u4E09\u5929\u514D\u8D39\u8BD5\u7528\u671F\u7ED3\u675F\u540E\u81EA\u52A8\u7EED\u8BA2\u3002\u5728\u8D2D\u4E70\u8BD5\u7528\u671F\u7ED3\u675F\u65F6\uFF0C\u6211\u4EEC\u5C06\u4ECE\u60A8\u7684{1}
+        \u8D26\u6237\u6263\u6B3E\u3002\u5982\u679C\u60A8\u672A\u5728\u5F53\u524D\u8BA2\u9605\u671F\u7ED3\u675F\u524D\u768424\u5C0F\u65F6\u5185\u5173\u95ED\u81EA\u52A8\u7EED\u8BA2\uFF0C\u90A3\u4E48\u5C06\u4F1A\u89C6\u4E3A\u81EA\u52A8\u7EED\u8BA2\u3002\u6211\u4EEC\u4F1A\u5728\u5F53\u524D\u8BA2\u9605\u671F\u7ED3\u675F\u524D24\u5C0F\u65F6\u5185\u6536\u53D6\u7EED\u8BA2\u8D39\u7528\u3002\u60A8\u53EF\u4EE5\u8D2D\u4E70\u540E\u524D\u5F80{2}\u7684\u8D26\u6237\u8BBE\u7F6E\u6765\u7BA1\u7406\u5E76\u5173\u95ED\u81EA\u52A8\u7EED\u8BA2\u9009\u9879\u3002\u5F53\u7528\u6237\u8D2D\u4E70\u5F53\u524D\u8BD5\u7528\u7684\u8BA2\u9605\u65F6\uFF0C\u4EFB\u4F55\u514D\u8D39\u8BD5\u7528\u671F\u95F4\u6CA1\u6709\u4F7F\u7528\u7684\u90E8\u5206\u5C06\u4F1A\u88AB\u6536\u56DE\u3002"
+    - language: 0
+      value: "{0} \u6BCF\u5468\u8C6A\u534E\u793C\u5305\u5C06\u5728\u4E09\u5929\u514D\u8D39\u8BD5\u7528\u671F\u7ED3\u675F\u540E\u81EA\u52A8\u7EED\u8BA2\u3002\u5728\u8D2D\u4E70\u8BD5\u7528\u671F\u7ED3\u675F\u65F6\uFF0C\u6211\u4EEC\u5C06\u4ECE\u60A8\u7684{1}
+        \u8D26\u6237\u6263\u6B3E\u3002\u5982\u679C\u60A8\u672A\u5728\u5F53\u524D\u8BA2\u9605\u671F\u7ED3\u675F\u524D\u768424\u5C0F\u65F6\u5185\u5173\u95ED\u81EA\u52A8\u7EED\u8BA2\uFF0C\u90A3\u4E48\u5C06\u4F1A\u89C6\u4E3A\u81EA\u52A8\u7EED\u8BA2\u3002\u6211\u4EEC\u4F1A\u5728\u5F53\u524D\u8BA2\u9605\u671F\u7ED3\u675F\u524D24\u5C0F\u65F6\u5185\u6536\u53D6\u7EED\u8BA2\u8D39\u7528\u3002\u60A8\u53EF\u4EE5\u8D2D\u4E70\u540E\u524D\u5F80{2}\u7684\u8D26\u6237\u8BBE\u7F6E\u6765\u7BA1\u7406\u5E76\u5173\u95ED\u81EA\u52A8\u7EED\u8BA2\u9009\u9879\u3002\u5F53\u7528\u6237\u8D2D\u4E70\u5F53\u524D\u8BD5\u7528\u7684\u8BA2\u9605\u65F6\uFF0C\u4EFB\u4F55\u514D\u8D39\u8BD5\u7528\u671F\u95F4\u6CA1\u6709\u4F7F\u7528\u7684\u90E8\u5206\u5C06\u4F1A\u88AB\u6536\u56DE\u3002"
+    - language: 15
+      value: "W\xF6chentlich Premium verl\xE4ngert sich nach der 3-t\xE4gigen kostenlosen
+        Testphase automatisch f\xFCr {0} pro Woche. Die Zahlung wird deinem {1} Konto
+        am Ende des Testzeitraums belastet. Das Abonnement verl\xE4ngert sich automatisch,
+        es sei denn, du schaltest die automatische Verl\xE4ngerung mindestens 24
+        Stunden vor dem Ende des aktuellen Zeitraums ab. Dein Konto wird innerhalb
+        von 24 Stunden vor dem Ende des aktuellen Zeitraums f\xFCr die Erneuerung
+        belastet. Du kannst die automatische Verl\xE4ngerung des Abonnements verwalten
+        und abschalten, indem du nach dem Kauf zu deinen Kontoeinstellungen auf {2}
+        gehst. Ein ungenutzter Teil des kostenlosen Testzeitraums verf\xE4llt, wenn
+        der Nutzer ein Abonnement f\xFCr die betreffende Publikation erwirbt, sofern
+        zutreffend."
+    - language: 34
+      value: "La bonificaci\xF3n semanal se renueva autom\xE1ticamente por {0} a
+        la semana tras la prueba gratuita de 3 d\xEDas. El pago se cargar\xE1 en
+        tu {1} cuenta al final del periodo de prueba de la compra. La suscripci\xF3n
+        se renueva autom\xE1ticamente a menos que la renovaci\xF3n autom\xE1tica
+        est\xE9 desactivada m\xEDnimo 24 horas antes de que acabe el periodo actual.
+        La renovaci\xF3n se cargar\xE1 en tu cuenta en las 24 horas anteriores a
+        finalizar el periodo actual. Podr\xE1s gestionar y desactivar la renovaci\xF3n
+        autom\xE1tica de la suscripci\xF3n en los ajustes de tu cuenta en {2} despu\xE9s
+        de la compra. La porci\xF3n de prueba gratuita que no se use, se perder\xE1
+        cuando el usuario adquiera la suscripci\xF3n a esa publicaci\xF3n, cuando
+        corresponda."
+    - language: 5
+      value: "La bonificaci\xF3n semanal se renueva autom\xE1ticamente por {0} a
+        la semana luego de la prueba gratuita de 3 d\xEDas. El pago se cargar\xE1
+        a tu cuenta {1} al final del per\xEDodo de prueba de la compra. La suscripci\xF3n
+        se renueva autom\xE1ticamente a menos que la renovaci\xF3n autom\xE1tica
+        se desactive por lo menos 24 horas antes de finalizar el per\xEDodo actual.
+        La renovaci\xF3n se cargar\xE1 a tu cuenta en las 24 horas anteriores a finalizar
+        el per\xEDodo actual. Puedes gestionar y desactivar la renovaci\xF3n autom\xE1tica
+        de la suscripci\xF3n en la configuraci\xF3n de tu cuenta en {2} despu\xE9s
+        de la compra. Cualquier parte no utilizada del per\xEDodo de prueba gratuito
+        se perder\xE1 cuando el usuario adquiera la suscripci\xF3n a esa publicaci\xF3n,
+        seg\xFAn corresponda."
+    - language: 14
+      value: "Le Premium hebdo est reconduit automatiquement pour {0} par semaine
+        apr\xE8s les 3 jours d'essai gratuit. Votre compte {1} sera factur\xE9 au
+        terme de la p\xE9riode d'essai d'achat. L'abonnement est reconduit automatiquement
+        si le renouvellement automatique n'est pas d\xE9sactiv\xE9 au moins 24 heures
+        avant la fin de la p\xE9riode en cours. Le renouvellement sera factur\xE9
+        sur votre compte 24 h avant la fin de la p\xE9riode en cours. Vous pouvez
+        g\xE9rer et d\xE9sactiver le renouvellement automatique de l'abonnement en
+        acc\xE9dant aux param\xE8tres de votre compte sur {2} apr\xE8s l'achat. L'\xE9ventuelle
+        p\xE9riode d'essai gratuit restante sera annul\xE9e si l'utilisateur ach\xE8te
+        un abonnement \xE0 cette publication, le cas \xE9ch\xE9ant."
+    - language: 22
+      value: "\u9031\u9593\u30D7\u30EC\u30DF\u30A2\u30E0\u306F\u30013\u65E5\u9593\u306E\u7121\u6599\u304A\u8A66\u3057\u671F\u9593\u306E\u5F8C\u3001{0}
+        \u9031\u9593\u3054\u3068\u306B\u81EA\u52D5\u3067\u66F4\u65B0\u3055\u308C\u307E\u3059\u3002\u8CBB\u7528\u306F\u3001\u304A\u8A66\u3057\u671F\u9593\u306E\u7D42\u4E86\u5F8C\u306B\u304A\u4F7F\u3044\u306E{1}\u30A2\u30AB\u30A6\u30F3\u30C8\u306B\u8ACB\u6C42\u3055\u308C\u307E\u3059\u3002\u672C\u30B5\u30D6\u30B9\u30AF\u30EA\u30D7\u30B7\u30E7\u30F3\u306F\u3001\u3054\u5229\u7528\u671F\u9593\u304C\u7D42\u4E86\u3059\u308B24\u6642\u9593\u524D\u307E\u3067\u306B\u81EA\u52D5\u66F4\u65B0\u3092\u30AA\u30D5\u306B\u3057\u306A\u3044\u9650\u308A\u3001\u81EA\u52D5\u7684\u306B\u66F4\u65B0\u3055\u308C\u307E\u3059\u3002\u304A\u4F7F\u3044\u306E\u30A2\u30AB\u30A6\u30F3\u30C8\u306B\u306F\u3001\u66F4\u65B0\u3055\u308C\u305F\u5206\u306E\u8CBB\u7528\u304C\u305D\u306E\u6642\u70B9\u3067\u306E\u3054\u5229\u7528\u671F\u9593\u304C\u7D42\u4E86\u3059\u308B24\u6642\u9593\u4EE5\u5185\u306B\u8ACB\u6C42\u3055\u308C\u307E\u3059\u3002\u30B5\u30D6\u30B9\u30AF\u30EA\u30D7\u30B7\u30E7\u30F3\u306E\u7BA1\u7406\u304A\u3088\u3073\u81EA\u52D5\u66F4\u65B0\u3092\u30AA\u30D5\u306B\u3059\u308B\u306B\u306F\u3001\u8CFC\u5165\u5F8C\u3001{2}\u306B\u3042\u308B\u30A2\u30AB\u30A6\u30F3\u30C8\u8A2D\u5B9A\u304B\u3089\u884C\u3046\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002\u672A\u4F7F\u7528\u306E\u7121\u6599\u304A\u8A66\u3057\u671F\u9593\u306F\u3001\u305D\u308C\u304C\u9069\u7528\u3055\u308C\u308B\u30B5\u30D6\u30B9\u30AF\u30EA\u30D7\u30B7\u30E7\u30F3\u3092\u30E6\u30FC\u30B6\u30FC\u304C\u8CFC\u5165\u3057\u305F\u6642\u70B9\u3067\u7834\u68C4\u3055\u308C\u307E\u3059\u3002"
+    - language: 23
+      value: "3\uC77C \uBB34\uB8CC \uD2B8\uB77C\uC774\uC5BC \uC774\uD6C4, \uC8FC\uAC04
+        \uD504\uB9AC\uBBF8\uC5C4\uC740 \uC8FC\uB2F9 {0}\uC5D0 \uC790\uB3D9\uC73C\uB85C
+        \uAC31\uC2E0\uB429\uB2C8\uB2E4. \uAD6C\uB9E4 \uD2B8\uB77C\uC774\uC5BC \uAE30\uAC04\uC774
+        \uB05D\uB098\uBA74 \uADC0\uD558\uC758 {1} \uACC4\uC815\uC73C\uB85C \uACB0\uC81C\uAC00
+        \uCCAD\uAD6C\uB429\uB2C8\uB2E4. \uD604\uC7AC \uAD6C\uB3C5 \uAE30\uAC04\uC774
+        \uC885\uB8CC\uB418\uAE30 \uCD5C\uC18C 24\uC2DC\uAC04 \uC804\uC5D0 \uAD6C\uB3C5\uC774
+        \uD574\uC81C\uB418\uC9C0 \uC54A\uC73C\uBA74 \uC790\uB3D9\uC73C\uB85C \uAC31\uC2E0\uB429\uB2C8\uB2E4.
+        \uD604\uC7AC \uAD6C\uB3C5 \uAE30\uAC04 \uC885\uB8CC 24\uC2DC\uAC04 \uB0B4\uC5D0
+        \uADC0\uD558\uC758 \uACC4\uC815\uC73C\uB85C \uACB0\uC81C\uAC00 \uCCAD\uAD6C\uB429\uB2C8\uB2E4.
+        \uAD6C\uB9E4 \uD6C4, {2} \uB0B4 \uADC0\uD558\uC758 \uACC4\uC815 \uC124\uC815
+        \uBA54\uB274\uC5D0\uC11C \uAD6C\uB3C5 \uAD00\uB9AC \uBC0F \uAD6C\uB3C5 \uC790\uB3D9
+        \uAC31\uC2E0 \uAE30\uB2A5\uC744 \uD574\uC81C\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uBB34\uB8CC \uD2B8\uB77C\uC774\uC5BC \uAE30\uAC04 \uC911 \uBBF8\uC0AC\uC6A9\uB41C
+        \uBD80\uBD84\uC740 \uD574\uB2F9\uB418\uB294 \uACBD\uC6B0 \uC0AC\uC6A9\uC790\uAC00
+        \uD574\uB2F9 \uCD9C\uD310\uBB3C\uC5D0 \uB300\uD55C \uAD6C\uB3C5\uC744 \uAD6C\uC785\uD560
+        \uB54C \uBB34\uB8CC \uD2B8\uB77C\uC774\uC5BC\uC5D0 \uB300\uD55C \uAD8C\uB9AC\uAC00
+        \uC0C1\uC2E4\uB429\uB2C8\uB2E4."
+    - language: 28
+      value: "A subscri\xE7\xE3o Premium Semanal renova-se automaticamente por {0}
+        por semana, ap\xF3s o per\xEDodo de avalia\xE7\xE3o gratuita de 3 dias. O
+        pagamento ser\xE1 cobrado na tua conta {1} no final do per\xEDodo de avalia\xE7\xE3o
+        da compra. A subscri\xE7\xE3o ser\xE1 renovada automaticamente se n\xE3o
+        desativares a renova\xE7\xE3o autom\xE1tica pelo menos 24 horas antes do
+        fim do per\xEDodo em quest\xE3o. A renova\xE7\xE3o ser\xE1 cobrada na tua
+        conta no prazo de 24 horas antes do final do per\xEDodo em quest\xE3o. Ap\xF3s
+        a compra, podes gerir e desativar a renova\xE7\xE3o autom\xE1tica da subscri\xE7\xE3o
+        acedendo \xE0s defini\xE7\xF5es da tua conta em {2}. Qualquer por\xE7\xE3o
+        n\xE3o utilizada do per\xEDodo de avalia\xE7\xE3o gratuita ser\xE1 revogada
+        quando o utilizador adquire uma subscri\xE7\xE3o para essa publica\xE7\xE3o,
+        se aplic\xE1vel."
+    - language: 42
+      value: "A assinatura Premium Semanal \xE9 renovada automaticamente por {0}
+        a cada semana ap\xF3s o per\xEDodo gratuito de 3 dias. O pagamento ser\xE1
+        cobrado por meio da sua conta {1} ao final do per\xEDodo gratuito. A assinatura
+        \xE9 renovada automaticamente, a menos que a op\xE7\xE3o de renova\xE7\xE3o
+        autom\xE1tica seja desativada 24 horas antes do final do per\xEDodo atual.
+        Uma cobran\xE7a ser\xE1 feita na sua conta dentro das 24 horas antecedentes
+        ao final do per\xEDodo atual. \xC9 poss\xEDvel gerenciar ou desativar a renova\xE7\xE3o
+        autom\xE1tica da assinatura. Basta acessar as configura\xE7\xF5es da sua
+        conta {2} ap\xF3s realizar a compra. Qualquer por\xE7\xE3o n\xE3o utilizada
+        do per\xEDodo gratuito ser\xE1 perdida ao realizar a compra de uma assinatura."
+    - language: 36
+      value: "\u0E1E\u0E23\u0E35\u0E40\u0E21\u0E35\u0E22\u0E21\u0E23\u0E32\u0E22\u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C\u0E08\u0E30\u0E15\u0E48\u0E2D\u0E2D\u0E32\u0E22\u0E38\u0E42\u0E14\u0E22\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34\u0E43\u0E19\u0E23\u0E32\u0E04\u0E32
+        {0} \u0E15\u0E48\u0E2D\u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C\u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E0A\u0E48\u0E27\u0E07\u0E17\u0E14\u0E25\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E1F\u0E23\u0E35
+        3 \u0E27\u0E31\u0E19 \u0E01\u0E32\u0E23\u0E0A\u0E33\u0E23\u0E30\u0E40\u0E07\u0E34\u0E19\u0E08\u0E30\u0E2B\u0E31\u0E01\u0E08\u0E32\u0E01\u0E1A\u0E31\u0E0D\u0E0A\u0E35
+        {1} \u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E2A\u0E34\u0E49\u0E19\u0E2A\u0E38\u0E14\u0E0A\u0E48\u0E27\u0E07\u0E17\u0E14\u0E25\u0E2D\u0E07\u0E0B\u0E37\u0E49\u0E2D
+        \u0E01\u0E32\u0E23\u0E2A\u0E21\u0E31\u0E04\u0E23\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01\u0E08\u0E30\u0E15\u0E48\u0E2D\u0E2D\u0E32\u0E22\u0E38\u0E42\u0E14\u0E22\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34\u0E40\u0E27\u0E49\u0E19\u0E41\u0E15\u0E48\u0E08\u0E30\u0E1B\u0E34\u0E14\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D\u0E2D\u0E32\u0E22\u0E38\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E49\u0E2D\u0E22
+        24 \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E2A\u0E34\u0E49\u0E19\u0E2A\u0E38\u0E14\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E27\u0E25\u0E32\u0E1B\u0E31\u0E08\u0E08\u0E38\u0E1A\u0E31\u0E19
+        \u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E08\u0E30\u0E16\u0E39\u0E01\u0E40\u0E23\u0E35\u0E22\u0E01\u0E40\u0E01\u0E47\u0E1A\u0E40\u0E07\u0E34\u0E19\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D\u0E2D\u0E32\u0E22\u0E38\u0E20\u0E32\u0E22\u0E43\u0E19
+        24 \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E2A\u0E34\u0E49\u0E19\u0E2A\u0E38\u0E14\u0E23\u0E30\u0E22\u0E30\u0E40\u0E27\u0E25\u0E32\u0E1B\u0E31\u0E08\u0E08\u0E38\u0E1A\u0E31\u0E19
+        \u0E04\u0E38\u0E13\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E08\u0E31\u0E14\u0E01\u0E32\u0E23\u0E41\u0E25\u0E30\u0E1B\u0E34\u0E14\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D\u0E2D\u0E32\u0E22\u0E38\u0E01\u0E32\u0E23\u0E2A\u0E21\u0E31\u0E04\u0E23\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34\u0E44\u0E14\u0E49\u0E42\u0E14\u0E22\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E43\u0E19
+        {2} \u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E0B\u0E37\u0E49\u0E2D \u0E2A\u0E48\u0E27\u0E19\u0E17\u0E35\u0E48\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E43\u0E0A\u0E49\u0E02\u0E2D\u0E07\u0E0A\u0E48\u0E27\u0E07\u0E17\u0E14\u0E25\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E1F\u0E23\u0E35\u0E08\u0E30\u0E16\u0E39\u0E01\u0E22\u0E36\u0E14\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E1C\u0E39\u0E49\u0E43\u0E0A\u0E49\u0E0B\u0E37\u0E49\u0E2D\u0E01\u0E32\u0E23\u0E2A\u0E21\u0E31\u0E04\u0E23\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01\u0E2A\u0E34\u0E48\u0E07\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E19\u0E31\u0E49\u0E19
+        \u0E2B\u0E32\u0E01\u0E21\u0E35"
+    - language: 37
+      value: "Haftal\u0131k Premium abonelik, \xFC\xE7 g\xFCnl\xFCk deneme s\xFCresinin
+        ard\u0131ndan her hafta {0} bedelle otomatik olarak yenilenir. \xDCcret deneme
+        s\xFCresinin ard\u0131ndan {1} hesab\u0131n\u0131za yans\u0131t\u0131l\u0131r.
+        Abonelik mevcut d\xF6nemin bitiminden 24 saat \xF6ncesine kadar iptal edilmedik\xE7e
+        otomatik olarak yenilenir. Yenilenen aboneli\u011Fin \xFCcreti mevcut abonelik
+        d\xF6neminin bitiminden \xF6nceki 24 saat i\xE7inde hesab\u0131n\u0131za
+        yans\u0131t\u0131l\u0131r. Abonelik y\xF6netimi ve otomatik yenilemeyi kapatma
+        i\u015Flemlerini sat\u0131n al\u0131m\u0131n ard\u0131ndan {2} \xFCzerinden
+        hesap ayarlar\u0131na giderek ger\xE7ekle\u015Ftirebilirsiniz. Kullan\u0131c\u0131
+        uygun durumda abonelik sat\u0131n ald\u0131\u011F\u0131nda \xFCcretsiz deneme
+        s\xFCresinin varsa kalan b\xF6l\xFCm\xFC kaybedilir ve \xFCcretli abonelik
+        derhal ba\u015Flar."
+  - key: label_congratulations
+    values:
+    - language: 10
+      value: CONGRATULATIONS!
+    - language: 30
+      value: "\u041F\u041E\u0417\u0414\u0420\u0410\u0412\u041B\u042F\u0415\u041C!"
+    - language: 40
+      value: "\u606D\u559C\uFF01"
+    - language: 0
+      value: "\u606D\u559C\uFF01"
+    - language: 15
+      value: "HERZLICHEN GL\xDCCKWUNSCH!"
+    - language: 34
+      value: "\xA1ENHORABUENA!"
+    - language: 5
+      value: "\xA1FELICIDADES!"
+    - language: 14
+      value: "F\xC9LICITATIONS !"
+    - language: 22
+      value: "\u304A\u3081\u3067\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01"
+    - language: 23
+      value: "\uCD95\uD558\uD569\uB2C8\uB2E4!"
+    - language: 28
+      value: "PARAB\xC9NS!"
+    - language: 42
+      value: "PARAB\xC9NS!"
+    - language: 36
+      value: "\u0E22\u0E34\u0E19\u0E14\u0E35\u0E14\u0E49\u0E27\u0E22!"
+    - language: 37
+      value: "TEBR\u0130KLER!"
+  - key: label_prizes
+    values:
+    - language: 10
+      value: 'Your prizes:'
+    - language: 30
+      value: "\u0412\u0430\u0448\u0430 \u043D\u0430\u0433\u0440\u0430\u0434\u0430:"
+    - language: 40
+      value: "\u4F60\u7684\u5956\u54C1\uFF1A"
+    - language: 0
+      value: "\u4F60\u7684\u5956\u54C1\uFF1A"
+    - language: 15
+      value: 'Deine Preise:'
+    - language: 34
+      value: 'Tus premios:'
+    - language: 5
+      value: 'Tus premios:'
+    - language: 14
+      value: 'Vos prix :'
+    - language: 22
+      value: "\u8CDE\u54C1\uFF1A"
+    - language: 23
+      value: "\uB098\uC758 \uC0C1\uAE08:"
+    - language: 28
+      value: "Os teus pr\xE9mios:"
+    - language: 42
+      value: "Seus pr\xEAmios:"
+    - language: 36
+      value: "\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13:"
+    - language: 37
+      value: "\xD6d\xFCllerin:"
+  - key: label_successful
+    values:
+    - language: 10
+      value: SUBSCRIPTION SUCCESSFUL
+    - language: 30
+      value: "\u041F\u041E\u0414\u041F\u0418\u0421\u041A\u0410 \u041E\u0424\u041E\u0420\u041C\u041B\u0415\u041D\u0410"
+    - language: 40
+      value: "\u6210\u529F\u8BA2\u9605"
+    - language: 0
+      value: "\u6210\u529F\u8BA2\u9605"
+    - language: 15
+      value: ABONNEMENT ERFOLGREICH
+    - language: 34
+      value: "SUSCRIPCI\xD3N EXITOSA"
+    - language: 5
+      value: "SUSCRIPCI\xD3N EXITOSA"
+    - language: 14
+      value: "ABONNEMENT R\xC9USSI"
+    - language: 22
+      value: "\u30B5\u30D6\u30B9\u30AF\u30EA\u30D7\u30B7\u30E7\u30F3\u6210\u529F"
+    - language: 23
+      value: "\uAD6C\uB3C5 \uC131\uACF5"
+    - language: 28
+      value: "SUBSCRI\xC7\xC3O BEM-SUCEDIDA"
+    - language: 42
+      value: "ASSINATURA CONCLU\xCDDA"
+    - language: 36
+      value: "\u0E2A\u0E21\u0E31\u0E04\u0E23\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08\u0E41\u0E25\u0E49\u0E27"
+    - language: 37
+      value: "ABONEL\u0130K BA\u015EARILI"
+  - key: label_hold_to_play
+    values:
+    - language: 10
+      value: HOLD TO PLAY
+    - language: 30
+      value: "\u0423\u0414\u0415\u0420\u0416\u0418\u0412\u0410\u0419\u0422\u0415
+        \u0414\u041B\u042F \u0418\u0413\u0420\u042B"
+    - language: 40
+      value: "\u957F\u6309\u4EE5\u6E38\u73A9"
+    - language: 0
+      value: "\u957F\u6309\u4EE5\u6E38\u73A9"
+    - language: 15
+      value: HALTEN ZUM SPIELEN
+    - language: 34
+      value: "MANT\xC9N PARA JUGAR"
+    - language: 5
+      value: "MANT\xC9N PARA JUGAR"
+    - language: 14
+      value: MAINTENEZ POUR JOUER
+    - language: 22
+      value: "\u30D7\u30EC\u30A4\u65B9\u6CD5"
+    - language: 23
+      value: "\uAE38\uAC8C \uB20C\uB7EC \uD50C\uB808\uC774"
+    - language: 28
+      value: "MANT\xC9M PREMIDO PARA JOGAR"
+    - language: 42
+      value: SEGURE PARA JOGAR
+    - language: 36
+      value: "\u0E01\u0E14\u0E04\u0E49\u0E32\u0E07\u0E44\u0E27\u0E49\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E25\u0E48\u0E19"
+    - language: 37
+      value: "OYNAMAK \u0130\xC7\u0130N BASILI TUT"
+  - key: label_dont_lose
+    values:
+    - language: 10
+      value: DON'T LOSE
+    - language: 30
+      value: "\u041D\u0415 \u0422\u0415\u0420\u042F\u0419\u0422\u0415"
+    - language: 40
+      value: "\u4E0D\u8981\u8F93"
+    - language: 0
+      value: "\u4E0D\u8981\u8F93"
+    - language: 15
+      value: NICHT VERLIEREN
+    - language: 34
+      value: NO PIERDAS
+    - language: 5
+      value: NO PIERDAS
+    - language: 14
+      value: NE PERDEZ PAS
+    - language: 22
+      value: "\u8CA0\u3051\u308B\u306A"
+    - language: 23
+      value: "\uC9C0\uC9C0 \uB9C8\uC138\uC694"
+    - language: 28
+      value: "N\xC3O PERCAS"
+    - language: 42
+      value: "N\xC3O PERCA"
+    - language: 36
+      value: "\u0E2D\u0E22\u0E48\u0E32\u0E17\u0E33"
+    - language: 37
+      value: KAYBETME
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_cream
+    values:
+    - language: 10
+      value: CREAM
+    - language: 30
+      value: "\u041A\u0420\u0415\u041C"
+    - language: 40
+      value: "\u5976\u6CB9"
+    - language: 0
+      value: "\u5976\u6CB9"
+    - language: 15
+      value: SAHNE
+    - language: 34
+      value: CREMA
+    - language: 5
+      value: CREMA
+    - language: 14
+      value: "CR\xC8ME"
+    - language: 22
+      value: "\u30AF\u30EA\u30FC\u30E0"
+    - language: 23
+      value: "\uD06C\uB9BC"
+    - language: 28
+      value: COBERTURA
+    - language: 42
+      value: CREME
+    - language: 36
+      value: "\u0E04\u0E23\u0E35\u0E21\u0E2B\u0E01"
+    - language: 37
+      value: KREMA
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_level
+    values:
+    - language: 10
+      value: LEVEL
+    - language: 30
+      value: "\u0423\u0420\u041E\u0412\u0415\u041D\u042C"
+    - language: 40
+      value: "\u5173\u5361"
+    - language: 0
+      value: "\u5173\u5361"
+    - language: 15
+      value: LEVEL
+    - language: 34
+      value: NIVEL
+    - language: 5
+      value: NIVEL
+    - language: 14
+      value: NIVEAU
+    - language: 22
+      value: "\u30B9\u30C6\u30FC\u30B8"
+    - language: 23
+      value: "\uB808\uBCA8"
+    - language: 28
+      value: "N\xCDVEL"
+    - language: 42
+      value: FASE
+    - language: 36
+      value: "\u0E14\u0E48\u0E32\u0E19"
+    - language: 37
+      value: "SEV\u0130YE"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_open
+    values:
+    - language: 10
+      value: OPEN
+    - language: 30
+      value: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C"
+    - language: 40
+      value: "\u5F00\u542F"
+    - language: 0
+      value: "\u5F00\u542F"
+    - language: 15
+      value: "\xD6FFNEN"
+    - language: 34
+      value: ABRIR
+    - language: 5
+      value: ABRIR
+    - language: 14
+      value: OUVRIR
+    - language: 22
+      value: "\u958B\u304F"
+    - language: 23
+      value: "\uC5F4\uAE30"
+    - language: 28
+      value: ABRIR
+    - language: 42
+      value: ABRIR
+    - language: 36
+      value: "\u0E40\u0E1B\u0E34\u0E14"
+    - language: 37
+      value: "A\xC7"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_unlocked
+    values:
+    - language: 10
+      value: UNLOCKED
+    - language: 30
+      value: "\u0420\u0410\u0417\u0411\u041B\u041E\u041A\u0418\u0420\u041E\u0412\u0410\u041D\u041E"
+    - language: 40
+      value: "\u5DF2\u89E3\u9501"
+    - language: 0
+      value: "\u5DF2\u89E3\u9501"
+    - language: 15
+      value: FREIGESCHALTET
+    - language: 34
+      value: DESBLOQUEADO
+    - language: 5
+      value: DESBLOQUEADO
+    - language: 14
+      value: "D\xC9BLOQU\xC9"
+    - language: 22
+      value: "\u30A2\u30F3\u30ED\u30C3\u30AF\u5B8C\u4E86"
+    - language: 23
+      value: "\uC7A0\uAE08 \uD574\uC81C \uC644\uB8CC"
+    - language: 28
+      value: DESBLOQUEADO
+    - language: 42
+      value: DESBLOQUEADO
+    - language: 36
+      value: "\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01\u0E41\u0E25\u0E49\u0E27"
+    - language: 37
+      value: "A\xC7ILDI"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_level_complete
+    values:
+    - language: 10
+      value: LEVEL COMPLETE
+    - language: 30
+      value: "\u0423\u0420\u041E\u0412\u0415\u041D\u042C \u041F\u0420\u041E\u0419\u0414\u0415\u041D"
+    - language: 40
+      value: "\u5173\u5361\u5B8C\u6210"
+    - language: 0
+      value: "\u5173\u5361\u5B8C\u6210"
+    - language: 15
+      value: LEVEL ABGESCHLOSSEN
+    - language: 34
+      value: NIVEL COMPLETADO
+    - language: 5
+      value: NIVEL COMPLETADO
+    - language: 14
+      value: "NIVEAU TERMIN\xC9"
+    - language: 22
+      value: "\u30B9\u30C6\u30FC\u30B8\u30AF\u30EA\u30A2"
+    - language: 23
+      value: "\uB808\uBCA8 \uC644\uB8CC"
+    - language: 28
+      value: "N\xCDVEL CONCLU\xCDDO"
+    - language: 42
+      value: "FASE CONCLU\xCDDA"
+    - language: 36
+      value: "\u0E1C\u0E48\u0E32\u0E19\u0E14\u0E48\u0E32\u0E19\u0E41\u0E25\u0E49\u0E27"
+    - language: 37
+      value: "SEV\u0130YE TAMAMLANDI"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_continue
+    values:
+    - language: 10
+      value: CONTINUE
+    - language: 30
+      value: "\u041F\u0420\u041E\u0414\u041E\u041B\u0416\u0418\u0422\u042C"
+    - language: 40
+      value: "\u7EE7\u7EED"
+    - language: 0
+      value: "\u7EE7\u7EED"
+    - language: 15
+      value: FORTSETZEN
+    - language: 34
+      value: CONTINUAR
+    - language: 5
+      value: CONTINUAR
+    - language: 14
+      value: CONTINUER
+    - language: 22
+      value: "\u7D9A\u3051\u308B"
+    - language: 23
+      value: "\uC774\uC5B4\uD558\uAE30"
+    - language: 28
+      value: CONTINUAR
+    - language: 42
+      value: CONTINUAR
+    - language: 36
+      value: "\u0E14\u0E33\u0E40\u0E19\u0E34\u0E19\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D"
+    - language: 37
+      value: DEVAM ET
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_reward
+    values:
+    - language: 10
+      value: REWARD
+    - language: 30
+      value: "\u041D\u0410\u0413\u0420\u0410\u0414\u0410"
+    - language: 40
+      value: "\u5956\u52B1"
+    - language: 0
+      value: "\u5956\u52B1"
+    - language: 15
+      value: BELOHNUNG
+    - language: 34
+      value: RECOMPENSA
+    - language: 5
+      value: RECOMPENSA
+    - language: 14
+      value: BONUS
+    - language: 22
+      value: "\u5831\u916C"
+    - language: 23
+      value: "\uBCF4\uC0C1"
+    - language: 28
+      value: RECOMPENSA
+    - language: 42
+      value: "PR\xCAMIO"
+    - language: 36
+      value: "\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25"
+    - language: 37
+      value: "\xD6D\xDCL"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_having_fun
+    values:
+    - language: 10
+      value: HAVING FUN?
+    - language: 30
+      value: "\u041D\u0420\u0410\u0412\u0418\u0422\u0421\u042F?"
+    - language: 40
+      value: "\u73A9\u5F97\u5F00\u5FC3\u5417\uFF1F"
+    - language: 0
+      value: "\u73A9\u5F97\u5F00\u5FC3\u5417\uFF1F"
+    - language: 15
+      value: HAST DU SPASS?
+    - language: 34
+      value: "\xBFDIVIRTI\xC9NDOTE?"
+    - language: 5
+      value: "\xBFTE EST\xC1S DIVIRTIENDO?"
+    - language: 14
+      value: VOUS VOUS AMUSEZ BIEN ?
+    - language: 22
+      value: "\u304A\u697D\u3057\u307F\u3044\u305F\u3060\u3051\u3066\u3044\u307E\u3059\u304B\uFF1F"
+    - language: 23
+      value: "\uC7AC\uBC0C\uAC8C \uC990\uAE30\uACE0 \uACC4\uC2DC\uB098\uC694?"
+    - language: 28
+      value: "EST\xC1S A DIVERTIR-TE?"
+    - language: 42
+      value: "EST\xC1 SE DIVERTINDO?"
+    - language: 36
+      value: "\u0E2A\u0E19\u0E38\u0E01\u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21\u0E25\u0E48\u0E30"
+    - language: 37
+      value: "E\u011ELEN\u0130YOR MUSUN?"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_rate
+    values:
+    - language: 10
+      value: RATE
+    - language: 30
+      value: "\u041E\u0426\u0415\u041D\u0418\u0422\u042C"
+    - language: 40
+      value: "\u7B49\u7EA7"
+    - language: 0
+      value: "\u901F\u5EA6"
+    - language: 15
+      value: BEWERTEN
+    - language: 34
+      value: VALORAR
+    - language: 5
+      value: CALIFICAR
+    - language: 14
+      value: "\xC9VALUER"
+    - language: 22
+      value: "\u8A55\u4FA1"
+    - language: 23
+      value: "\uD3C9\uAC00"
+    - language: 28
+      value: AVALIAR
+    - language: 42
+      value: AVALIE
+    - language: 36
+      value: "\u0E43\u0E2B\u0E49\u0E04\u0E30\u0E41\u0E19\u0E19"
+    - language: 37
+      value: NOT VER
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_no_thanks
+    values:
+    - language: 10
+      value: NO, THANKS
+    - language: 30
+      value: "\u041D\u0415\u0422, \u0421\u041F\u0410\u0421\u0418\u0411\u041E"
+    - language: 40
+      value: "\u4E0D\u7528\uFF0C\u8C22\u8C22"
+    - language: 0
+      value: "\u4E0D\u7528\uFF0C\u8C22\u8C22"
+    - language: 15
+      value: NEIN, DANKE
+    - language: 34
+      value: NO, GRACIAS
+    - language: 5
+      value: NO, GRACIAS
+    - language: 14
+      value: NON MERCI
+    - language: 22
+      value: "\u3044\u3044\u3048\u3001\u7D50\u69CB\u3067\u3059"
+    - language: 23
+      value: "\uC544\uB2C8\uC624, \uAD1C\uCC2E\uC2B5\uB2C8\uB2E4"
+    - language: 28
+      value: "N\xC3O, OBRIGADO"
+    - language: 42
+      value: "N\xC3O, VALEU"
+    - language: 36
+      value: "\u0E44\u0E21\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E44\u0E23 \u0E02\u0E2D\u0E1A\u0E04\u0E38\u0E13"
+    - language: 37
+      value: "HAYIR, TE\u015EEKK\xDCRLER."
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_hold_to_decorate
+    values:
+    - language: 10
+      value: HOLD TO<br>DECORATE
+    - language: 30
+      value: "\u0423\u0414\u0415\u0420\u0416\u0418\u0412\u0410\u0419\u0422\u0415<br>\u0414\u041B\u042F
+        \u0423\u041A\u0420\u0410\u0428\u0415\u041D\u0418\u042F"
+    - language: 40
+      value: "\u957F\u6309\u4EE5\u88C5\u9970"
+    - language: 0
+      value: "\u957F\u6309\u4EE5<br>\u88C5\u9970"
+    - language: 15
+      value: HALTEN ZUM<br>DEKORIEREN
+    - language: 34
+      value: "MANT\xC9N PARA<br>DECORAR"
+    - language: 5
+      value: "MANT\xC9N PARA<br>DECORAR"
+    - language: 14
+      value: "MAINTENEZ POUR<br>D\xC9CORER"
+    - language: 22
+      value: "\u9577\u62BC\u3057\u3067<br>\u30C7\u30B3\u30EC\u30FC\u30B7\u30E7\u30F3"
+    - language: 23
+      value: "\uAE38\uAC8C \uB20C\uB7EC<br>\uAFB8\uBBF8\uAE30"
+    - language: 28
+      value: "MANT\xC9M PREMIDO<br>PARA DECORAR"
+    - language: 42
+      value: SEGURE PARA<br>DECORAR
+    - language: 36
+      value: "\u0E01\u0E14\u0E04\u0E49\u0E32\u0E07\u0E44\u0E27\u0E49\u0E40\u0E1E\u0E37\u0E48\u0E2D<br>\u0E15\u0E01\u0E41\u0E15\u0E48\u0E07"
+    - language: 37
+      value: "TAKMAK \u0130\xC7\u0130N<br>BASILI TUT"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_get_prize
+    values:
+    - language: 10
+      value: GET PRIZE
+    - language: 30
+      value: "\u0412\u041E\u0417\u042C\u041C\u0418 \u041F\u0420\u0418\u0417"
+    - language: 40
+      value: "\u83B7\u5F97\u5956\u54C1"
+    - language: 0
+      value: "\u83B7\u5F97\u5956\u54C1"
+    - language: 15
+      value: PREIS ERHALTEN
+    - language: 34
+      value: CONSEGUIR PREMIO
+    - language: 5
+      value: OBTENER PREMIO
+    - language: 14
+      value: OBTENIR UN PRIX
+    - language: 22
+      value: "\u8CDE\u54C1\u3092\u5165\u624B"
+    - language: 23
+      value: "\uC0C1\uAE08\uC744 \uD68D\uB4DD\uD558\uC138\uC694"
+    - language: 28
+      value: "OBTER PR\xC9MIO"
+    - language: 42
+      value: "OBTER PR\xCAMIO"
+    - language: 36
+      value: "\u0E23\u0E31\u0E1A\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25"
+    - language: 37
+      value: "\xD6D\xDCL\xDC AL"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_best_prize
+    values:
+    - language: 10
+      value: BEST PRIZE
+    - language: 30
+      value: "\u041B\u0423\u0427\u0428\u0418\u0419 \u041F\u0420\u0418\u0417"
+    - language: 40
+      value: "\u6700\u4F73\u5956\u54C1"
+    - language: 0
+      value: "\u6700\u4F73\u5956\u54C1"
+    - language: 15
+      value: BESTER PREIS
+    - language: 34
+      value: MEJOR PREMIO
+    - language: 5
+      value: MEJOR PREMIO
+    - language: 14
+      value: MEILLEUR PRIX
+    - language: 22
+      value: "\u6700\u9AD8\u8CDE\u54C1"
+    - language: 23
+      value: "\uCD5C\uACE0\uC758 \uC0C1\uAE08"
+    - language: 28
+      value: "MELHOR PR\xC9MIO"
+    - language: 42
+      value: "MELHOR PR\xCAMIO"
+    - language: 36
+      value: "\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25\u0E17\u0E35\u0E48\u0E14\u0E35\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14"
+    - language: 37
+      value: "EN \u0130Y\u0130 \xD6D\xDCL\xDC"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_fever
+    values:
+    - language: 10
+      value: CREAM FEVER!
+    - language: 30
+      value: "\u0416\u0410\u0420\u0410!"
+    - language: 40
+      value: "\u5976\u6CB9\u70ED\uFF01"
+    - language: 0
+      value: "\u5976\u6CB9\u70ED\uFF01"
+    - language: 15
+      value: SAHNEFIEBER!
+    - language: 34
+      value: "\xA1FIEBRE DE LA CREMA!"
+    - language: 5
+      value: "\xA1FIEBRE DE CREMA!"
+    - language: 14
+      value: "FI\xC8VRE P\xC2TISSI\xC8RE !"
+    - language: 22
+      value: "\u30AF\u30EA\u30FC\u30E0\u30D5\u30A3\u30FC\u30D0\u30FC\uFF01"
+    - language: 23
+      value: "\uD06C\uB9BC \uD53C\uBC84!"
+    - language: 28
+      value: FEBRE DA COBERTURA!
+    - language: 42
+      value: CREMOSO!
+    - language: 36
+      value: "\u0E04\u0E23\u0E35\u0E21\u0E1F\u0E35\u0E40\u0E27\u0E2D\u0E23\u0E4C!"
+    - language: 37
+      value: "KREMA ATE\u015E\u0130!"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_good
+    values:
+    - language: 10
+      value: GOOD
+    - language: 30
+      value: "\u0425\u041E\u0420\u041E\u0428\u041E"
+    - language: 40
+      value: "\u4F18\u79C0"
+    - language: 0
+      value: "\u4F18\u79C0"
+    - language: 15
+      value: GUT
+    - language: 34
+      value: BIEN
+    - language: 5
+      value: BIEN
+    - language: 14
+      value: BIEN
+    - language: 22
+      value: "\u30B0\u30C3\u30C9"
+    - language: 23
+      value: "\uD6CC\uB96D\uD574\uC694"
+    - language: 28
+      value: BOM
+    - language: 42
+      value: "\xD3TIMO"
+    - language: 36
+      value: "\u0E14\u0E35"
+    - language: 37
+      value: "\u0130Y\u0130"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_perfect
+    values:
+    - language: 10
+      value: PERFECT
+    - language: 30
+      value: "\u0418\u0414\u0415\u0410\u041B\u042C\u041D\u041E"
+    - language: 40
+      value: "\u5B8C\u7F8E"
+    - language: 0
+      value: "\u5B8C\u7F8E"
+    - language: 15
+      value: PERFEKT
+    - language: 34
+      value: PERFECTO
+    - language: 5
+      value: PERFECTO
+    - language: 14
+      value: PARFAIT
+    - language: 22
+      value: "\u30D1\u30FC\u30D5\u30A7\u30AF\u30C8"
+    - language: 23
+      value: "\uC644\uBCBD\uD574\uC694"
+    - language: 28
+      value: PERFEITO
+    - language: 42
+      value: PERFEITO
+    - language: 36
+      value: "\u0E40\u0E1E\u0E2D\u0E23\u0E4C\u0E40\u0E1F\u0E47\u0E01\u0E15\u0E4C"
+    - language: 37
+      value: "M\xDCKEMMEL"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_failed
+    values:
+    - language: 10
+      value: LEVEL<br>FAILED!
+    - language: 30
+      value: "\u0423\u0420\u041E\u0412\u0415\u041D\u042C<br>\u041F\u0420\u041E\u0412\u0410\u041B\u0415\u041D"
+    - language: 40
+      value: "\u5173\u5361\u5931\u8D25\uFF01"
+    - language: 0
+      value: "\u5173\u5361<br>\u5931\u8D25\uFF01"
+    - language: 15
+      value: LEVEL<br>GESCHEITERT!
+    - language: 34
+      value: "\xA1NIVEL<br>FALLIDO!"
+    - language: 5
+      value: "\xA1NIVEL<br>FALLIDO!"
+    - language: 14
+      value: "NIVEAU<br>RAT\xC9 !"
+    - language: 22
+      value: "\u30B9\u30C6\u30FC\u30B8<br>\u30AF\u30EA\u30A2\u5931\u6557\uFF01"
+    - language: 23
+      value: "\uB808\uBCA8<br>\uC2E4\uD328!"
+    - language: 28
+      value: "N\xCDVEL<br>N\xC3O CONCLU\xCDDO!"
+    - language: 42
+      value: FASE<br>FRACASSADA!
+    - language: 36
+      value: "\u0E44\u0E21\u0E48\u0E1C\u0E48\u0E32\u0E19<br>\u0E14\u0E48\u0E32\u0E19!"
+    - language: 37
+      value: "SEV\u0130YE<br>BA\u015EARISIZ!"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_watch_ad
+    values:
+    - language: 10
+      value: WATCH AD
+    - language: 30
+      value: "\u0421\u041C\u041E\u0422\u0420\u0415\u0422\u042C \u0420\u0415\u041A\u041B\u0410\u041C\u0423"
+    - language: 40
+      value: "\u89C2\u770B\u5E7F\u544A"
+    - language: 0
+      value: "\u89C2\u770B\u5E7F\u544A"
+    - language: 15
+      value: WERBUNG ANSEHEN
+    - language: 34
+      value: VER ANUNCIO
+    - language: 5
+      value: VER ANUNCIO
+    - language: 14
+      value: VOIR PUB
+    - language: 22
+      value: "\u5E83\u544A\u3092\u8996\u8074"
+    - language: 23
+      value: "\uAD11\uACE0 \uC2DC\uCCAD"
+    - language: 28
+      value: "VER AN\xDANCIO"
+    - language: 42
+      value: "VER AN\xDANCIO"
+    - language: 36
+      value: "\u0E14\u0E39\u0E42\u0E06\u0E29\u0E13\u0E32"
+    - language: 37
+      value: "REKLAM \u0130ZLE"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_no_ads
+    values:
+    - language: 10
+      value: NO ADS
+    - language: 30
+      value: "\u0411\u0415\u0417 \u0420\u0415\u041A\u041B\u0410\u041C\u042B"
+    - language: 40
+      value: "\u65E0\u5E7F\u544A"
+    - language: 0
+      value: "\u65E0\u5E7F\u544A"
+    - language: 15
+      value: KEINE WERBUNGEN
+    - language: 34
+      value: SIN ANUNCIOS
+    - language: 5
+      value: SIN ANUNCIOS
+    - language: 14
+      value: SANS PUB
+    - language: 22
+      value: "\u5E83\u544A\u306A\u3057"
+    - language: 23
+      value: "\uAD11\uACE0 \uC5C6\uC74C"
+    - language: 28
+      value: "SEM AN\xDANCIOS"
+    - language: 42
+      value: "SEM AN\xDANCIOS"
+    - language: 36
+      value: "\u0E44\u0E21\u0E48\u0E21\u0E35\u0E42\u0E06\u0E29\u0E13\u0E32"
+    - language: 37
+      value: REKLAM YOK
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_store_is_not_initialized
+    values:
+    - language: 10
+      value: Store isn't initialized yet. Try again after 5 seconds
+    - language: 30
+      value: "\u0418\u043D\u0438\u0446\u0438\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u044F
+        \u043C\u0430\u0433\u0430\u0437\u0438\u043D\u0430 \u043F\u043E\u043A\u0443\u043F\u043E\u043A
+        \u0435\u0449\u0451 \u043D\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0430.
+        \u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0447\u0435\u0440\u0435\u0437
+        5 \u0441\u0435\u043A\u0443\u043D\u0434"
+    - language: 40
+      value: "\u5546\u5E97\u5C1A\u672A\u521D\u59CB\u5316\u3002\u8BF7\u5728\u4E94\u79D2\u540E\u91CD\u8BD5\u3002"
+    - language: 0
+      value: "\u5546\u5E97\u5C1A\u672A\u521D\u59CB\u5316\u3002\u8BF7\u5728\u4E94\u79D2\u540E\u91CD\u8BD5\u3002"
+    - language: 15
+      value: Der Store ist noch nicht initialisiert. Versuche es nach 5 Sekunden
+        erneut
+    - language: 34
+      value: "La tienda a\xFAn no se ha iniciado. Int\xE9ntalo de nuevo en 5 segundos"
+    - language: 5
+      value: "La tienda a\xFAn no se ha iniciado. Int\xE9ntalo nuevamente en 5 segundos"
+    - language: 14
+      value: "La boutique n'est pas encore initialis\xE9e. R\xE9essayez d'ici 5 s"
+    - language: 22
+      value: "\u30B9\u30C8\u30A2\u306F\u307E\u3060\u521D\u671F\u5316\u3055\u308C\u3066\u3044\u307E\u305B\u3093\u30025\u79D2\u5F8C\u306B\u518D\u5EA6\u304A\u8A66\u3057\u304F\u3060\u3055\u3044"
+    - language: 23
+      value: "\uC2A4\uD1A0\uC5B4\uAC00 \uC544\uC9C1 \uCD08\uAE30\uD654\uB418\uC9C0
+        \uC54A\uC558\uC2B5\uB2C8\uB2E4. 5\uCD08 \uD6C4\uC5D0 \uB2E4\uC2DC \uC2DC\uB3C4\uD558\uC2ED\uC2DC\uC624"
+    - language: 28
+      value: "A loja ainda n\xE3o foi inicializada. Tenta novamente daqui a 5 segundos"
+    - language: 42
+      value: "A loja ainda n\xE3o foi inicializada. Tente novamente em 5 segundos"
+    - language: 36
+      value: "\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E40\u0E23\u0E34\u0E48\u0E21\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E2A\u0E42\u0E15\u0E23\u0E4C
+        \u0E42\u0E1B\u0E23\u0E14\u0E25\u0E2D\u0E07\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E2B\u0E25\u0E31\u0E07\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B
+        5 \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35"
+    - language: 37
+      value: "Ma\u011Faza ba\u015Flat\u0131lamad\u0131. 5 saniye sonra tekrar deneyin."
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_no_internet
+    values:
+    - language: 10
+      value: No Internet connection
+    - language: 30
+      value: "\u041D\u0435\u0442 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442-\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F"
+    - language: 40
+      value: "\u65E0\u7F51\u7EDC\u8FDE\u63A5"
+    - language: 0
+      value: "\u65E0\u7F51\u7EDC\u8FDE\u63A5"
+    - language: 15
+      value: Keine Internetverbindung
+    - language: 34
+      value: "Sin conexi\xF3n a Internet"
+    - language: 5
+      value: "Sin conexi\xF3n a Internet"
+    - language: 14
+      value: Aucune connexion Internet
+    - language: 22
+      value: "\u30A4\u30F3\u30BF\u30FC\u30CD\u30C3\u30C8\u306B\u63A5\u7D9A\u3055\u308C\u3066\u3044\u307E\u305B\u3093"
+    - language: 23
+      value: "\uC778\uD130\uB137 \uC5F0\uACB0 \uC5C6\uC74C"
+    - language: 28
+      value: "Sem liga\xE7\xE3o \xE0 Internet"
+    - language: 42
+      value: "Sem conex\xE3o com a Internet"
+    - language: 36
+      value: "\u0E44\u0E21\u0E48\u0E21\u0E35\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E2D\u0E34\u0E19\u0E40\u0E17\u0E2D\u0E23\u0E4C\u0E40\u0E19\u0E47\u0E15"
+    - language: 37
+      value: "\u0130nternet ba\u011Flant\u0131s\u0131 yok."
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_purchases_restored
+    values:
+    - language: 10
+      value: Purchases restored successfully
+    - language: 30
+      value: "\u041F\u043E\u043A\u0443\u043F\u043A\u0438 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u044B
+        \u0443\u0441\u043F\u0435\u0448\u043D\u043E"
+    - language: 40
+      value: "\u6210\u529F\u6062\u590D\u8D2D\u4E70"
+    - language: 0
+      value: "\u6210\u529F\u6062\u590D\u8D2D\u4E70"
+    - language: 15
+      value: "K\xE4ufe erfolgreich wiederhergestellt"
+    - language: 34
+      value: "Compras restauradas con \xE9xito"
+    - language: 5
+      value: Compras restauradas correctamente
+    - language: 14
+      value: "Les achats ont \xE9t\xE9 r\xE9tablis"
+    - language: 22
+      value: "\u8CFC\u5165\u306E\u5FA9\u5143\u306B\u6210\u529F\u3057\u307E\u3057\u305F"
+    - language: 23
+      value: "\uAD6C\uB9E4 \uBCF5\uAD6C\uAC00 \uC131\uACF5\uC801\uC73C\uB85C \uC644\uB8CC\uB418\uC5C8\uC2B5\uB2C8\uB2E4"
+    - language: 28
+      value: Compras repostas
+    - language: 42
+      value: Compras restauradas
+    - language: 36
+      value: "\u0E40\u0E23\u0E35\u0E22\u0E01\u0E04\u0E37\u0E19\u0E01\u0E32\u0E23\u0E0B\u0E37\u0E49\u0E2D\u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22\u0E41\u0E25\u0E49\u0E27"
+    - language: 37
+      value: "Sat\u0131n al\u0131m kaydedildi."
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_cannot_connect
+    values:
+    - language: 10
+      value: Failed to connect to the application store
+    - language: 30
+      value: "\u041D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C
+        \u043A \u043C\u0430\u0433\u0430\u0437\u0438\u043D\u0443"
+    - language: 40
+      value: "\u65E0\u6CD5\u8FDE\u63A5\u81F3\u5E94\u7528\u5546\u5E97"
+    - language: 0
+      value: "\u65E0\u6CD5\u8FDE\u63A5\u81F3\u5E94\u7528\u5546\u5E97"
+    - language: 15
+      value: Verbindung mit dem App Store fehlgeschlagen
+    - language: 34
+      value: "Fallo en la conexi\xF3n con la tienda de aplicaciones"
+    - language: 5
+      value: No se pudo conectar a la tienda de aplicaciones
+    - language: 14
+      value: "\xC9chec de connexion \xE0 la boutique d'applications"
+    - language: 22
+      value: "\u30A2\u30D7\u30EA\u30B9\u30C8\u30A2\u3078\u306E\u63A5\u7D9A\u306B\u5931\u6557\u3057\u307E\u3057\u305F"
+    - language: 23
+      value: "\uC560\uD50C\uB9AC\uCF00\uC774\uC158 \uC2A4\uD1A0\uC5B4 \uC5F0\uACB0\uC5D0
+        \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4"
+    - language: 28
+      value: "Erro ao estabelecer liga\xE7\xE3o \xE0 loja de aplica\xE7\xF5es"
+    - language: 42
+      value: Falha ao conectar-se com a loja de aplicativos
+    - language: 36
+      value: "\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E01\u0E31\u0E1A\u0E41\u0E2D\u0E1B\u0E1E\u0E25\u0E34\u0E40\u0E04\u0E0A\u0E31\u0E19\u0E2A\u0E42\u0E15\u0E23\u0E4C\u0E44\u0E14\u0E49"
+    - language: 37
+      value: "Uygulama ma\u011Fazas\u0131na ba\u011Flan\u0131lamad\u0131."
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_message
+    values:
+    - language: 10
+      value: MESSAGE!
+    - language: 30
+      value: "\u0421\u041E\u041E\u0411\u0429\u0415\u041D\u0418\u0415!"
+    - language: 40
+      value: "\u6D88\u606F\uFF01"
+    - language: 0
+      value: "\u6D88\u606F\uFF01"
+    - language: 15
+      value: MELDUNG!
+    - language: 34
+      value: "\xA1MENSAJE!"
+    - language: 5
+      value: "\xA1MENSAJE!"
+    - language: 14
+      value: MESSAGE !
+    - language: 22
+      value: "\u30E1\u30C3\u30BB\u30FC\u30B8\uFF01"
+    - language: 23
+      value: "\uBA54\uC2DC\uC9C0!"
+    - language: 28
+      value: MENSAGEM!
+    - language: 42
+      value: MENSAGEM!
+    - language: 36
+      value: "\u0E21\u0E35\u0E02\u0E49\u0E2D\u0E04\u0E27\u0E32\u0E21!"
+    - language: 37
+      value: MESAJ!
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_accept
+    values:
+    - language: 10
+      value: Accept
+    - language: 30
+      value: "\u041F\u0440\u0438\u043D\u044F\u0442\u044C"
+    - language: 40
+      value: "\u63A5\u53D7"
+    - language: 0
+      value: "\u63A5\u53D7"
+    - language: 15
+      value: Annehmen
+    - language: 34
+      value: Aceptar
+    - language: 5
+      value: Aceptar
+    - language: 14
+      value: Accepter
+    - language: 22
+      value: "\u627F\u8A8D"
+    - language: 23
+      value: "\uC218\uB77D"
+    - language: 28
+      value: Aceitar
+    - language: 42
+      value: Aceitar
+    - language: 36
+      value: "\u0E22\u0E2D\u0E21\u0E23\u0E31\u0E1A"
+    - language: 37
+      value: Kabul et
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_privacy_policy_1
+    values:
+    - language: 10
+      value: By tapping "Accept", you agree to them
+    - language: 30
+      value: "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \xAB\u041F\u0440\u0438\u043D\u044F\u0442\u044C\xBB,
+        \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C
+        \u0441 \u043D\u0438\u043C\u0438"
+    - language: 40
+      value: "\u70B9\u51FB\u201C\u63A5\u53D7\u201D\uFF0C\u8868\u793A\u60A8\u540C\u610F\u4EE5\u4E0A\u6761\u6B3E"
+    - language: 0
+      value: "\u70B9\u51FB\u201C\u63A5\u53D7\u201D\uFF0C\u8868\u793A\u60A8\u540C\u610F\u4EE5\u4E0A\u6761\u6B3E"
+    - language: 15
+      value: Indem du auf "Akzeptieren" tippst, stimmst du ihnen zu
+    - language: 34
+      value: "Al tocar \"Aceptar\", est\xE1s de acuerdo"
+    - language: 5
+      value: "Al tocar \"Aceptar\", est\xE1s de acuerdo"
+    - language: 14
+      value: Toucher Accepter vaut acceptation
+    - language: 22
+      value: "\u300C\u627F\u8A8D\u300D\u3092\u30BF\u30C3\u30D7\u3059\u308B\u3053\u3068\u3067\u305D\u308C\u3089\u306B\u540C\u610F\u3057\u305F\u3053\u3068\u306B\u306A\u308A\u307E\u3059"
+    - language: 23
+      value: "\"\uC218\uB77D\"\uC744 \uD0ED\uD558\uBA74 \uC57D\uAD00\uACFC \uC815\uCC45\uC5D0
+        \uB3D9\uC758\uD558\uAC8C \uB429\uB2C8\uB2E4"
+    - language: 28
+      value: Ao tocar em "Aceitar", concordas com eles
+    - language: 42
+      value: "Ao tocar em \"Aceitar\", voc\xEA concorda com eles"
+    - language: 36
+      value: "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E41\u0E15\u0E30 \"\u0E22\u0E2D\u0E21\u0E23\u0E31\u0E1A\"
+        \u0E41\u0E2A\u0E14\u0E07\u0E27\u0E48\u0E32\u0E04\u0E38\u0E13\u0E22\u0E2D\u0E21\u0E23\u0E31\u0E1A\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E02\u0E2D\u0E07\u0E40\u0E23\u0E32"
+    - language: 37
+      value: "\"Kabul et\" d\xFC\u011Fmesine t\u0131klamakla bunlar\u0131 kabul etmi\u015F
+        say\u0131l\u0131rs\u0131n\u0131z."
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_privacy_policy_0
+    values:
+    - language: 10
+      value: We updated our terms
+    - language: 30
+      value: "\u041C\u044B \u043E\u0431\u043D\u043E\u0432\u0438\u043B\u0438 \u043D\u0430\u0448\u0438
+        \u043F\u0440\u0430\u0432\u0438\u043B\u0430"
+    - language: 40
+      value: "\u6211\u4EEC\u66F4\u65B0\u4E86\u6761\u6B3E"
+    - language: 0
+      value: "\u6211\u4EEC\u66F4\u65B0\u4E86\u6761\u6B3E"
+    - language: 15
+      value: Wir haben unsere Bedingungen aktualisiert
+    - language: 34
+      value: Hemos actualizado las condiciones
+    - language: 5
+      value: Hemos actualizado nuestras condiciones de uso.
+    - language: 14
+      value: "Nous avons actualis\xE9 nos conditions"
+    - language: 22
+      value: "\u5229\u7528\u898F\u7D04\u304C\u66F4\u65B0\u3055\u308C\u307E\u3057\u305F"
+    - language: 23
+      value: "\uC57D\uAD00 \uC5C5\uB370\uC774\uD2B8"
+    - language: 28
+      value: "Atualiz\xE1mos os nossos termos"
+    - language: 42
+      value: Atualizamos os nossos termos
+    - language: 36
+      value: "\u0E40\u0E23\u0E32\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E02\u0E2D\u0E07\u0E40\u0E23\u0E32"
+    - language: 37
+      value: "\u015Eartlar\u0131m\u0131z g\xFCncellendi."
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_policy
+    values:
+    - language: 10
+      value: Privacy Policy
+    - language: 30
+      value: "\u041F\u043E\u043B\u0438\u0442\u0438\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+    - language: 40
+      value: "<u>\u9690\u79C1\u653F\u7B56"
+    - language: 0
+      value: "\u9690\u79C1\u653F\u7B56"
+    - language: 15
+      value: Datenschutzrichtlinien
+    - language: 34
+      value: "Pol\xEDtica de privacidad"
+    - language: 5
+      value: "Pol\xEDtica de privacidad"
+    - language: 14
+      value: "Politique de confidentialit\xE9"
+    - language: 22
+      value: "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC"
+    - language: 23
+      value: "\uAC1C\uC778\uC815\uBCF4\uBCF4\uD638\uC815\uCC45"
+    - language: 28
+      value: "Pol\xEDtica de Privacidade"
+    - language: 42
+      value: "Pol\xEDtica de Privacidade"
+    - language: 36
+      value: "\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27"
+    - language: 37
+      value: "Gizlilik Politikas\u0131"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_policy_terms
+    values:
+    - language: 10
+      value: Terms of Use
+    - language: 30
+      value: "\u041F\u0440\u0430\u0432\u0438\u043B\u0430"
+    - language: 40
+      value: "<u>\u4F7F\u7528\u6761\u6B3E"
+    - language: 0
+      value: "\u4F7F\u7528\u6761\u6B3E"
+    - language: 15
+      value: Nutzungsbedingungen
+    - language: 34
+      value: Condiciones de uso
+    - language: 5
+      value: Condiciones de uso
+    - language: 14
+      value: Conditions d'utilisation
+    - language: 22
+      value: "\u5229\u7528\u898F\u7D04"
+    - language: 23
+      value: "\uC0AC\uC6A9 \uC57D\uAD00"
+    - language: 28
+      value: "Termos de Utiliza\xE7\xE3o"
+    - language: 42
+      value: Termos de Uso
+    - language: 36
+      value: "\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E01\u0E32\u0E23\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19"
+    - language: 37
+      value: "Kullan\u0131m \u015Eartlar\u0131"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_tap_to_finalize
+    values:
+    - language: 10
+      value: TAP TO<br>FINALIZE
+    - language: 30
+      value: "\u0422\u0410\u041F\u0410\u0419\u0422\u0415<br>\u0414\u041B\u042F \u0417\u0410\u0412\u0415\u0420\u0428\u0415\u041D\u0418\u042F"
+    - language: 40
+      value: "\u70B9\u51FB\u4EE5\u5B8C\u6210"
+    - language: 0
+      value: "\u70B9\u51FB\u4EE5<br>\u5B8C\u6210"
+    - language: 15
+      value: TIPPEN ZUM<br>FINALISIEREN
+    - language: 34
+      value: TOCA PARA<br>FINALIZAR
+    - language: 5
+      value: TOCA PARA<br>FINALIZAR
+    - language: 14
+      value: TOUCHEZ POUR<br>FINALISER
+    - language: 22
+      value: "\u30BF\u30C3\u30D7\u3057\u3066<br>\u4ED5\u4E0A\u3052\u308B"
+    - language: 23
+      value: "\uD0ED\uD558\uC5EC<br>\uB9C8\uBB34\uB9AC"
+    - language: 28
+      value: TOCA PARA<br>FINALIZAR
+    - language: 42
+      value: TOQUE PARA<br>FINALIZAR
+    - language: 36
+      value: "\u0E41\u0E15\u0E30\u0E40\u0E1E\u0E37\u0E48\u0E2D<br>\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08"
+    - language: 37
+      value: "TAMAMLAMAK \u0130\xC7\u0130N<br>DOKUN"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_subscription_daily_reward
+    values:
+    - language: 10
+      value: SUBSCRIPTION<br>DAILY REWARD!
+    - language: 30
+      value: "\u0415\u0416\u0415\u0414\u041D\u0415\u0412\u041D\u0410\u042F<br>\u041D\u0410\u0413\u0420\u0410\u0414\u0410
+        \u041F\u041E \u041F\u041E\u0414\u041F\u0418\u0421\u041A\u0415"
+    - language: 40
+      value: "\u8BA2\u9605\u6BCF\u65E5\u5956\u52B1\uFF01"
+    - language: 0
+      value: "\u8BA2\u9605<br>\u6BCF\u65E5\u5956\u52B1\uFF01"
+    - language: 15
+      value: "ABONNEMENT<br>T\xC4GLICHE BELOHNUNG!"
+    - language: 34
+      value: "\xA1SUSCRIPCI\xD3N<br>RECOMPENSA DIARIA!"
+    - language: 5
+      value: "\xA1RECOMPENSA DIARIA<br>DE SUSCRIPCI\xD3N!"
+    - language: 14
+      value: BONUS QUOTIDIEN<br>D'ABONNEMENT !
+    - language: 22
+      value: "\u30B5\u30D6\u30B9\u30AF\u30EA\u30D7\u30B7\u30E7\u30F3<br>\u30C7\u30A4\u30EA\u30FC\u5831\u916C\uFF01"
+    - language: 23
+      value: "\uAD6C\uB3C5<br>\uC77C\uC77C \uBCF4\uC0C1!"
+    - language: 28
+      value: "RECOMPENSA DI\xC1RIA<br>DE SUBSCRI\xC7\xC3O!"
+    - language: 42
+      value: "PR\xCAMIO DI\xC1RIO<br>DE ASSINANTE!"
+    - language: 36
+      value: "\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25\u0E1B\u0E23\u0E30\u0E08\u0E33\u0E27\u0E31\u0E19<br>\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01!"
+    - language: 37
+      value: "ABONEL\u0130K<br>G\xDCNL\xDCK \xD6D\xDCL\xDC!"
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_claim
+    values:
+    - language: 10
+      value: CLAIM
+    - language: 30
+      value: "\u0412\u0417\u042F\u0422\u042C"
+    - language: 40
+      value: "\u83B7\u53D6"
+    - language: 0
+      value: "\u83B7\u53D6"
+    - language: 15
+      value: NEHMEN
+    - language: 34
+      value: RECLAMAR
+    - language: 5
+      value: RECLAMAR
+    - language: 14
+      value: "R\xC9CUP\xC9RER"
+    - language: 22
+      value: "\u53D7\u3051\u53D6\u308B"
+    - language: 23
+      value: "\uC218\uB839"
+    - language: 28
+      value: OBTER
+    - language: 42
+      value: RESGATAR
+    - language: 36
+      value: "\u0E23\u0E31\u0E1A\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25"
+    - language: 37
+      value: AL
+    - language: 21
+      value: 'TODO: Italian'
+    - language: 1
+      value: 'TODO: Arabic'
+    - language: 4
+      value: 'TODO: Bulgarian'
+    - language: 2
+      value: 'TODO: Basque'
+    - language: 3
+      value: 'TODO: Belarusian'
+    - language: 18
+      value: 'TODO: Hungarian'
+    - language: 41
+      value: 'TODO: ChineseTraditional'
+    - language: 39
+      value: 'TODO: Vietnamese'
+    - language: 38
+      value: 'TODO: Ukrainian'
+    - language: 35
+      value: 'TODO: Swedish'
+    - language: 33
+      value: 'TODO: Slovenian'
+    - language: 32
+      value: 'TODO: Slovak'
+    - language: 31
+      value: 'TODO: SerboCroatian'
+    - language: 29
+      value: 'TODO: Romanian'
+    - language: 27
+      value: 'TODO: Polish'
+    - language: 26
+      value: 'TODO: Norwegian'
+    - language: 25
+      value: 'TODO: Lithuanian'
+    - language: 24
+      value: 'TODO: Latvian'
+    - language: 20
+      value: 'TODO: Indonesian'
+    - language: 19
+      value: 'TODO: Icelandic'
+    - language: 17
+      value: 'TODO: Hebrew'
+    - language: 16
+      value: 'TODO: Greek'
+    - language: 13
+      value: 'TODO: Finnish'
+    - language: 12
+      value: 'TODO: Faroese'
+    - language: 11
+      value: 'TODO: Estonian'
+    - language: 9
+      value: 'TODO: Dutch'
+    - language: 8
+      value: 'TODO: Danish'
+    - language: 7
+      value: 'TODO: Czech'
+    - language: 6
+      value: 'TODO: Chinese'
+  - key: label_policy_terms_key1
+    values:
+    - language: 30
+      value: "\u041C\u044B \u043E\u0431\u043D\u043E\u0432\u0438\u043B\u0438 \u043D\u0430\u0448\u0438
+        \u0443\u0441\u043B\u043E\u0432\u0438\u044F"
+    - language: 0
+      value: "\u6211\u4EEC\u5DF2\u7ECF\u66F4\u65B0\u4E86\u6211\u4EEC\u7684\u6761\u6B3E"
+    - language: 10
+      value: We've updated our Terms
+    - language: 15
+      value: "Unsere Nutzungsbedingungen haben sich ge\xE4ndert."
+    - language: 34
+      value: Hemos actualizado nuestras condiciones de uso.
+    - language: 5
+      value: Hemos actualizado nuestras condiciones de uso.
+    - language: 14
+      value: "Nous avons mis \xE0 jour nos conditions g\xE9n\xE9rales."
+    - language: 22
+      value: "\u5F53\u793E\u306E\u5229\u7528\u898F\u7D04\u304C\u66F4\u65B0\u3055\u308C\u307E\u3057\u305F\u3002"
+    - language: 23
+      value: "\uC57D\uAD00\uC744 \uC5C5\uB370\uC774\uD2B8\uD588\uC2B5\uB2C8\uB2E4."
+    - language: 28
+      value: "Atualiz\xE1mos os nossos termos e condi\xE7\xF5es. Para continuar a
+        jogar, aceita os novos Termos de Utiliza\xE7\xE3o."
+    - language: 42
+      value: "Atualizamos nossos termos e condi\xE7\xF5es."
+    - language: 36
+      value: "\u0E40\u0E23\u0E32\u0E44\u0E14\u0E49\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E43\u0E19\u0E01\u0E32\u0E23\u0E43\u0E2B\u0E49\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23\u0E40\u0E01\u0E21\u0E41\u0E25\u0E49\u0E27"
+    - language: 37
+      value: "Ko\u015Fullar\u0131m\u0131z g\xFCncellendi."
+    - language: 40
+      value: "\u6761\u6B3E\u548C\u6761\u4EF6\u5DF2\u66F4\u65B0\u3002"
+  - key: label_policy_terms_key2
+    values:
+    - language: 30
+      value: "\u0423\u0441\u043B\u043E\u0432\u0438\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F"
+    - language: 0
+      value: "\u4F7F\u7528\u6761\u6B3E"
+    - language: 10
+      value: Terms of Service
+    - language: 15
+      value: Nutzungsbedingungen
+    - language: 34
+      value: Condiciones de uso
+    - language: 5
+      value: Condiciones de uso
+    - language: 14
+      value: Conditions d'utilisation
+    - language: 22
+      value: "\u5229\u7528\u898F\u7D04"
+    - language: 23
+      value: "\uC0AC\uC6A9 \uC57D\uAD00"
+    - language: 28
+      value: "Termos de Utiliza\xE7\xE3o"
+    - language: 42
+      value: Termos de Uso
+    - language: 36
+      value: "\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E43\u0E19\u0E01\u0E32\u0E23\u0E43\u0E2B\u0E49\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23"
+    - language: 37
+      value: "Hizmet Ko\u015Fullar\u0131"
+    - language: 40
+      value: "\u4F7F\u7528\u6761\u6B3E"
+  - key: label_policy_terms_key3
+    values:
+    - language: 30
+      value: "\u041F\u043E\u043B\u0438\u0442\u0438\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+    - language: 0
+      value: "\u9690\u79C1\u6761\u6B3E"
+    - language: 10
+      value: Privacy Policy
+    - language: 15
+      value: "Datenschutzerkl\xE4rung"
+    - language: 34
+      value: "Pol\xEDtica de privacidad"
+    - language: 5
+      value: "Pol\xEDtica de privacidad"
+    - language: 14
+      value: "Politique de confidentialit\xE9"
+    - language: 22
+      value: "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC"
+    - language: 23
+      value: "\uAC1C\uC778 \uC815\uBCF4 \uADDC\uC815"
+    - language: 28
+      value: "Pol\xEDtica de privacidad"
+    - language: 42
+      value: "Pol\xEDtica de privacidade"
+    - language: 36
+      value: "\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27"
+    - language: 37
+      value: "Gizlilik politikas\u0131"
+    - language: 40
+      value: "\u9690\u79C1\u6761\u6B3E"
+  - key: label_policy_terms_key4
+    values:
+    - language: 30
+      value: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044F \u044D\u0442\u043E
+        \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435, \u044F \u043F\u0440\u0438\u043D\u0438\u043C\u0430\u044E
+        \u0423\u0441\u043B\u043E\u0432\u0438\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
+        Azur Games \u0438 \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u044E,
+        \u0447\u0442\u043E \u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u043B\u0441\u044F
+        \u0441 \u041F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+    - language: 0
+      value: "\u4F7F\u7528\u6B64\u5E94\u7528\u7A0B\u5E8F\uFF0C\u5373\u8868\u793A\u6211\u5DF2\u540C\u610FAzur
+        Games\u7684\u4F7F\u7528\u6761\u6B3E\uFF0C\u5E76\u786E\u8BA4\u5DF2\u9605\u8BFB\u9690\u79C1\u653F\u7B56"
+    - language: 10
+      value: "By using this app I agree to Azur Games\u2019 Terms of Use and confirm
+        that I have read Privacy Policy"
+    - language: 15
+      value: "Durch die Benutzung dieser App stimme ich den Nutzungsbedingungen von
+        Azur Games zu und best\xE4tige, dass ich die Datenschutzerkl\xE4rung gelesen
+        habe."
+    - language: 34
+      value: "Al usar esta app estoy de acuerdo con los T\xE9rminos de Uso de Azur
+        Games y confirmo haber le\xEDdo la Pol\xEDtica de Privacidad"
+    - language: 5
+      value: "Al usar esta aplicaci\xF3n, acepto los T\xE9rminos de Uso de Azur Games
+        y confirmo haber le\xEDdo la Pol\xEDtica de Privacidad"
+    - language: 14
+      value: "En utilisant cette application, j'accepte les Conditions d'utilisation
+        d'Azur Games et je confirme avoir lu la Politique de confidentialit\xE9"
+    - language: 22
+      value: "\u3053\u306E\u30A2\u30D7\u30EA\u3092\u4F7F\u7528\u3059\u308B\u3053\u3068\u3067Azur
+        Games\u306E\u5229\u7528\u898F\u7D04\u306B\u540C\u610F\u3057\u3001 \u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC  
+        \u3092\u8AAD\u4E86\u3057\u305F\u3053\u3068\u306B\u306A\u308A\u307E\u3059"
+    - language: 23
+      value: "\uC774 \uC571\uC744 \uC0AC\uC6A9\uD568\uC73C\uB85C\uC368 Azur Games\uC758
+        \uC774\uC6A9 \uC57D\uAD00\uC5D0 \uB3D9\uC758\uD558\uACE0 \uAC1C\uC778\uC815\uBCF4
+        \uBCF4\uD638\uC815\uCC45\uC744 \uC77D\uC5C8\uC74C\uC744 \uD655\uC778\uD569\uB2C8\uB2E4"
+    - language: 28
+      value: "Ao utilizar esta aplica\xE7\xE3o, fica impl\xEDcito que concordo com
+        os Termos de Utiliza\xE7\xE3o da Azur Games e que li a Pol\xEDtica de Privacidade."
+    - language: 42
+      value: "Ao utilizar este aplicativo, eu concordo com os Termos de Uso da Azur
+        Games e confirmo que li a Pol\xEDtica de Privacidade."
+    - language: 36
+      value: "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E41\u0E2D\u0E1B\u0E19\u0E35\u0E49
+        \u0E16\u0E37\u0E2D\u0E27\u0E48\u0E32\u0E09\u0E31\u0E19\u0E22\u0E2D\u0E21\u0E23\u0E31\u0E1A
+        \u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E01\u0E32\u0E23\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19
+        \u0E02\u0E2D\u0E07 Azur Games \u0E41\u0E25\u0E30\u0E22\u0E37\u0E19\u0E22\u0E31\u0E19\u0E27\u0E48\u0E32\u0E09\u0E31\u0E19\u0E44\u0E14\u0E49\u0E2D\u0E48\u0E32\u0E19
+        \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27
+        \u0E41\u0E25\u0E49\u0E27"
+    - language: 37
+      value: "Bu uygulamay\u0131 kullanmakla Azur Games'in Kullan\u0131m \u015Eartlar\u0131n\u0131
+        kabul ediyor ve Gizlilik Politikas\u0131n\u0131 onayl\u0131yorum."
+    - language: 40
+      value: "\u4F7F\u7528\u6B64\u5E94\u7528\u7A0B\u5E8F\uFF0C\u5373\u8868\u793A\u6211\u5DF2\u540C\u610FAzur
+        Games\u7684<link=\"TermsOfUse\"><color=#0650f1><u>\u4F7F\u7528\u6761\u6B3E</u></color></link>\uFF0C\u5E76\u786E\u8BA4\u5DF2\u9605\u8BFB<link=\"PrivacyPolicy\"><color=#0650f1><u>\u9690\u79C1\u653F\u7B56</u></color></link>"
+  - key: label_ads_time
+    values:
+    - language: 30
+      value: "\u0412\u0420\u0415\u041C\u042F \u0420\u0415\u041A\u041B\u0410\u041C\u042B"
+    - language: 0
+      value: "\u5E7F\u544A\u65F6\u95F4"
+    - language: 10
+      value: ADS TIME
+    - language: 15
+      value: WERBUNG
+    - language: 34
+      value: "\xA1HORA DE UN ANUNCIO!"
+    - language: 5
+      value: HORA DEL ANUNCIO
+    - language: 14
+      value: C'EST L'HEURE DE L'ANNONCE
+    - language: 22
+      value: "\u5E83\u544A\u306E\u6642\u9593"
+    - language: 23
+      value: "\uAD11\uACE0 \uC2DC\uAC04"
+    - language: 28
+      value: "DURA\xC7\xC3O DO AN\xDANCIO"
+    - language: 42
+      value: HORA DO COMERCIAL
+    - language: 36
+      value: "\u0E40\u0E27\u0E25\u0E32\u0E42\u0E06\u0E29\u0E13\u0E32"
+    - language: 37
+      value: REKLAM ZAMANI
+    - language: 40
+      value: ADS TIME
+  - key: label_ads_help_us
+    values:
+    - language: 30
+      value: "\u0420\u0435\u043A\u043B\u0430\u043C\u0430 \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442
+        \u043D\u0430\u043C \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0438\u0433\u0440\u0443
+        \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0439."
+    - language: 0
+      value: "\u5E7F\u544A\u5E2E\u52A9\u6211\u4EEC\u8BA9\u6211\u4EEC\u7684\u6E38\u620F\u53EF\u4EE5\u514D\u8D39\u73A9\u3002."
+    - language: 10
+      value: Ads help us make our game free to play.
+    - language: 15
+      value: Dank Werbung ist unser Spiel kostenlos.
+    - language: 34
+      value: Los anuncios contribuyen a que nuestro juego sea gratuito.
+    - language: 5
+      value: Los anuncios contribuyen a que nuestro juego sea gratuito.
+    - language: 14
+      value: "Les annonces nous aident \xE0 assurer la gratuit\xE9 du jeu."
+    - language: 22
+      value: "\u5E83\u544A\u306E\u304A\u304B\u3052\u3067\u7121\u6599\u306E\u30B2\u30FC\u30E0\u3092\u63D0\u4F9B\u3067\u304D\u307E\u3059\u3002"
+    - language: 23
+      value: "\uAD11\uACE0\uB294 \uAC8C\uC784\uC744 \uBB34\uB8CC\uB85C \uD50C\uB808\uC774\uD560
+        \uC218 \uC788\uB3C4\uB85D \uB3C4\uC640\uC90D\uB2C8\uB2E4."
+    - language: 28
+      value: "Os an\xFAncios permitem-nos tornar o nosso jogo gratuito para jogares."
+    - language: 42
+      value: "Os an\xFAncios nos permitem tornar o nosso jogo gratuito para voc\xEA
+        jogar."
+    - language: 36
+      value: "\u0E42\u0E06\u0E29\u0E13\u0E32\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E23\u0E32\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E01\u0E21\u0E02\u0E2D\u0E07\u0E40\u0E23\u0E32\u0E40\u0E25\u0E48\u0E19\u0E44\u0E14\u0E49\u0E1F\u0E23\u0E35"
+    - language: 37
+      value: "Reklamlar, oyunumuzu \xFCcretsiz oynaman\u0131z\u0131 sa\u011Flar."
+    - language: 40
+      value: Ads help us make our game free to play.
+  - key: label_you_can_switch_off_ads
+    values:
+    - language: 30
+      value: "\u0422\u044B \u043C\u043E\u0436\u0435\u0448\u044C \u043E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C
+        \u0440\u0435\u043A\u043B\u0430\u043C\u0443"
+    - language: 0
+      value: "\u4F60\u53EF\u4EE5\u901A\u8FC7\u652F\u4ED8\u8D39\u7528\u6765\u5173\u95ED\u5E7F\u544A"
+    - language: 10
+      value: You can switch off ads with no ads offer.
+    - language: 15
+      value: Du kannst die Werbung mit dem Angebot Keine Werbung deaktivieren.
+    - language: 34
+      value: "Adquiere la opci\xF3n sin anuncios para desactivarlos."
+    - language: 5
+      value: "Adquiere la opci\xF3n sin anuncios para desactivarlos."
+    - language: 14
+      value: "Vous pouvez d\xE9sactiver les annonce sans offre d'annonce."
+    - language: 22
+      value: "\u5E83\u544A\u306A\u3057\u30AA\u30D5\u30A1\u30FC\u3092\u4F7F\u3063\u3066\u5E83\u544A\u3092\u975E\u8868\u793A\u306B\u3067\u304D\u307E\u3059\u3002"
+    - language: 23
+      value: "\uAD11\uACE0 \uC81C\uACF5\uC774 \uC5C6\uB3C4\uB85D \uAD11\uACE0\uB97C
+        \uB04C \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    - language: 28
+      value: "Podes desativar os an\xFAncios, adquirindo a oferta livre de an\xFAncios."
+    - language: 42
+      value: "Voc\xEA pode desativar os an\xFAncios, adquirindo a oferta livre de
+        an\xFAncios."
+    - language: 36
+      value: "\u0E04\u0E38\u0E13\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E1B\u0E34\u0E14\u0E42\u0E06\u0E29\u0E13\u0E32\u0E42\u0E14\u0E22\u0E44\u0E21\u0E48\u0E21\u0E35\u0E42\u0E06\u0E29\u0E13\u0E32\u0E19\u0E33\u0E40\u0E2A\u0E19\u0E2D\u0E2D\u0E35\u0E01\u0E15\u0E48\u0E2D\u0E44\u0E1B"
+    - language: 37
+      value: "Reklams\u0131z s\xFCr\xFCme ge\xE7erek reklamlar\u0131 kapatabilirsin."
+    - language: 40
+      value: You can switch off ads with no ads offer.
+  - key: label_cancel_membership
+    values:
+    - language: 30
+      value: "<u>\u041E\u0442\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F \u043E\u0442
+        \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438</u>"
+    - language: 0
+      value: "<u>\u53D6\u6D88\u4F1A\u5458\u8D44\u683C</u>\u3002"
+    - language: 10
+      value: <u>Cancel Membership</u>
+    - language: 15
+      value: "<u>Mitgliedschaft k\xFCndigen</u>"
+    - language: 34
+      value: "<u>Cancelar suscripci\xF3n</u>"
+    - language: 5
+      value: "<u>Cancelar suscripci\xF3n</u>"
+    - language: 14
+      value: <u>Annuler l'abonnement</u>
+    - language: 22
+      value: "<u>\u30E1\u30F3\u30D0\u30FC\u30B7\u30C3\u30D7\u3092\u30AD\u30E3\u30F3\u30BB\u30EB</u>"
+    - language: 23
+      value: "<u>\uD68C\uC6D0 \uD0C8\uD1F4</u>"
+    - language: 28
+      value: "<u>Cancelar Ades\xE3o</u>"
+    - language: 42
+      value: <u>Cancelar titularidade</u>
+    - language: 36
+      value: "<u>\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01</u>"
+    - language: 37
+      value: "<u>\xDCyeli\u011Fi \u0130ptal Et</u>"
+    - language: 40
+      value: <u>Cancel Membership</u>
+  - key: label_if_you_cancel_subscription
+    values:
+    - language: 30
+      value: "\u041F\u0440\u0438 \u043E\u0442\u043C\u0435\u043D\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438
+        \u0443 \u0442\u0435\u0431\u044F \u043D\u0435 \u0431\u0443\u0434\u0435\u0442
+        \u0434\u043E\u0441\u0442\u0443\u043F\u0430 \u043A \u043A\u043B\u0430\u0441\u0441\u043D\u044B\u043C
+        \u0444\u0443\u043D\u043A\u0446\u0438\u044F\u043C \u0438\u0433\u0440\u044B:"
+    - language: 0
+      value: "\u5982\u679C\u4F60\u53D6\u6D88\u4E86\u4F60\u7684\u4F1A\u5458\u8D44\u683C\uFF0C\u90A3\u4E48\u4F60\u5C06\u65E0\u6CD5\u7EE7\u7EED\u83B7\u5F97\u5F88\u9177\u7684\u6E38\u620F\u529F\u80FD\u3002"
+    - language: 10
+      value: 'If you cancel your membership, you won''t have access to cool game
+        features:'
+    - language: 15
+      value: "Wenn du deine Mitgliedschaft k\xFCndigst, kannst du coole Spielfunktionen
+        nicht mehr nutzen:"
+    - language: 34
+      value: "Si cancelas tu suscripci\xF3n, no tendr\xE1s acceso a caracter\xEDsticas
+        superchulas del juego:"
+    - language: 5
+      value: "Si cancelas tu afiliaci\xF3n, no tendr\xE1s acceso a las funciones
+        del juego:"
+    - language: 14
+      value: "Si vous annulez votre abonnement, vous n'aurez plus acc\xE8s aux fonctionnalit\xE9s
+        cool du jeu :"
+    - language: 22
+      value: "\u30E1\u30F3\u30D0\u30FC\u30B7\u30C3\u30D7\u3092\u30AD\u30E3\u30F3\u30BB\u30EB\u3059\u308B\u3068\u3001\u30AF\u30FC\u30EB\u306A\u30B2\u30FC\u30E0\u6A5F\u80FD\u306B\u30A2\u30AF\u30BB\u30B9\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002"
+    - language: 23
+      value: "\uD68C\uC6D0\uC744 \uD0C8\uD1F4\uD558\uBA74 \uB2E4\uC74C\uACFC \uAC19\uC740
+        \uBA4B\uC9C4 \uAC8C\uC784 \uAE30\uB2A5\uC5D0 \uC811\uC18D\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."
+    - language: 28
+      value: "Se cancelares a tua ades\xE3o, vai perder o acesso aos recursos interessantes
+        do jogo:"
+    - language: 42
+      value: "Se voc\xEA cancelar a titularidade, perder\xE1 o acesso aos recursos
+        interessantes do jogo:"
+    - language: 36
+      value: "\u0E2B\u0E32\u0E01\u0E04\u0E38\u0E13\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01
+        \u0E04\u0E38\u0E13\u0E08\u0E30\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E02\u0E49\u0E32\u0E16\u0E36\u0E07\u0E1F\u0E35\u0E40\u0E08\u0E2D\u0E23\u0E4C\u0E40\u0E14\u0E47\u0E14\u0E46
+        \u0E02\u0E2D\u0E07\u0E40\u0E01\u0E21\u0E44\u0E14\u0E49:"
+    - language: 37
+      value: "\xDCyeli\u011Finizi iptal edersen, harika oyun \xF6zelliklerine eri\u015Femezsin:"
+    - language: 40
+      value: 'If you cancel your membership, you won''t have access to cool game
+        features:'
+  - key: label_play
+    values:
+    - language: 30
+      value: "\u0418\u0433\u0440\u0430\u0442\u044C"
+    - language: 0
+      value: "\u5F00\u59CB\u6E38\u620F"
+    - language: 10
+      value: Play
+    - language: 15
+      value: Spielen
+    - language: 34
+      value: Jugar
+    - language: 5
+      value: Jugar
+    - language: 14
+      value: Jouer
+    - language: 22
+      value: "\u30D7\u30EC\u30A4"
+    - language: 23
+      value: "\uD50C\uB808\uC774"
+    - language: 28
+      value: Jogar
+    - language: 42
+      value: Jogar
+    - language: 36
+      value: "\u0E40\u0E25\u0E48\u0E19"
+    - language: 37
+      value: Oyna
+    - language: 40
+      value: Play
+  - key: label_music
+    values:
+    - language: 30
+      value: "\u041C\u0423\u0417\u042B\u041A\u0410"
+    - language: 10
+      value: MUSIC
+    - language: 15
+      value: MUSIK
+    - language: 34
+      value: "M\xDASICA"
+    - language: 5
+      value: "M\xDASICA"
+    - language: 14
+      value: MUSIQUE
+    - language: 22
+      value: "\u97F3\u697D"
+    - language: 23
+      value: "\uC74C\uC545"
+    - language: 28
+      value: "M\xDASICA"
+    - language: 42
+      value: "M\xDASICA"
+    - language: 36
+      value: "\u0E40\u0E1E\u0E25\u0E07"
+    - language: 37
+      value: "M\xDCZIK"
+    - language: 40
+      value: "\u97F3\u4E50"
+    - language: 0
+      value: "\u97F3\u4E50"
+  displayLanguages: 280000001e0000000a0000000f000000220000000e000000160000001c0000000500000024000000250000002a00000017000000
+  availableLanguages: 0a0000001e000000280000000f000000220000000e000000160000001c0000000500000024000000250000002a00000017000000
+  width: 256
+  countOnPage: 32

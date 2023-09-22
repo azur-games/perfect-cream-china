@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b61d1656cdfbc4199a955806fc3bf2, type: 3}
+  m_Name: GoldenShape
+  m_EditorClassIdentifier: 
+  info:
+    name: GoldenShape
+    cannotBeReceived: 1
+    isPremiumItem: 0
+    priceOverride: 0
+    assetType: 4
+    tags: []
+    order: 60
+    subCategory: 
+  asset: {fileID: 3751679693953757743, guid: 476309c451be58547927ee5b9bb94797, type: 3}

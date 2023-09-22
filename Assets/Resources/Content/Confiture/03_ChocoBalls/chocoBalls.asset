@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b61d1656cdfbc4199a955806fc3bf2, type: 3}
+  m_Name: chocoBalls
+  m_EditorClassIdentifier: 
+  info:
+    name: Choco Balls
+    cannotBeReceived: 0
+    isPremiumItem: 0
+    priceOverride: 0
+    assetType: 5
+    tags: []
+    order: 3
+    subCategory: 
+  asset: {fileID: 396169161172259725, guid: ffe5c9f83cea16b4e981a219fe241b57, type: 3}

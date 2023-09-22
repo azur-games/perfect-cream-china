@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5444011e6f084f919406029fc7d3f348, type: 3}
+  m_Name: AmazonSettings
+  m_EditorClassIdentifier: 
+  AppId: a24d00fa-3710-46c9-8a7d-8cf686d7ce1a
+  BannerSlotId: 24f05811-b390-41ba-b10f-83cce76a9320
+  InterstitialSlotId: 37bc48db-3044-4273-87f5-81eed99d1181
+  RewardedVideoSlotId: c32d4cc7-13ae-4ff4-bb8c-300972210564
+  RewardedVideoWidth: 320
+  RewardedVideoHeight: 480

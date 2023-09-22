@@ -1,0 +1,97 @@
+
+CremPie_Subscribe_3.png
+size: 2026,1128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Curves 1607
+  rotate: false
+  xy: 2, 557
+  size: 957, 569
+  orig: 995, 582
+  offset: 13, 0
+  index: -1
+Layer 17
+  rotate: false
+  xy: 1346, 511
+  size: 196, 104
+  orig: 196, 104
+  offset: 0, 0
+  index: -1
+Layer 1811
+  rotate: false
+  xy: 1048, 317
+  size: 296, 298
+  orig: 296, 298
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: false
+  xy: 681, 39
+  size: 196, 96
+  orig: 196, 96
+  offset: 0, 0
+  index: -1
+Layer 72
+  rotate: false
+  xy: 879, 38
+  size: 99, 97
+  orig: 99, 97
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 35
+  size: 677, 520
+  orig: 677, 520
+  offset: 0, 0
+  index: -1
+cream
+  rotate: false
+  xy: 961, 570
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+ekler_small
+  rotate: true
+  xy: 1048, 2
+  size: 313, 272
+  orig: 315, 273
+  offset: 0, 1
+  index: -1
+face
+  rotate: false
+  xy: 681, 137
+  size: 365, 418
+  orig: 365, 418
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 961, 617
+  size: 509, 602
+  orig: 509, 602
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 1565, 433
+  size: 381, 693
+  orig: 381, 693
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: true
+  xy: 1346, 63
+  size: 368, 678
+  orig: 368, 678
+  offset: 0, 0
+  index: -1
+shadow_on_finger
+  rotate: false
+  xy: 1948, 1075
+  size: 35, 51
+  orig: 36, 54
+  offset: 0, 2
+  index: -1

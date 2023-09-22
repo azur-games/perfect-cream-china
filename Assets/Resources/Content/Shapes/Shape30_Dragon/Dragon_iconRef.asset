@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9204b6c7545af45a0e5d4e38ab3c28, type: 3}
+  m_Name: Dragon_iconRef
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: 6ee6ea3eed3c0d549890397874b3de35, type: 3}
+  AlternativeIcon: {fileID: 21300000, guid: afa08ea6ca442114c99a1a2ef65331b0, type: 3}
+  AlternativeIcon2: {fileID: 21300000, guid: 5c25ca8007f69c242936e6e4a607d192, type: 3}

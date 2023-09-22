@@ -1,0 +1,314 @@
+fileFormatVersion: 2
+guid: 54556bbd1d5440842a2f1f26af7e9259
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: boy_01_geo
+    100002: //RootNode
+    100004: girl_01_geo
+    100006: Head
+    100008: HeadTop_End
+    100010: Hips
+    100012: LeftArm
+    100014: LeftFoot
+    100016: LeftForeArm
+    100018: LeftHand
+    100020: LeftHandIndex1
+    100022: LeftHandIndex2
+    100024: LeftHandIndex3
+    100026: LeftHandMiddle1
+    100028: LeftHandMiddle2
+    100030: LeftHandThumb1
+    100032: LeftHandThumb2
+    100034: LeftLeg
+    100036: LeftShoulder
+    100038: LeftToe_End
+    100040: LeftToeBase
+    100042: LeftUpLeg
+    100044: Neck
+    100046: RightArm
+    100048: RightFoot
+    100050: RightForeArm
+    100052: RightHand
+    100054: RightHandIndex1
+    100056: RightHandIndex2
+    100058: RightHandIndex3
+    100060: RightHandMiddle1
+    100062: RightHandMiddle2
+    100064: RightHandThumb1
+    100066: RightHandThumb2
+    100068: RightLeg
+    100070: RightShoulder
+    100072: RightToe_End
+    100074: RightToeBase
+    100076: RightUpLeg
+    100078: Spine
+    100080: Spine1
+    100082: Spine2
+    100084: barmen_geo
+    100086: boy_02_geo
+    100088: girl_02_geo
+    100090: boxes_grp
+    100092: case_barmen
+    100094: PlasticBox_barmen
+    100096: SimpleBox_barmen
+    400000: boy_01_geo
+    400002: //RootNode
+    400004: girl_01_geo
+    400006: Head
+    400008: HeadTop_End
+    400010: Hips
+    400012: LeftArm
+    400014: LeftFoot
+    400016: LeftForeArm
+    400018: LeftHand
+    400020: LeftHandIndex1
+    400022: LeftHandIndex2
+    400024: LeftHandIndex3
+    400026: LeftHandMiddle1
+    400028: LeftHandMiddle2
+    400030: LeftHandThumb1
+    400032: LeftHandThumb2
+    400034: LeftLeg
+    400036: LeftShoulder
+    400038: LeftToe_End
+    400040: LeftToeBase
+    400042: LeftUpLeg
+    400044: Neck
+    400046: RightArm
+    400048: RightFoot
+    400050: RightForeArm
+    400052: RightHand
+    400054: RightHandIndex1
+    400056: RightHandIndex2
+    400058: RightHandIndex3
+    400060: RightHandMiddle1
+    400062: RightHandMiddle2
+    400064: RightHandThumb1
+    400066: RightHandThumb2
+    400068: RightLeg
+    400070: RightShoulder
+    400072: RightToe_End
+    400074: RightToeBase
+    400076: RightUpLeg
+    400078: Spine
+    400080: Spine1
+    400082: Spine2
+    400084: barmen_geo
+    400086: boy_02_geo
+    400088: girl_02_geo
+    400090: boxes_grp
+    400092: case_barmen
+    400094: PlasticBox_barmen
+    400096: SimpleBox_barmen
+    2100000: lambert2
+    2100002: boy_01_mat
+    2100004: girl_01_mat
+    2100006: barmen_01_mat
+    2100008: barmen_mat
+    2100010: girl_02_mat
+    2100012: boy_02_mat
+    2100014: case_mat
+    2100016: m
+    2100018: m2
+    2100020: SimpleBox_mat
+    2100022: ribbon_mat
+    2100024: plastic_mat
+    2100026: handle_mat
+    2100028: Box_mat
+    2300000: case_barmen
+    2300002: PlasticBox_barmen
+    2300004: SimpleBox_barmen
+    3300000: case_barmen
+    3300002: PlasticBox_barmen
+    3300004: SimpleBox_barmen
+    4300000: girl_01_geo
+    4300002: boy_01_geo
+    4300004: barmen_geo
+    4300006: girl_02_geo
+    4300008: boy_02_geo
+    4300010: case_barmen
+    4300012: PlasticBox_barmen
+    4300014: SimpleBox_barmen
+    7400000: Box_to_bar
+    9500000: //RootNode
+    13700000: boy_01_geo
+    13700002: girl_01_geo
+    13700004: barmen_geo
+    13700006: boy_02_geo
+    13700008: girl_02_geo
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box_mat
+    second: {instanceID: 0}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SimpleBox_mat
+    second: {instanceID: 0}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: barmen_mat
+    second: {fileID: 2100000, guid: d44b685a381003647a34114652304162, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boy_01_mat
+    second: {fileID: 2100000, guid: df764cf960a4f9b4bb1f43d0341b1d62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boy_02_mat
+    second: {fileID: 2100000, guid: a03933200949b37408f2567d33a2c989, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: case_mat
+    second: {fileID: 2100000, guid: b9820f21a2a0a234db067c3a11db691f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girl_01_mat
+    second: {fileID: 2100000, guid: af3b3f1dc0997ad448ccfeb00cd5bc81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girl_02_mat
+    second: {fileID: 2100000, guid: ff4165d45f0afac4799e0395397942cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: handle_mat
+    second: {fileID: 2100000, guid: 0a4067372e5f6dd4d9afc01ff52ffce3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 7fdb82a9d05dba2449cc3aa973d84130, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic_mat
+    second: {fileID: 2100000, guid: 19e2b69f56ccc1a4badaca6fc4a03bfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ribbon_mat
+    second: {fileID: 2100000, guid: 7ac0776a3a35c1a46a737dd982ab5f81, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Box_to_bar
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 0
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

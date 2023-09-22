@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: 83e9d418760a21147b783450f54e6063
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Box001
+    100012: Circle001
+    100014: Circle002
+    100016: Circle003
+    100018: Circle004
+    100020: Circle005
+    100022: Circle006
+    100024: Cylinder_base_001
+    100026: Cylinder_base_002
+    100028: Cylinder_base_009
+    100030: Cylinder_base_01
+    100032: //RootNode
+    100034: Cylinder_base_012
+    100036: Cylinder_base_013
+    100038: Cylinder_base_015
+    100040: Cylinder_base_016
+    100042: Cylinder_base_02
+    100044: Cylinder_base_03
+    100046: Cylinder_base_04
+    100048: Cylinder_base_05
+    100050: Cylinder_base_06
+    100052: Cylinder_base_08
+    100054: Cylinder_base_09
+    100056: Object020
+    100058: Object021
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Box001
+    400012: Circle001
+    400014: Circle002
+    400016: Circle003
+    400018: Circle004
+    400020: Circle005
+    400022: Circle006
+    400024: Cylinder_base_001
+    400026: Cylinder_base_002
+    400028: Cylinder_base_009
+    400030: //RootNode
+    400032: Cylinder_base_01
+    400034: Cylinder_base_012
+    400036: Cylinder_base_013
+    400038: Cylinder_base_015
+    400040: Cylinder_base_016
+    400042: Cylinder_base_02
+    400044: Cylinder_base_03
+    400046: Cylinder_base_04
+    400048: Cylinder_base_05
+    400050: Cylinder_base_06
+    400052: Cylinder_base_08
+    400054: Cylinder_base_09
+    400056: Object020
+    400058: Object021
+    2100000: Fon_base
+    2100002: Fon_base2
+    2100004: No Name
+    2100006: 01 - Default
+    2300000: Box001
+    2300002: Cylinder_base_05
+    2300004: Cylinder_base_08
+    2300006: Cylinder_base_09
+    3300000: Box001
+    3300002: Cylinder_base_05
+    3300004: Cylinder_base_08
+    3300006: Cylinder_base_09
+    4300000: Cylinder_base_013
+    4300002: Cylinder_base_015
+    4300004: Cylinder_base_016
+    4300006: Cylinder_base_009
+    4300008: Cylinder_base_012
+    4300010: Cylinder_base_002
+    4300012: Object020
+    4300014: Object021
+    4300016: Cylinder_base_001
+    4300018: Box001
+    4300020: Cylinder_base_01
+    4300022: Cylinder_base_02
+    4300024: Cylinder_base_03
+    4300026: Cylinder_base_04
+    4300028: Cylinder_base_05
+    4300030: Cylinder_base_06
+    4300032: Cylinder_base_08
+    4300034: Cylinder_base_09
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Cylinder_base_001
+    13700002: Cylinder_base_002
+    13700004: Cylinder_base_009
+    13700006: Cylinder_base_01
+    13700008: Cylinder_base_012
+    13700010: Cylinder_base_013
+    13700012: Cylinder_base_015
+    13700014: Cylinder_base_016
+    13700016: Cylinder_base_02
+    13700018: Cylinder_base_03
+    13700020: Cylinder_base_04
+    13700022: Cylinder_base_06
+    13700024: Object020
+    13700026: Object021
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,83 @@
+
+CremPie_Subscribe_2.png
+size: 1986,959
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+textures/1
+  rotate: false
+  xy: 1799, 153
+  size: 82, 26
+  orig: 83, 26
+  offset: 1, 0
+  index: -1
+textures/3
+  rotate: false
+  xy: 1800, 758
+  size: 73, 29
+  orig: 73, 29
+  offset: 0, 0
+  index: -1
+textures/4
+  rotate: false
+  xy: 1799, 121
+  size: 72, 30
+  orig: 72, 30
+  offset: 0, 0
+  index: -1
+textures/Color Balance 1
+  rotate: false
+  xy: 806, 4
+  size: 545, 375
+  orig: 560, 382
+  offset: 2, 6
+  index: -1
+textures/Group 11
+  rotate: false
+  xy: 1353, 4
+  size: 444, 375
+  orig: 444, 375
+  offset: 0, 0
+  index: -1
+textures/Group 6
+  rotate: true
+  xy: 1157, 381
+  size: 576, 641
+  orig: 576, 652
+  offset: 0, 10
+  index: -1
+textures/Group 7
+  rotate: true
+  xy: 2, 2
+  size: 463, 802
+  orig: 463, 802
+  offset: 0, 0
+  index: -1
+textures/Shape 2
+  rotate: false
+  xy: 2, 467
+  size: 1153, 490
+  orig: 1173, 510
+  offset: 10, 10
+  index: -1
+textures/Vector Smart Object copy 7
+  rotate: true
+  xy: 806, 411
+  size: 54, 287
+  orig: 54, 287
+  offset: 0, 0
+  index: -1
+textures/raspberries
+  rotate: false
+  xy: 1800, 789
+  size: 176, 168
+  orig: 176, 168
+  offset: 0, 0
+  index: -1
+textures/strwbr
+  rotate: false
+  xy: 1799, 181
+  size: 185, 198
+  orig: 185, 198
+  offset: 0, 0
+  index: -1

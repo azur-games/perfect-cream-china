@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7309968671902548302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282977025503904818}
+  - component: {fileID: 615144204677064715}
+  - component: {fileID: 7412930310378293677}
+  m_Layer: 20
+  m_Name: GoldenLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &282977025503904818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309968671902548302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &615144204677064715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309968671902548302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964560599251a374cae759c19fb8d2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: e2ef305beb7b04bf6a369a24f5bc1940, type: 3}
+  AlternativeIcon: {fileID: 0}
+  AlternativeIcon2: {fileID: 0}
+  Name: GoldenLevel
+  SubCategory: 
+  CannotBeReceived: 0
+  IsPremiumItem: 0
+  PriceOverride: 0
+  levelBalanceData: {fileID: 11400000, guid: 56784dd38e602db4ea62f1763543717c, type: 2}
+  Generator: {fileID: 7412930310378293677}
+  FinishAnimationObject: {fileID: 7219083726037159462, guid: 70af41022d9a8854caf3c24f5d28cebb,
+    type: 3}
+  TypeOfDeliveredObject: 3
+  FinalJar: {fileID: 0}
+  ValveAssetOverrideName: 
+  ColorSchemes:
+  - BackgroundBright: {r: 1, g: 0.8605479, b: 0.16509432, a: 1}
+    BackgroundDark: {r: 0.8584906, g: 0.6218619, b: 0.06074225, a: 1}
+  CreamSkinName: CreamGoldenLevel
+  OverrideCoinsReward: -1
+  MinStarsCount: 0
+  BaseUIColor: {r: 1, g: 0.72604626, b: 0, a: 1}
+--- !u!114 &7412930310378293677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309968671902548302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230cdfde38b00a441a537c6a51aeaa1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _availableShapes:
+  - {fileID: 3751679693953757743, guid: 476309c451be58547927ee5b9bb94797, type: 3}
+  _feverModeShapes: []
+  _feverModeStartPrefab: {fileID: 0}
+  _obstaclePrefab: {fileID: 9025176467039674450, guid: dc0845d40fbbbde4ea2049fce987a8a2,
+    type: 3}
+  _preFinalPrefab: {fileID: 4618182978257768105, guid: 0d9bd46a244607b46b1ae9dc5bdfc764,
+    type: 3}
+  _finalPrefab: {fileID: 4009163745205768874, guid: 749e557d90d9e6b4db666fee7895cf84,
+    type: 3}
+  paperForFinalShape: {fileID: 0}
+  _minCountInSet: 3
+  _maxCountInSet: 7
+  AdditionalInterval: 0

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9204b6c7545af45a0e5d4e38ab3c28, type: 3}
+  m_Name: Blueberry_iconRef
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: d7128c69b346bdc4e87535c052956c44, type: 3}
+  AlternativeIcon: {fileID: 21300000, guid: fd66681814849544da58d7fac3f3ea2a, type: 3}
+  AlternativeIcon2: {fileID: 21300000, guid: b82d6662f8f8c7c41a017125d5b9826b, type: 3}

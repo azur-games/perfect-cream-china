@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c4ad0783094b62854adc52aad7fd80, type: 3}
+  m_Name: LLMaxSettings
+  m_EditorClassIdentifier: 
+  SdkKey: 6AQkyPv9b4u7yTtMH9PT40gXg00uJOTsmBOf7hDxa_-FnNZvt_qTLnJAiKeb5-2_T8GsI_dGQKKKrtwZTlCzAR
+  IsBannerEnabled: 1
+  BannerId: c3dc91b8a68b1f5f
+  IsInterstitialEnabled: 1
+  InterstitialId: 0522dcde770c96d9
+  IsRewardedEnabled: 1
+  RewardedId: 680fd5ef7a3c9482
+  BannerPosition: 7
+  PhoneBannerWidth: 320
+  TabletBannerWidth: 728
+  EnableAdaptiveBanners: 0
+  ForceBanners: 0
+  ShouldStopAutoRefreshOnAdExpand: 1
+  PrivacyUrl: https://aigames.ae/policy#h.hn0lb3lfd0ij
+  TermsUrl: https://aigames.ae/policy#h.v7mztoso1wgw
+  EnabledAdapters:
+  - ByteDanceAdapter
+  - FacebookAdapter
+  - FyberAdapter
+  - GoogleAdapter
+  - IronSourceAdapter
+  - MintegralAdapter
+  - UnityAdsAdapter
+  - VungleAdapter
+  consentApiClassesNamesIncludingAssemblies:
+  - Modules.AppsFlyer.LLAppsFlyerManager, Modules.AppsFlyer
+  - Modules.Firebase.FirebaseManager, Modules.Firebase

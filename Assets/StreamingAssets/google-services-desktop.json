@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "977776543915",
+    "firebase_url": "https://perfect-cream-f8012-default-rtdb.firebaseio.com",
+    "project_id": "perfect-cream-f8012",
+    "storage_bucket": "perfect-cream-f8012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977776543915:android:b673c3f38bdb4c5e61cfee",
+        "android_client_info": {
+          "package_name": "com.playgendary.creamaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977776543915-biavorrvmjlenossqcdbdtvlea7h3tif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.playgendary.creamaster",
+            "certificate_hash": "d7038f8213946ce4aedb3d527003f72884e8c678"
+          }
+        },
+        {
+          "client_id": "977776543915-v7dql5lv1uhhqir44oop4jsc7opd24pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJmttela8Uq0m29iW73VMK5G8i9GzciDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977776543915-v7dql5lv1uhhqir44oop4jsc7opd24pa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "977776543915-qaerkvga6iq6rer7jce1jf52icg4n1ir.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.playgendary.creammaster",
+                "app_store_id": "1494449873"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-7663884898922975~1644014309"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977776543915:android:e4a3d994a49394f161cfee",
+        "android_client_info": {
+          "package_name": "com.playgendary.creamaster.huawei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977776543915-v7dql5lv1uhhqir44oop4jsc7opd24pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJmttela8Uq0m29iW73VMK5G8i9GzciDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977776543915-v7dql5lv1uhhqir44oop4jsc7opd24pa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "977776543915-qaerkvga6iq6rer7jce1jf52icg4n1ir.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.playgendary.creammaster",
+                "app_store_id": "1494449873"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

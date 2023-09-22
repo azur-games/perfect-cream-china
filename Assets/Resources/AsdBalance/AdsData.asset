@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b137283601627340968a09878efe6a9, type: 3}
+  m_Name: AdsData
+  m_EditorClassIdentifier: 
+  minLevelForInterstitialShowing: 1
+  minLevelForBannerShowing: 1
+  delayBetweenInterstitials: 10
+  isNeedShowInterstitialAfterResult: 0
+  isNeedShowInterstitialBeforeResult: 1
+  isNeedShowInterstitialAfterBackground: 1
+  isNeedShowInactivityInterstitial: 1
+  delayBetweenInactivityInterstitials: 40
+  isNeedShowSettingsOpenInterstitials: 0
+  isNeedShowSettingsCloseInterstitials: 0
+  isNeedShowGalleryOpenInterstitials: 0
+  isNeedShowGalleryCloseInterstitials: 0
+  isNeedShowInGameRestartInterstitial: 0
+  isNeedShow9ChestInterstitial: 0
+  isNeedShowInterstitialAfterSegment: 0
