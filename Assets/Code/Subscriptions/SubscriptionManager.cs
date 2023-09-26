@@ -63,62 +63,7 @@ public class SubscriptionManager : IInitializableService, ISubscriptionRewardMan
         }
     }
 
-
-    public bool IsRewardPopupAvailable
-    {
-        get
-        {
-            return StoreManager.HasAnyActiveSubscription && SubscriptionDaysForReward > 0;
-        }
-    }
-
     public bool IsSubscriptionActive => StoreManager.HasAnyActiveSubscription;
-
-    public int SubscriptionDaysForReward
-    {
-        get
-        {
-            DateTime lastReward = LastSubscriptionRewardDate;
-            DateTime checkedDate = DateTime.UtcNow;
-            TimeSpan span = new TimeSpan();
-
-            if (lastReward != DateTime.MinValue)
-            {
-                ISubscriptionInfo lastSubscriptionReward = StoreManager.GetSubscriptionsForDate(lastReward).FirstOrDefault();
-                ISubscriptionInfo currentSubscriptionReward = StoreManager.GetSubscriptionsForDate(checkedDate).FirstOrDefault();
-
-                if (lastSubscriptionReward == null || currentSubscriptionReward == null)
-                {
-                    return 0;
-                }
-
-                if (lastSubscriptionReward.ProductId == currentSubscriptionReward.ProductId)
-                {
-                    span = checkedDate - lastReward;
-                }
-                else
-                {
-                    TimeSpan lastSpan = lastSubscriptionReward.ExpirationDate - lastReward;
-                    TimeSpan currentSpan = checkedDate - currentSubscriptionReward.PurchaseDate;
-                    span = lastSpan + currentSpan;
-                }
-            }
-            else
-            {
-                ISubscriptionInfo result = StoreManager.GetLastSubscription();
-
-                if (result != null && !string.IsNullOrEmpty(result.ProductId))
-                {
-                    LastSubscriptionRewardDate = result.PurchaseDate;
-                    span = checkedDate - LastSubscriptionRewardDate;
-
-                    return (StoreManager.IsSandboxEnvironment ? (span.Minutes / 2) : (span.Days)) + 1;
-                }
-            }
-
-            return StoreManager.IsSandboxEnvironment ? (span.Minutes / 2) : (span.Days);
-        }
-    }
 
 
     private DateTime LastSubscriptionRewardDate
@@ -147,21 +92,10 @@ public class SubscriptionManager : IInitializableService, ISubscriptionRewardMan
 
     public void ClaimReward()
     {
-        DateTime checkedDate = DateTime.UtcNow;
-        ISubscriptionInfo currentSubscriptionReward = StoreManager.GetSubscriptionsForDate(checkedDate).FirstOrDefault();
-        TimeSpan span = checkedDate - LastSubscriptionRewardDate;
 
-        if (currentSubscriptionReward != null && !string.IsNullOrEmpty(currentSubscriptionReward.ProductId))
-        {
-            LastSubscriptionRewardDate = StoreManager.IsSandboxEnvironment ?
-                LastSubscriptionRewardDate.AddMinutes((span.Minutes / 2) * 2.0f) :
-                LastSubscriptionRewardDate.AddDays(span.Days);
-        }
-        else
-        {
-            LastSubscriptionRewardDate = checkedDate;
-        }
     }
 
     #endregion
+
+    public bool IsRewardPopupAvailable { get; }
 }

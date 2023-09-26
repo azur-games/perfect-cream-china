@@ -1,16 +1,13 @@
-﻿using Modules.Analytics;
-using Modules.General;
+﻿using Modules.General;
 using Modules.General.Abstraction;
 using Modules.General.Abstraction.InAppPurchase;
-using Modules.InAppPurchase;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using BoGD;
-using Code.RateUs;
-using Modules.Max;
+using Code.Subscriptions;
+using Modules.General.HelperClasses;
 
 
 public class MetagameRoomUI : MonoBehaviourBase
@@ -39,22 +36,10 @@ public class MetagameRoomUI : MonoBehaviourBase
     [SerializeField] private NewIconHelper newShopItemsIconHelper;
     [SerializeField] private GameObject CanPurchaseIcon;
     [SerializeField] private EventSystem eventSystem;
-
-    [Header("Rate Us")] [SerializeField] private RateUsConfiguration _rateUsConfiguration;
-
-    [SerializeField] private Button _mediationDebuggerButton;
-    [SerializeField] private Button _addBucksButton;
-    private MaxDebuggerEnabler _debuggerEnabler;
+    [SerializeField] private CustomSubscriptionPopUp customSubscriptionPopUp;
 
     public Camera UICamera;
     private IAdvertisingNecessaryInfo adInfo = null;
-    private RateUsCoolDown _rateUsCoolDown;
-
-    public RateUsConfiguration RateUsConfiguration
-    {
-        get => _rateUsConfiguration;
-        set => _rateUsConfiguration = value;
-    }
 
     #endregion
 
@@ -64,10 +49,6 @@ public class MetagameRoomUI : MonoBehaviourBase
 
     private void Start()
     {
-        _rateUsCoolDown = GetComponent<RateUsCoolDown>();
-        _rateUsCoolDown.Constructor(this);
-        _rateUsCoolDown.LoadCoolDownData();
-
         metagamePersBubble.OnNewShape += (itemInfo) =>
         {
             Env.Instance.UI.Messages.ShowContentReceive(itemInfo, () => {});
@@ -76,7 +57,19 @@ public class MetagameRoomUI : MonoBehaviourBase
         newShopItemsIconHelper.Refresh();
         UpdateCanPurchaseIcon();
 
-        ShowRateUs();
+        if (((Env.Instance.Rooms.MetagameRoom.Context.GameplayResult == MetagameRoomContext.GameplaySessionResult.Completed) ||
+            (Env.Instance.Rooms.MetagameRoom.Context.GameplayResult == MetagameRoomContext.GameplaySessionResult.CompletedExtraLevel)) 
+            && (Env.Instance.Inventory.CurrentLevelIndex == 2))
+        {
+            // RateUsFeedbackPopupScreen.ShowRatePopupIfCan();
+        }
+        
+                    
+        if (CustomPlayerPrefs.GetBool("FirstLaunch", true))
+        {
+            customSubscriptionPopUp.Show();
+            CustomPlayerPrefs.SetBool("FirstLaunch", false);
+        }
 
         if (UserActivityChecker.Instance.IsCoinsBoxPeriodicRewardAvailable)
         {
@@ -105,43 +98,6 @@ public class MetagameRoomUI : MonoBehaviourBase
         startButton.Init(useCommonStartButton, StartButton_OnClick);
 
         LLApplicationStateRegister.OnApplicationEnteredBackground += LLApplicationStateRegister_OnApplicationEnteredBackground;
-
-        
-#if DEVELOPMENT_BUILD || UNITY_EDITOR
-        _debuggerEnabler = GameObject.Find("MaxDebuggerEnabler").GetComponent<MaxDebuggerEnabler>();
-        _mediationDebuggerButton.gameObject.SetActive(true);
-        _mediationDebuggerButton.onClick.AddListener(_debuggerEnabler.ShowMediationDebugger);
-        _addBucksButton.gameObject.SetActive(true);
-        _addBucksButton.onClick.AddListener(() => Env.Instance.Inventory.AddBucks(5000));
-        #else
-        _mediationDebuggerButton.gameObject.SetActive(false);
-        _addBucksButton.gameObject.SetActive(false);
-#endif
-    }
-
-    private void ShowRateUs()
-    {
-        if (CheckAvailableRateUs() && CheckAvailableCoolDownRateUs())
-        {
-            RateUsFeedbackPopupScreen.ShowRatePopupIfCan();
-            _rateUsCoolDown.ResetCoolDown();
-        }
-    }
-
-    private bool CheckAvailableRateUs()
-    {
-        var gameplayCompleted = Env.Instance.Rooms.MetagameRoom.Context.GameplayResult == MetagameRoomContext.GameplaySessionResult.Completed;
-        var gameplayCompletedExtraLevel = Env.Instance.Rooms.MetagameRoom.Context.GameplayResult == MetagameRoomContext.GameplaySessionResult.CompletedExtraLevel;
-        var currentLevelIsCorrect = Env.Instance.Inventory.CurrentLevelIndex >= RateUsConfiguration.MinLevelToShow;
-        var currentRateUsResult = PlayerPrefs.GetInt("RateUsResult", 0);
-        var result = (gameplayCompleted || gameplayCompletedExtraLevel) && currentLevelIsCorrect && currentRateUsResult != 5;
-
-        return result;
-    }
-
-    private bool CheckAvailableCoolDownRateUs()
-    {
-        return _rateUsCoolDown.CheckShowAvailable();
     }
 
     void OnDestroy()
@@ -204,12 +160,6 @@ public class MetagameRoomUI : MonoBehaviourBase
         noAdsButton.onClick.AddListener(NoAdsButton_OnClick);
         coinsBoxButton.onClick.AddListener(CoinsBoxButton_OnClick);
 
-        IAPsItemsHandler.Instance.NoAds.PurchaseComplete += NoAds_OnPurchased;
-        IAPsItemsHandler.Instance.NoAds.PurchaseRestored += NoAds_OnRestored;
-        
-        IAPsItemsHandler.Instance.WeeklySubscription.PurchaseComplete += WeeklySubscription_OnPurchased;
-        IAPsItemsHandler.Instance.WeeklySubscription.PurchaseRestored += WeeklySubscription_OnRestored;
-
         Env.Instance.Sound.PlayMusic(AudioKeys.Music.MusicMetagame);
 
         UpdateUpgradePrice();
@@ -225,13 +175,6 @@ public class MetagameRoomUI : MonoBehaviourBase
         changeLanguageButton.onClick.RemoveListener(ChangeLanguage_OnClick);
         noAdsButton.onClick.RemoveListener(NoAdsButton_OnClick);
         coinsBoxButton.onClick.RemoveListener(CoinsBoxButton_OnClick);
-        _mediationDebuggerButton.onClick.RemoveAllListeners();
-
-        IAPsItemsHandler.Instance.NoAds.PurchaseComplete -= NoAds_OnPurchased;
-        IAPsItemsHandler.Instance.NoAds.PurchaseRestored -= NoAds_OnRestored;
-
-        IAPsItemsHandler.Instance.WeeklySubscription.PurchaseComplete -= WeeklySubscription_OnPurchased;
-        IAPsItemsHandler.Instance.WeeklySubscription.PurchaseRestored -= WeeklySubscription_OnRestored;
     }
 
     #endregion
@@ -401,7 +344,6 @@ public class MetagameRoomUI : MonoBehaviourBase
             data["item_id"] = itemId.Replace(" ", "_");
             data["reason"] = "soft";
             data["value"] = price;
-            BoGD.MonoBehaviourBase.Analytics.SendEvent("sweetshop_upgrade", data);
         }
     }
 
@@ -450,11 +392,6 @@ public class MetagameRoomUI : MonoBehaviourBase
         noAdsSpinner.Show();
 
         onPurchasedCallbackEvent = OnRestorePurchaseCallback;
-        IAPsItemsHandler.Instance.NoAds.Purchase((purchaseItemResult) =>
-        {
-            onPurchasedCallbackEvent?.Invoke(purchaseItemResult);
-            return true;
-        });
     }
 
     private System.Action<IPurchaseItemResult> onPurchasedCallbackEvent = null;

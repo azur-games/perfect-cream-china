@@ -94,7 +94,7 @@ public class ShopItem : MonoBehaviour
     bool IsPremium => itemInfo != null && Env.Instance.Inventory.IsPremiumItem(itemInfo);
 
 
-    private bool IsSubscriptionActive => Services.AdvertisingManagerSettings.AdvertisingInfo.IsSubscriptionActive;
+    private bool IsSubscriptionActive => true;
 
 
     bool IsNextToOpen
@@ -199,7 +199,7 @@ public class ShopItem : MonoBehaviour
         bool isSelected = CheckItemSelected();
         background.gameObject.SetActive(!IsPremium || isSelected);
         premium.gameObject.SetActive(IsPremium && !isSelected);
-        premiumLock.gameObject.SetActive(IsPremium && !IsSubscriptionActive && !isSelected);
+        // premiumLock.gameObject.SetActive(IsPremium && !IsSubscriptionActive && !isSelected);
         premiumSelected.gameObject.SetActive(IsPremium && isSelected);
 
         button.interactable = IsPremium || (IsSelectable && !IsUnknown);
@@ -339,13 +339,13 @@ public class ShopItem : MonoBehaviour
             {
                 if (isSubscriptionActivated)
                 {
-                    Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.SuccessfulSubscription, (isClaimed) =>
-                    {
-                        if (isClaimed)
-                        {
-                            OnShopItemSelected?.Invoke();
-                        }
-                    });
+                    // Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.SuccessfulSubscription, (isClaimed) =>
+                    // {
+                    //     if (isClaimed)
+                    //     {
+                    //         OnShopItemSelected?.Invoke();
+                    //     }
+                    // });
                 }
             }, placement: "click_vip_item");
         }

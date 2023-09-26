@@ -1,17 +1,17 @@
-﻿using Modules.Advertising;
-using Modules.Analytics;
-using Modules.General.Abstraction;
+﻿using System;
+using TMPro;
 using UnityEngine;
-using BoGD;
+using UnityEngine.UI;
 
 public class WatchVideoBubble : MonoBehaviour
 {
     [SerializeField] private RectTransform ownTransform;
-    [SerializeField] private UnityEngine.UI.Image image;
-    [SerializeField] private UnityEngine.UI.Button button;
-    [SerializeField] private Vector3 positionOffset;
+    [SerializeField] private Image image;
+    [SerializeField] private Button button;
+    [SerializeField] private TextMeshProUGUI _priceText;
+    [SerializeField] private int _price;
 
-    private System.Action onVideoShowed = () => { };
+    private Action onVideoShowed = () => { };
     private string videoRewardName;
 
     public bool IsShowing
@@ -39,11 +39,9 @@ public class WatchVideoBubble : MonoBehaviour
         IsShowing = false;
     }
 
-    public void Show(Vector2 position, Sprite icon, string rewardName, System.Action onVideoShowed)
+    public void Show(Vector2 position, Sprite icon, string rewardName, Action onVideoShowed)
     {
-        var positionX = position.x / Screen.width * image.rectTransform.sizeDelta.x;
-        var positionY = position.y / Screen.height * image.rectTransform.sizeDelta.y;
-        transform.localPosition = new Vector3(positionX, positionY, transform.localPosition.z) + positionOffset;
+        this.transform.localPosition = new Vector3(position.x, position.y, this.transform.localPosition.z);
 
         this.onVideoShowed = onVideoShowed;
         this.videoRewardName = rewardName;
@@ -58,37 +56,47 @@ public class WatchVideoBubble : MonoBehaviour
         button.interactable = true;
 
         IsShowing = true;
+        _priceText.text = _price.ToString();
     }
 
     private void OnOwnButtonClick()
     {
-        button.interactable = false;
-        IsShowing = false;
-        Env.Instance.Sound.StopMusic();
-
-        AdvertisingManager.Instance.TryShowAdByModule(AdModule.RewardedVideo, "meta_pers_bubble", 
-            (resultType) =>
+        if (Env.Instance.Inventory.Bucks >= _price)
         {
-            button.interactable = true;
-            Env.Instance.Sound.PlayMusic(AudioKeys.Music.MusicMetagame);
+            Env.Instance.Inventory.TrySpendBucks(_price);
+            Action onVideoShowed_cached = onVideoShowed;
+            onVideoShowed = () => { };
+            onVideoShowed_cached?.Invoke();
+            
+            IsShowing = false;
+        }
+        // button.interactable = false;
+        // IsShowing = false;
+        // Env.Instance.Sound.StopMusic();
 
-            switch (resultType)
-            {
-                case AdActionResultType.Success:
-                    System.Action onVideoShowed_cached = onVideoShowed;
-                    onVideoShowed = () => { };
-                    onVideoShowed_cached?.Invoke();
-
-                    break;
-
-                default:
-                    Env.Instance.UI.Messages.ShowInfoBox("label_no_video".Translate(), () =>
-                    {
-                        IsShowing = true;
-                        button.interactable = true;
-                    });
-                    break;
-            }
-        });
+        // AdvertisingManager.Instance.TryShowAdByModule(AdModule.RewardedVideo, "meta_pers_bubble", 
+        //     (resultType) =>
+        // {
+        //     button.interactable = true;
+        //     Env.Instance.Sound.PlayMusic(AudioKeys.Music.MusicMetagame);
+        //
+        //     switch (resultType)
+        //     {
+        //         case AdActionResultType.Success:
+        //             System.Action onVideoShowed_cached = onVideoShowed;
+        //             onVideoShowed = () => { };
+        //             onVideoShowed_cached?.Invoke();
+        //
+        //             break;
+        //
+        //         default:
+        //             Env.Instance.UI.Messages.ShowInfoBox("label_no_video".Translate(), () =>
+        //             {
+        //                 IsShowing = true;
+        //                 button.interactable = true;
+        //             });
+        //             break;
+        //     }
+        // });
     }
 }

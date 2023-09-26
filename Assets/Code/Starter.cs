@@ -1,7 +1,4 @@
 ﻿using Modules.Advertising;
-using Modules.Analytics;
-using Modules.AppsFlyer;
-using Modules.Firebase;
 using Modules.General;
 using Modules.General.Abstraction;
 using Modules.General.Abstraction.InAppPurchase;
@@ -12,11 +9,8 @@ using Modules.General.ServicesInitialization;
 using Modules.HmsPlugin.Advertising;
 #endif
 using Modules.InAppPurchase;
-using Modules.Max;
 using UnityEngine;
 using System.Collections;
-using Amazon.Scripts;
-using Code;
 
 public class Starter : MonoBehaviour
 {
@@ -27,7 +21,6 @@ public class Starter : MonoBehaviour
     [SerializeField] private PopupManager   popupManagerPrefab = default;
     [SerializeField] private BalanceData    balanceData;
     private bool isFirstStart = false;
-    private GlobalConfig _globalConfig;
 
     private readonly RemoteAvailabilityAbTestData remoteAvailabilityAbTestData = new RemoteAvailabilityAbTestData();
     
@@ -66,16 +59,14 @@ public class Starter : MonoBehaviour
             QualitySettings.SetQualityLevel(0);
         }
 
-        CreateGameTimer();
-        
         if (Env.Instance == null)
         {
             Env.SendTechnical(1, "starter_awake_begin");
             isFirstStart = !CustomPlayerPrefs.HasKey("inventory");
             Env.SendTechnical(2, "loader_screen_show");
             loaderScreen.Show();
-            _globalConfig = GlobalConfig.LoadSelf();
-            Env.Create(_globalConfig);
+            GlobalConfig globalConfig = GlobalConfig.LoadSelf();
+            Env.Create(globalConfig);
             Env.SendTechnical(3, "env_created");
             if (isFirstStart)
             {
@@ -90,12 +81,6 @@ public class Starter : MonoBehaviour
             loaderScreen.Hide();
             Env.Instance.SceneManager.OnMainSceneLoaded(this);
         }
-
-#if DEVELOPMENT_BUILD || UNITY_EDITOR
-        var go = new GameObject("MaxDebuggerEnabler");
-        DontDestroyOnLoad(go);
-        go.AddComponent<MaxDebuggerEnabler>();
-#endif  
     }
 
     #endregion
@@ -106,14 +91,6 @@ public class Starter : MonoBehaviour
 
     private void Initialize()
     {
-        AnalyticsManagerSettings analyticsSettings = new AnalyticsManagerSettings
-        {
-            Services = new IAnalyticsService[]
-            {
-                new AppsFlyerAnalyticsServiceImplementor(LLAppsFlyerSettings.Instance),
-                new FirebaseAnalyticsServiceImplementor(LLFirebaseSettings.Instance)
-            }
-        };
         AdvertisingManagerSettings advertisingSettings = new AdvertisingManagerSettings
         {
             AdServices = new IAdvertisingService[]
@@ -121,7 +98,6 @@ public class Starter : MonoBehaviour
                 #if !UNITY_EDITOR && HIVE_HUAWEI
                 new HuaweiAdvertisingServiceImplementor(huaweiAdsKitAbTestData),
                 #endif
-                new MaxAdvertisingServiceImplementor(),
                 new EditorAdvertisingServiceImplementor(AdvertisingEditorSettings.Instance)
             },
 
@@ -129,17 +105,9 @@ public class Starter : MonoBehaviour
 
             AbTestData = new IAdvertisingAbTestData[] { new AdvertisingAbTestData()}
         };
-
-        IPurchaseAnalyticsParameters purchaseAnalyticsParameters = new PurchaseAnalyticsParametersImplementor();
-        purchaseAnalyticsParameters.SetParameter(
-            "placement",
-            () => DataStateService.Instance.Get("placement", SubscriptionPurchasePlacement.Default));
-        Services.CreateServiceSingleton<IPurchaseAnalyticsParameters, PurchaseAnalyticsParametersImplementor>(purchaseAnalyticsParameters);
-        Services.CreateServiceSingleton<IAnalyticsManagerSettings, AnalyticsManagerSettings>(analyticsSettings);
-        Services.CreateServiceSingleton<IAdvertisingManagerSettings, AdvertisingManagerSettings>(advertisingSettings);
         
-        var amazonService = new AmazonServiceImplementor();
-        amazonService.Initialize();
+        // Services.CreateServiceSingleton<IPurchaseAnalyticsParameters, PurchaseAnalyticsParametersImplementor>(purchaseAnalyticsParameters);
+        Services.CreateServiceSingleton<IAdvertisingManagerSettings, AdvertisingManagerSettings>(advertisingSettings);
 
         if (InitializationQueueConfiguration.DoesInstanceExist)
         {
@@ -150,7 +118,6 @@ public class Starter : MonoBehaviour
         }
 
         starterCamera.enabled = true;
-        SendTechData();
     }
 
 
@@ -160,35 +127,7 @@ public class Starter : MonoBehaviour
 
         Env.Instance.ContinueLoading();
         loaderScreen.Hide();
-        CreateGadsmeService();
         Destroy(gameObject);
-    }
-
-    private void CreateGadsmeService()
-    {
-        var gadsmeService = Instantiate(_globalConfig.GadsmeServiceGameObject).GetComponent<GadsmeService>();
-        gadsmeService.InitializeInstance();
-        gadsmeService.InitializeService();
-    }
-    
-    private void SendTechData()
-    {
-        if (CustomPlayerPrefs.GetBool("CustomFirstLaunch", true))
-        {
-            BoGD.MonoBehaviourBase.Analytics.SendTechData();
-            CustomPlayerPrefs.SetBool("CustomFirstLaunch", false);
-            CustomPlayerPrefs.Save();
-        }
-    }
-
-    private void CreateGameTimer()
-    {
-        var gameTimerGameObject = new GameObject
-        {
-            name = "GameTimer"
-        };
-        
-        gameTimerGameObject.AddComponent<GameTimer>();
     }
 
 
@@ -207,7 +146,6 @@ public class Starter : MonoBehaviour
             !storeManager.HasAnyActiveSubscription)
         {
             Env.Instance.Sound.PlayMusic(AudioKeys.Music.MusicMetagame);
-            // Env.Instance.Sound.StopMusic();
 
             Env.Instance.UI.Messages.ShowSubscriptionPopup(
                 balanceData.isSubscriptionExtended
@@ -230,7 +168,7 @@ public class Starter : MonoBehaviour
 
             if (isSubscriptionActivated)
             {
-                Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.SuccessfulSubscription);
+                // Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.SuccessfulSubscription);
             }
             
             PopupManager.Instance.IsStartSubscriptionShown = true;
@@ -245,15 +183,15 @@ public class Starter : MonoBehaviour
 
     private void Initialization_OnInitialized()
     {
-        advertisingNecessaryInfo.InitListeners();
-        advertisingNecessaryInfo.OnPersonalDataDeletingDetect += AdvertisingNecessaryInfo_OnPersonalDataDeletingDetect;
+        // advertisingNecessaryInfo.InitListeners();
+        // advertisingNecessaryInfo.OnPersonalDataDeletingDetect += AdvertisingNecessaryInfo_OnPersonalDataDeletingDetect;
 
         Env.Instance.PostInitialize();
-        
-        Services.AdvertisingManager.CreateInactivityTimer(() => 
-            !Services.AdvertisingManager.IsFullScreenAdShowing);
-
-        TryShowSubscriptionPopups();
+        //
+        // Services.AdvertisingManager.CreateInactivityTimer(() => 
+        //     !Services.AdvertisingManager.IsFullScreenAdShowing);
+        //
+        // TryShowSubscriptionPopups();
         
 
         LoadGame();

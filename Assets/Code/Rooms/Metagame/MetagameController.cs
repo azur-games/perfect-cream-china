@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Code;
-using Gadsme;
 using UnityEngine;
 
 public class MetagameController : MonoBehaviour
@@ -14,8 +12,6 @@ public class MetagameController : MonoBehaviour
 
     [SerializeField] private PersCharacter Pers;
     [SerializeField] private PersCharacter Barman;
-    [SerializeField] private GadsmePlacementVideo _metagamePlacementVideo;
-    [SerializeField] private GadsmePlacementBanner _metagamePlacementBanner;
 
     #region Unity lifecycle
 
@@ -38,8 +34,6 @@ public class MetagameController : MonoBehaviour
         roomConstructor.Construct();
 
         UpdateChar();
-        GadsmeService.Instance.OnGamePhaseChange(camera);
-        GadsmeService.Instance.PlacementVideos.Add(_metagamePlacementVideo);
     }
 
     public MetagameRoomConstructor GetRoomConstructor()

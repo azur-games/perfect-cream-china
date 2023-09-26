@@ -78,46 +78,6 @@ public class PopupManager : SingletonMonoBehaviour<PopupManager>
     public void TryShowSubscriptionReward(string rewardDescription, Action<SubscriptionRewardResult> claimCallback,
         Transform newHandler = null)
     {
-        if (newHandler != null)
-        {
-            if (rewardSubscriptionPopupPrefab == null)
-            {
-                CustomDebug.LogError("rewardSubscriptionPopupPrefab is null!");
-                claimCallback?.Invoke(SubscriptionRewardResult.RewardNotAvailable);
-            }
-            else if (SubscriptionManager.Instance.IsRewardPopupAvailable)
-            {
-                rewardPopup = Instantiate(rewardSubscriptionPopupPrefab, newHandler);
-                Env.Instance.SendPopup("subscription_reward", "reward", "show");
-                rewardPopup.Show(rewardDescription, popupResult =>
-                {
-                    if (rewardPopup != null)
-                    {
-                        SubscriptionRewardResult result = popupResult ?
-                            SubscriptionRewardResult.Claimed :
-                            SubscriptionRewardResult.Skipped;
-                        claimCallback?.Invoke(result);
-                        Destroy(rewardPopup.gameObject);
-                        rewardPopup = null;
-                        if (popupResult)
-                        {
-                            SubscriptionManager.Instance.ClaimReward();
-
-                            Env.Instance.SendPopup("subscription_reward", "reward", "claim");
-                        }
-                    }
-                });
-            }
-            else
-            {
-                claimCallback?.Invoke(SubscriptionRewardResult.RewardNotAvailable);
-            }
-        }
-        else
-        {
-            CustomDebug.LogError("You should call Initialize method before trying to show RewardPopup!");
-            claimCallback?.Invoke(SubscriptionRewardResult.RewardNotAvailable);
-        }
     }
 
 

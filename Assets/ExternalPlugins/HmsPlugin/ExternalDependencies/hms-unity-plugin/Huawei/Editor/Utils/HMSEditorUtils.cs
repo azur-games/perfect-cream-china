@@ -15,13 +15,13 @@ namespace HmsPlugin
         public static void HandleAssemblyDefinitions(bool enable)
         {
             string huaweiMobileServicesCorePath = HuaweiMobileServicesPluginHierarchy.Instance.CoreAsmdefPath;
-            var huaweiMobileServicesCore = JsonUtility.FromJson<AssemblyDefinitionInfo>(File.ReadAllText(huaweiMobileServicesCorePath));
+            // var huaweiMobileServicesCore = JsonUtility.FromJson<AssemblyDefinitionInfo>(File.ReadAllText(huaweiMobileServicesCorePath));
 
-            if (huaweiMobileServicesCore != null)
-            {
-                huaweiMobileServicesCore.includePlatforms = enable ? new List<string> { "Editor", "Android" } : new List<string> { "Editor" };
-                File.WriteAllText(huaweiMobileServicesCorePath, JsonUtility.ToJson(huaweiMobileServicesCore, true));
-            }
+            // if (huaweiMobileServicesCore != null)
+            // {
+            //     huaweiMobileServicesCore.includePlatforms = enable ? new List<string> { "Editor", "Android" } : new List<string> { "Editor" };
+            //     File.WriteAllText(huaweiMobileServicesCorePath, JsonUtility.ToJson(huaweiMobileServicesCore, true));
+            // }
             AssetDatabase.Refresh();
         }
 

@@ -10578,8 +10578,6 @@ MonoBehaviour:
     type: 3}
   Speed: 0.8
   Shapes: []
-  _gadsmeConfiguration: {fileID: 11400000, guid: d3ce5e57102d2e64fb8a3c903f22772e,
-    type: 2}
 --- !u!1 &2702946745590952135
 GameObject:
   m_ObjectHideFlags: 0

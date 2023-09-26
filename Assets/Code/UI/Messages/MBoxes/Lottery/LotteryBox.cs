@@ -1,7 +1,4 @@
-﻿using Modules.Advertising;
-using Modules.Analytics;
-using Modules.General.Abstraction;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using Modules.General;
@@ -28,9 +25,13 @@ public sealed class LotteryBox: UIMessageBox
     private static readonly int MaterialMainColorProperty = Shader.PropertyToID("_MainColor");
     
     [Header("Cards and video button")]
-    [SerializeField] VideoButton videoButton;
-    [SerializeField] List<Card> cards;
+    [SerializeField] Button videoButton;
 
+    [SerializeField] private GameObject _videoButtonLock;
+    [SerializeField] private TextMeshProUGUI _addCardPriceText;
+    [SerializeField] List<Card> cards;
+    [SerializeField] private int _addCardPrice;
+    
     [Space]
     [Header("Continue Button")]
     [SerializeField] Button continueButton;
@@ -70,11 +71,11 @@ public sealed class LotteryBox: UIMessageBox
         this.prizes = prizes;
         this.context = context;
         this.onFinished = onFinished;
-        
+        _addCardPriceText.text = _addCardPrice.ToString();
         attemptsCount = BalanceDataProvider.Instance.LotteryCountCardsAtStart;
         
         continueButton.onClick.AddListener(ContinueButton_OnClick);
-        videoButton.Init(AdModule.RewardedVideo, "lottery", VideoButton_OnClick);
+        videoButton.onClick.AddListener(VideoButton_OnClick);
 
         // Fill prizes
         while (prizesPositions.Count < prizes.Count)
@@ -98,7 +99,7 @@ public sealed class LotteryBox: UIMessageBox
                 continue;
             }
 
-            var amount = Random.Range(2, 10) * BalanceDataProvider.Instance.CoinsMultiplierInLottery;
+            var amount = Random.Range(2, 20) * BalanceDataProvider.Instance.CoinsMultiplierInLottery;
             SetCoinsCard(placeIndex, amount);
             coinPrizes.Add(amount);
         }
@@ -133,6 +134,13 @@ public sealed class LotteryBox: UIMessageBox
         Rect rect = rectTransform.rect;
         rectTransform.sizeDelta = new Vector2(rect.width,
             rect.width * bestPrize.Icon.rect.height / bestPrize.Icon.rect.width);
+        
+        CheckBuyButtonAvailable();
+    }
+    
+    private void CheckBuyButtonAvailable()
+    {
+        _videoButtonLock.SetActive(Env.Instance.Inventory.Bucks < _addCardPrice);
     }
 
 
@@ -250,6 +258,7 @@ public sealed class LotteryBox: UIMessageBox
                 
                 
                 Env.Instance.Inventory.AddBucks(reward, card.transform, category: "reward", itemId: "lottery");
+                CheckBuyButtonAvailable();
             };
         }
 
@@ -262,7 +271,6 @@ public sealed class LotteryBox: UIMessageBox
         data["lootbox_id"] = "lottery";
         data["lootbox_count"] = cardCount;
         data["reward"] = prizeName.ToLower().Replace(' ', '_');
-        BoGD.MonoBehaviourBase.Analytics.SendEvent("open_lootbox", data);
 
         if (attemptsCount >= 1 && openedCards < cards.Count)
         {
@@ -283,7 +291,7 @@ public sealed class LotteryBox: UIMessageBox
             wasLastAttempt = false;
             continueLabel.text = "label_no_thanks".Translate();
             continueImage.color = Color.clear;
-            videoButton.Reset();
+            // videoButton.Reset();
             return;
         }
 
@@ -340,34 +348,27 @@ public sealed class LotteryBox: UIMessageBox
 
     private void VideoButton_OnClick()
     {
-        Scheduler.Instance.UnscheduleMethod(this, ShowNoThanksButton);
-        
-        AdvertisingManager.Instance.TryShowAdByModule(AdModule.RewardedVideo, "lottery", result =>
+        if (Env.Instance.Inventory.Bucks >= _addCardPrice)
         {
-            switch (result)
+            Env.Instance.Inventory.TrySpendBucks(_addCardPrice);
+            
+            Scheduler.Instance.UnscheduleMethod(this, ShowNoThanksButton);
+        
+            animator.SetBool(AnimationIdle, true);
+            hasSeenAds = true;
+            isInteractionsEnabled = true;
+            videoButton.gameObject.SetActive(false);
+            continueButton.gameObject.SetActive(false);
+                    
+            attemptsCount = BalanceDataProvider.Instance.LotteryCountCardsPerAdShow;
+                    
+            foreach (var card in cards)
             {
-                case AdActionResultType.Success:
-                    animator.SetBool(AnimationIdle, true);
-                    hasSeenAds = true;
-                    isInteractionsEnabled = true;
-                    videoButton.gameObject.SetActive(false);
-                    continueButton.gameObject.SetActive(false);
-                    
-                    attemptsCount = BalanceDataProvider.Instance.LotteryCountCardsPerAdShow;
-                    
-                    foreach (var card in cards)
-                    {
-                        card.BackRenderer.material.SetColor(MaterialMainColorProperty, activeColor);
-                    }
-                    break;
-
-                case AdActionResultType.NoInternet:
-                    Env.Instance.UI.Messages.ShowInfoBox("label_no_video".Translate(), () => {});
-                    break;
+                card.BackRenderer.material.SetColor(MaterialMainColorProperty, activeColor);
             }
-
-            videoButton.Reset();
-        });
+        }
+        CheckBuyButtonAvailable();
+        // videoButton.Reset();
     }
     
     

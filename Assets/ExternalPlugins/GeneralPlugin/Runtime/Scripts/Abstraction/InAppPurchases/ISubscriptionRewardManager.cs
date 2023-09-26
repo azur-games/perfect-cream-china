@@ -3,9 +3,5 @@
     public interface ISubscriptionRewardManager
     { 
         bool IsRewardPopupAvailable { get; }
-        
-        int SubscriptionDaysForReward { get; }
-
-        void ClaimReward();
     }
 }

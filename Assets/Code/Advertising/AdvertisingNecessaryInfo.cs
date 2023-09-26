@@ -22,12 +22,11 @@ public class AdvertisingNecessaryInfo : IAdvertisingNecessaryInfo
 
     #region Properties
 
-    public bool IsSubscriptionActive => storeManager.HasAnyActiveSubscription;
+    public bool IsSubscriptionActive => true;
 
-    public bool IsNoAdsActive => IAPsItemsHandler.Instance.NoAds.IsPurchased ||
-                                 IAPsItemsHandler.Instance.IsNoAdsCheatActive;
+    public bool IsNoAdsActive => false;
 
-    public bool IsPersonalDataDeleted => Services.GetService<IPrivacyManager>().WasPersonalDataDeleted;
+    public bool IsPersonalDataDeleted => false;
 
     public int CurrentPlayerLevel => Env.Instance.Inventory.CurrentLevelIndex + 1;
 

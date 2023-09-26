@@ -127,7 +127,7 @@ namespace Modules.General.Editor.EmptyDirectoriesCleaner
             {
                 foreach (DirectoryInfo dirInfo in emptyDirectories)
                 {
-                    FolderContent.text = UnityPath.GetAssetPathFromFullPath(dirInfo.FullName);
+                    // FolderContent.text = UnityPath.GetAssetPathFromFullPath(dirInfo.FullName);
 
                     GUILayout.Label(FolderContent, GUILayout.Height(DirectoryLabelHeight));
                 }
@@ -140,7 +140,7 @@ namespace Modules.General.Editor.EmptyDirectoriesCleaner
         {
             foreach (DirectoryInfo directoryInfo in emptyDirectories)
             {
-                FileSystemUtilities.DeleteEntryAndEmptyParentsDirectories(directoryInfo.FullName);
+                // FileSystemUtilities.DeleteEntryAndEmptyParentsDirectories(directoryInfo.FullName);
             }
 
             emptyDirectories = null;
@@ -151,9 +151,10 @@ namespace Modules.General.Editor.EmptyDirectoriesCleaner
 
         private static void FillEmptyDirectories(out List<DirectoryInfo> emptyDirectories)
         {
-            emptyDirectories = FileSystemUtilities.EnumerateDirectories()
-                .Where(directoryInfo => IsEmptyDirectory(directoryInfo))
-                .ToList();
+            // emptyDirectories = FileSystemUtilities.EnumerateDirectories()
+            //     .Where(directoryInfo => IsEmptyDirectory(directoryInfo))
+            //     .ToList();
+            emptyDirectories = null;
         }
 
 

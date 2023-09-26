@@ -26,13 +26,6 @@ namespace Modules.Advertising
             foreach (AdvertisingServiceInfo<BannerModuleImplementor> advertisingServiceInfo in advertisingServiceInfos)
             {
                 result = advertisingServiceInfo.controlledElement.IsBannerAvailable;
-                
-                analyticsTracker.SendAdAvailabilityCheck(
-                        advertisingServiceInfo.advertisingService,
-                        advertisingServiceInfo.controlledElement.AdModule,
-                        result,
-                        placementName,
-                        string.Empty);
 
                 if (result)
                 {

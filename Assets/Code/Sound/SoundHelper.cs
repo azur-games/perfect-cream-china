@@ -21,18 +21,12 @@ public class SoundHelper
             bool needSave = (isSoundEnabled != value);
             isSoundEnabled = value;
 
-            // if (!IsSoundEnabled)
-            //     StopMusic();
+            if (!IsSoundEnabled)
+                StopMusic();
 
             if (needSave)
                 CustomPlayerPrefs.SetBool("sound", value);
         }
-    }
-    
-    public bool isMusicEnabled 
-    { 
-        get => CustomPlayerPrefs.GetBool("MusicButtonState", true); 
-        set => CustomPlayerPrefs.SetBool("MusicButtonState", value); 
     }
 
     private Guid? currentlyPlayingMusic = null;
@@ -43,7 +37,6 @@ public class SoundHelper
         GameObject.DontDestroyOnLoad(soundManagerInstance.gameObject);
 
         IsSoundEnabled = CustomPlayerPrefs.GetBool("sound", true);
-        // isMusicEnabled = CustomPlayerPrefs.GetBool("MusicButtonState", true);
 
         AdvertisingManager.Instance.OnAdShow += AdvertisingManager_OnAdShow;
         AdvertisingManager.Instance.OnAdHide += AdvertisingManager_OnAdHide;
@@ -77,7 +70,7 @@ public class SoundHelper
 
     public void PlayMusic(string musicId)
     {
-        if (!isMusicEnabled) return;
+        if (!IsSoundEnabled) return;
         currentlyPlayingMusic = SoundManager.Instance.PlayMusic(musicId);
     }
 

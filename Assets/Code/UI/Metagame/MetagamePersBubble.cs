@@ -1,5 +1,4 @@
 ﻿using AbTest;
-using Modules.Networking;
 using Modules.Advertising;
 using Modules.General.Abstraction;
 using System;
@@ -30,8 +29,7 @@ public class MetagamePersBubble : MonoBehaviour
         if ((Time.realtimeSinceStartup - startTime) < TIMEDELAY_BEFORE_POPUP) return;
         if (null == Env.Instance.Rooms.MetagameRoom.Controller) return;
 
-        bool videoAvailable = AdvertisingManager.Instance.IsAdModuleByPlacementAvailable(AdModule.RewardedVideo, "meta_pers_bubble");
-        if (ReachabilityHandler.Instance.NetworkStatus == NetworkStatus.NotReachable) videoAvailable = false;
+        bool videoAvailable = true;
         if (persBubble.IsShowing)
         {
             if (!videoAvailable)
@@ -67,7 +65,7 @@ public class MetagamePersBubble : MonoBehaviour
         if (!bubblePivotPoint.HasValue) return;
 
         MetagameRoomUI metagameUI = gameObject.GetComponentInParent<MetagameRoomUI>();
-        Vector3 bubblePoint = metagameUI.UICamera.ViewportToScreenPoint(new Vector3(bubblePivotPoint.Value.x, bubblePivotPoint.Value.y, bubblePivotPoint.Value.z));
+        Vector3 bubblePoint = metagameUI.UICamera.ViewportToScreenPoint(new Vector3(bubblePivotPoint.Value.x - 0.5f, bubblePivotPoint.Value.y - 0.5f, bubblePivotPoint.Value.z));
 
         ContentItemIconRef currentItemIconRef = Env.Instance.Content.LoadContentItemIconRef(contentElement.Info.AssetType, contentElement.Info.Name);
 

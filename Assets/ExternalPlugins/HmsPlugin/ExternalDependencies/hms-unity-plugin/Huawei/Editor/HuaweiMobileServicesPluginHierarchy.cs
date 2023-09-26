@@ -2,7 +2,7 @@ using Modules.Hive.Editor;
 
 namespace Modules.HmsPlugin.Editor
 {
-    public class HuaweiMobileServicesPluginHierarchy : PluginHierarchy
+    public class HuaweiMobileServicesPluginHierarchy
     {
         #region Fields
 
@@ -18,10 +18,10 @@ namespace Modules.HmsPlugin.Editor
             instance ?? (instance = new HuaweiMobileServicesPluginHierarchy("HuaweiMobileServices.Editor"));
         
         
-        public string CoreAsmdefPath => UnityPath.Combine(RootAssetPath, "HuaweiMobileServices.Core.asmdef");
+        public string CoreAsmdefPath => "";
         
         
-        public string VersionPath => UnityPath.Combine(RootAssetPath, "VERSION");
+        public string VersionPath => "";
 
         #endregion
 
@@ -29,7 +29,7 @@ namespace Modules.HmsPlugin.Editor
 
         #region Class lifecycle
 
-        public HuaweiMobileServicesPluginHierarchy(string mainAssemblyName) : base(mainAssemblyName) { }
+        public HuaweiMobileServicesPluginHierarchy(string mainAssemblyName) : base() { }
 
         #endregion
 
@@ -37,7 +37,7 @@ namespace Modules.HmsPlugin.Editor
 
         #region Methods
 
-        public string GetPathWithRoot(string pathInRoot) => UnityPath.Combine(RootAssetPath, pathInRoot);
+        public string GetPathWithRoot(string pathInRoot) => "";
 
         #endregion
     }

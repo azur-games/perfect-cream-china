@@ -1,6 +1,5 @@
 ﻿using Modules.General.Abstraction;
 using Modules.General.ServicesInitialization;
-using Modules.Networking;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -25,7 +24,6 @@ namespace Modules.Advertising
         protected AdAvailabilityParametersLib availabilityParametersLib;
         protected AdPlacementsController adPlacementsController;
         
-        internal readonly AdAnalyticsTracker analyticsTracker;
         internal readonly CrossPromoController crossPromoController;
         internal readonly BannerController bannerController;
         private readonly InterstitialController interstitialController;
@@ -82,7 +80,6 @@ namespace Modules.Advertising
         protected BaseAdvertisingManager()
         {
             availableAdvertisingServices = new Dictionary<Type, IAdvertisingService>();
-            analyticsTracker = new AdAnalyticsTracker();
             availabilityParametersLib = new AdAvailabilityParametersLib();
             adPlacementsController = new AdPlacementsController();
             
@@ -143,11 +140,6 @@ namespace Modules.Advertising
             IAdvertisingService[] supportedAdServices = 
                 adServices.Where(service => service.IsSupportedByCurrentPlatform).ToArray();
 
-            interstitialController.Initialize(supportedAdServices, analyticsTracker);
-            bannerController.Initialize(supportedAdServices, analyticsTracker);
-            rewardedVideoController.Initialize(supportedAdServices, analyticsTracker);
-            crossPromoController.Initialize(supportedAdServices, analyticsTracker);
-            
             FillPreDefinedAvailabilityParameters();
             FillCustomAdAvailabilityParameters(adAvailabilityParameters);
             FillPreDefinedPlacements();
@@ -219,15 +211,6 @@ namespace Modules.Advertising
 
             if (IsAdModuleByPlacementAvailable(module, adShowingPlacement))
 			{
-                if (ReachabilityHandler.Instance.NetworkStatus != NetworkStatus.NotReachable)
-                {
-                    ShowAdByModule(module, adShowingPlacement, callback);
-                }
-				else
-				{
-                    TrySendVideoAdsAvailableNoInternet(module, adShowingPlacement);
-                    callback?.Invoke(AdActionResultType.NoInternet);
-                }
             }
 			else
 			{
@@ -544,8 +527,7 @@ namespace Modules.Advertising
             string errorDescription, 
             string adIdentifier, 
             string advertisingPlacement, 
-            string result,
-            Dictionary<string, object> data = null)
+            string result)
         {
             switch (adModule)
             {
@@ -581,8 +563,7 @@ namespace Modules.Advertising
             int delay,
             string errorDescription,
             string adIdentifier,
-            string advertisingPlacement,
-            Dictionary<string, object> data = null)
+            string advertisingPlacement)
         {
             OnAdStarted?.Invoke(adModule, responseResultType);
         }

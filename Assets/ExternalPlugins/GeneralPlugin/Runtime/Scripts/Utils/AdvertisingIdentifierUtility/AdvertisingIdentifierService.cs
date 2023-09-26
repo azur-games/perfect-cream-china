@@ -58,8 +58,6 @@ namespace Modules.General.Utilities
                 // Unity method doesn't support Amazon platform, but idfa can be retrieved using native code
                 if (PlatformInfo.AndroidTarget == AndroidTarget.Amazon)
                 {
-                    string id = LLAndroidJavaSingletone<Utilities>.CallStatic<string>(GetAmazonAdvertisingIdMethodName);
-                    invokeCallbackAction(id);
                 }
                 else if (PlatformInfo.AndroidTarget == AndroidTarget.Huawei)
                 {

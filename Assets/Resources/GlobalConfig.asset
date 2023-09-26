@@ -22,5 +22,3 @@ MonoBehaviour:
   srDebuggerEnabled: 1
   soundManager: {fileID: 7648678384110336991, guid: 564a3601c7ce9459d927f928d096806e,
     type: 3}
-  _gadsmeServiceGameObject: {fileID: 8108150405418800261, guid: 899ef1f0684860f48884e8a0c9283f46,
-    type: 3}

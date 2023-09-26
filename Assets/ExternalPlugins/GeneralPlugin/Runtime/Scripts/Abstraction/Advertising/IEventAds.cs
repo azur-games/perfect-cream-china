@@ -1,6 +1,5 @@
 ﻿using Modules.General.Abstraction;
 using System;
-using System.Collections.Generic;
 
 
 namespace Modules.Advertising
@@ -14,9 +13,9 @@ namespace Modules.Advertising
         event Action<IAdvertisingService, AdModule, int, AdActionResultType, string, string> OnAdRespond;
 
         event Action<IAdvertisingService, AdModule, AdActionResultType, int, string, string> OnAdShow;
-        event Action<IAdvertisingService, AdModule, AdActionResultType, int, string, string, Dictionary<string, object>> OnAdStarted;
+        event Action<IAdvertisingService, AdModule, AdActionResultType, int, string, string> OnAdStarted;
 
-        event Action<IAdvertisingService, AdModule, AdActionResultType, string, string, string, string, Dictionary<string, object>> OnAdHide;
+        event Action<IAdvertisingService, AdModule, AdActionResultType, string, string, string, string> OnAdHide;
         event Action<IAdvertisingService, AdModule, string> OnAdClick;
         event Action<IAdvertisingService, AdModule, int, string> OnAdExpire;
 
@@ -54,9 +53,7 @@ namespace Modules.Advertising
             AdActionResultType responseResultType, 
             string errorDescription, 
             string adIdentifier,
-            string adPlacement, 
-            string result,
-            Dictionary<string, object> data = null);
+            string adPlacement, string result);
         
         
         void Invoke_OnAdClick(

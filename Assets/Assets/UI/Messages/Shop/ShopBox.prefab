@@ -337,8 +337,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CREME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dcc1d2d43c6bb4466941c4429a33db53, type: 2}
-  m_sharedMaterial: {fileID: 21091624310935700, guid: dcc1d2d43c6bb4466941c4429a33db53,
+  m_fontAsset: {fileID: 11400000, guid: 36719ddf67a15c9469e822e1bee67055, type: 2}
+  m_sharedMaterial: {fileID: -7220287961139580791, guid: 36719ddf67a15c9469e822e1bee67055,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3368,7 +3368,7 @@ PrefabInstance:
     - target: {fileID: 5396511252458238026, guid: d27f10c5f421f7642adf38aec2c5c54c,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5396511252458238026, guid: d27f10c5f421f7642adf38aec2c5c54c,
         type: 3}
@@ -3378,7 +3378,7 @@ PrefabInstance:
     - target: {fileID: 5396511252458238026, guid: d27f10c5f421f7642adf38aec2c5c54c,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5396511252458238026, guid: d27f10c5f421f7642adf38aec2c5c54c,
         type: 3}
@@ -3428,12 +3428,12 @@ PrefabInstance:
     - target: {fileID: 5396511252458238026, guid: d27f10c5f421f7642adf38aec2c5c54c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 978.2567
       objectReference: {fileID: 0}
     - target: {fileID: 5396511252458238026, guid: d27f10c5f421f7642adf38aec2c5c54c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -128.28
       objectReference: {fileID: 0}
     - target: {fileID: 5396511252458238026, guid: d27f10c5f421f7642adf38aec2c5c54c,
         type: 3}
@@ -3454,6 +3454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VideoButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983843712150974411, guid: d27f10c5f421f7642adf38aec2c5c54c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7171515575084268489, guid: d27f10c5f421f7642adf38aec2c5c54c,
         type: 3}
@@ -3602,8 +3607,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: +150
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dcc1d2d43c6bb4466941c4429a33db53, type: 2}
-  m_sharedMaterial: {fileID: 21091624310935700, guid: dcc1d2d43c6bb4466941c4429a33db53,
+  m_fontAsset: {fileID: 11400000, guid: 36719ddf67a15c9469e822e1bee67055, type: 2}
+  m_sharedMaterial: {fileID: -7220287961139580791, guid: 36719ddf67a15c9469e822e1bee67055,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

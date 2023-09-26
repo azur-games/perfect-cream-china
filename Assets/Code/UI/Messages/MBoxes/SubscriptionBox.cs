@@ -57,7 +57,6 @@ public class SubscriptionBox : UIMessageBox
                 data["subscription_id"] = "vip";
                 data["placement"] = placement;
                 data["action"] = "show";
-                BoGD.MonoBehaviourBase.Analytics.SendEvent("subscription", data);
 
                 PopupManager.Instance.ShowSubscription((result) =>
                 {
@@ -72,7 +71,6 @@ public class SubscriptionBox : UIMessageBox
                             data["subscription_id"] = "vip";
                             data["placement"] = placement;
                             data["action"] = "buy";
-                            BoGD.MonoBehaviourBase.Analytics.SendEvent("subscription", data);
                         }
                     }
                     else
@@ -83,7 +81,6 @@ public class SubscriptionBox : UIMessageBox
                         data["subscription_id"] = "vip";
                         data["placement"] = placement;
                         data["action"] = "close";
-                        BoGD.MonoBehaviourBase.Analytics.SendEvent("subscription", data);
                     }
                 }, isStartSubscription, contentRoot, placement);
                 break;
@@ -105,19 +102,6 @@ public class SubscriptionBox : UIMessageBox
                 break;
 
             case SubscriptionBoxType.Reward:
-                int rewardAmount = BalanceDataProvider.Instance.SubscriptionCoinsReward;
-                PopupManager.Instance.TryShowSubscriptionReward(rewardAmount.ToString(), (subscriptionRewardResult) =>
-                {
-                    if (subscriptionRewardResult == SubscriptionRewardResult.Claimed)
-                    {
-                        Env.Instance.Inventory.AddBucks(rewardAmount, category: "reward", itemId: "subscription");
-                        CloseSelf(true);
-                    }
-                    else
-                    {
-                        CloseSelf(false);
-                    }
-                }, contentRoot);
                 break;
 
             case SubscriptionBoxType.SuccessfulSubscription:

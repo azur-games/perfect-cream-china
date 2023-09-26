@@ -1,15 +1,14 @@
-﻿using Modules.Advertising;
-using Modules.Analytics;
-using Modules.General.Abstraction;
-using DG.Tweening;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using BoGD;
+using DG.Tweening;
+using Modules.Advertising;
+using Modules.General.Abstraction;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using BoGD;
 
-[System.Serializable]
+[Serializable]
 public class LevelFailedBox : UIMessageBox
 {
     #region Fields

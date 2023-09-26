@@ -136,12 +136,93 @@ MonoBehaviour:
   containers:
   - category: 2
     itemsContainer: {fileID: 11400000, guid: baa62005fa7f80b42bc7e950f6408fda, type: 2}
+    soundLinks:
+    - assetGUID: e3ac63406376d2641a451756125cdb4e
+      fullPath: Assets/Resources/Sounds/Configs/UI/CreamLoop.prefab
+    - assetGUID: a8558d7d73d1f68479ba6cf020331ab9
+      fullPath: Assets/Resources/Sounds/Configs/UI/FireworksLevelComplete.prefab
+    - assetGUID: e46281f512b22d04c94042b3fc0ab17a
+      fullPath: Assets/Resources/Sounds/Configs/UI/Block.prefab
+    - assetGUID: 546840d0a02888f47b1dce11203c20ac
+      fullPath: Assets/Resources/Sounds/Configs/UI/Box.prefab
+    - assetGUID: e550ff3e5fab115478f438d12f7a0006
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/KeyCollect.prefab
+    - assetGUID: a687b7e45916c414581c23115691cc79
+      fullPath: Assets/Resources/Sounds/Configs/UI/BreakStick.prefab
+    - assetGUID: dcdca686569e14841931c13254777791
+      fullPath: Assets/Resources/Sounds/Configs/UI/BoxPlastic.prefab
+    - assetGUID: 3a35a78791157cf4ebeeaf64f9dd2401
+      fullPath: Assets/Resources/Sounds/Configs/UI/BoxGold.prefab
+    - assetGUID: 01efe0112804bfc4ebda1d942a5f7c94
+      fullPath: Assets/Resources/Sounds/Configs/UI/Fever/FeverMode_intrigue.prefab
+    - assetGUID: 5deb00e98beb8aa4a92f2aae44c4b930
+      fullPath: Assets/Resources/Sounds/Configs/UI/Fever/FeverMode_off.prefab
+    - assetGUID: 73f82f26bd262864dbc82edd4c705ed5
+      fullPath: Assets/Resources/Sounds/Configs/UI/Fever/FeverMode_on.prefab
+    - assetGUID: 0a64281b51f8f7648afbd5bd94fc3468
+      fullPath: Assets/Resources/Sounds/Configs/UI/BoxBurger.prefab
     categoryMixerGroup: {fileID: 0}
   - category: 1
     itemsContainer: {fileID: 11400000, guid: 88ff32c91ba8044a4aaff999e9a82dbb, type: 2}
+    soundLinks:
+    - assetGUID: 3f9943e29f44e0641a76aeb90a2caa61
+      fullPath: Assets/Resources/Sounds/Configs/UI/ClickButtons.prefab
+    - assetGUID: 2da5437bf1f5832418d2c40840587710
+      fullPath: Assets/Resources/Sounds/Configs/UI/UnlockedNewObject.prefab
+    - assetGUID: 4e73deba7a55af0498d274e8c9af05d9
+      fullPath: Assets/Resources/Sounds/Configs/UI/Win.prefab
+    - assetGUID: cf23dcb19b4878240ad1f2e8b80e99f9
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/Applause.prefab
+    - assetGUID: 8a09d8fda522b8c43951d2426f3c4c1b
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/ChestOpen.prefab
+    - assetGUID: dc3f87c7143537b4486712833d4f4935
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/Coins.prefab
+    - assetGUID: 81a7dc1a7cd3b474889831999a57d4ce
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/DessertUnlock.prefab
+    - assetGUID: c18ace9b6356e0544ad20ba8f47858f7
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/PopupCloud.prefab
+    - assetGUID: 0424238d086e9e7448a7d1e57365e68f
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/Star01.prefab
+    - assetGUID: 88c10baf49f42b54298dd4d98bc1e076
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/Star02.prefab
+    - assetGUID: f0481bce7c94ba14f97c9ef5199b1af9
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/Star03.prefab
+    - assetGUID: c2d0b704e44b10c4a9ecd4290bbfa023
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/UpgradeDevice.prefab
+    - assetGUID: e60ec272aa5dcbf4bbbb105c11a78d4e
+      fullPath: Assets/Resources/Sounds/Configs/UI/Unlocked.prefab
+    - assetGUID: f01a64f6c7acd1e418c2b244c2061f98
+      fullPath: Assets/Resources/Sounds/Configs/UI/ShopRespanwObjects.prefab
+    - assetGUID: fa3354379eaf0494b88757affbdfbf6d
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/ConfettiDrop.prefab
+    - assetGUID: c8771930d185b254ab80cd6f2ed5bde6
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/BarUpgrade.prefab
+    - assetGUID: f72f6b3624376aa4c8d2cdea354d5b7e
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/StarMini1.prefab
+    - assetGUID: b8468dc165ad5b84ebf15f27cf6966bb
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/StarMini2.prefab
+    - assetGUID: 94ac2f6ac1b4dd3479eff3b98ba8b01a
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/StarMini3.prefab
+    - assetGUID: 7132920d3181ed04e88fb02c1b42d68f
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/Whoosh.prefab
+    - assetGUID: b1783cbad5f98464b8f3de2537b44408
+      fullPath: Assets/Resources/Sounds/Configs/UI/Lottery/CardsDisappear.prefab
+    - assetGUID: 63748bbe00a35604c80d6a736639779a
+      fullPath: Assets/Resources/Sounds/Configs/UI/Lottery/CardsFlip.prefab
+    - assetGUID: fa7de92a33c5d8a46819137a762b61f7
+      fullPath: Assets/Resources/Sounds/Configs/UI/Lottery/CardsRespawn.prefab
+    - assetGUID: 95fa4c5b2cacdf740bdd34ee2a64fd67
+      fullPath: Assets/Resources/Sounds/Configs/UI/Lottery/CardsShuffle.prefab
+    - assetGUID: 949d67116bb26f14185bbaa02fe4e72b
+      fullPath: Assets/Resources/Sounds/Configs/UI/Lottery/CardsWin.prefab
     categoryMixerGroup: {fileID: 0}
   - category: 3
     itemsContainer: {fileID: 11400000, guid: 54e5104e45b66ea4cb268dead99283ea, type: 2}
+    soundLinks:
+    - assetGUID: 9d73ce8e0fa4f594e811c348353f5af9
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/music01.prefab
+    - assetGUID: 90c800f1232adb04d85747d7c7c441c7
+      fullPath: Assets/Resources/Sounds/Configs/UI/New/musicIngame.prefab
     categoryMixerGroup: {fileID: 0}
   uiVolume: 0
   inGameVolume: 0

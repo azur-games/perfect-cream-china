@@ -10,8 +10,6 @@ namespace Modules.General.Abstraction
         event Action<AdModule, AdActionResultType> OnAdShow;
         event Action<AdModule, AdActionResultType> OnAdHide;
         event Action<AdModule> OnAdClick;
-        DateTime LastInterstitialShowDateTime { get; set; }
-        bool IsInterstitialDelayEnded { get; }
 
         void Initialize(
             IAdvertisingService[] adServices,

@@ -1,13 +1,12 @@
 using System;
-using UnityEngine;
-using UnityEngine.UI;
+using System.Collections.Generic;
+using BoGD;
 using DG.Tweening;
 using Modules.Advertising;
-using Modules.Analytics;
 using Modules.General.Abstraction;
-using System.Collections.Generic;
 using TMPro;
-using BoGD;
+using UnityEngine;
+using UnityEngine.UI;
 
 [Serializable]
 public class CoinsPiggyBox : UIMessageBox
@@ -90,11 +89,11 @@ public class CoinsPiggyBox : UIMessageBox
     {
         this.onHide = onHide;
 
-        videoButton.Init(AdModule.RewardedVideo, "coins_piggy_box", VideoButton_OnClick);
+        // videoButton.Init(AdModule.RewardedVideo, "coins_piggy_box", VideoButton_OnClick);
 
         bool isRewardOnlyForVideo = BalanceDataProvider.Instance.IsCoinsBoxRewardOnlyForVideo;
-        bool isVideoButtonAvailable = (VideoRewardMultiplier > 1 || isRewardOnlyForVideo) && IsCoinsBoxFull;
-        videoButton.gameObject.SetActive(isVideoButtonAvailable);
+        // bool isVideoButtonAvailable = (VideoRewardMultiplier > 1 || isRewardOnlyForVideo) && IsCoinsBoxFull;
+        // videoButton.gameObject.SetActive(isVideoButtonAvailable);
 
         if (isRewardOnlyForVideo)
         {
@@ -314,7 +313,6 @@ public class CoinsPiggyBox : UIMessageBox
 
             var data = new Dictionary<string, object>();
             data["action"] = "get";
-            BoGD.MonoBehaviourBase.Analytics.SendEvent("piggy_bank", data);
         }
     }
 
@@ -345,7 +343,6 @@ public class CoinsPiggyBox : UIMessageBox
                 }).Play();
                 var data = new Dictionary<string, object>();
                 data["action"] = "get_x2";
-                BoGD.MonoBehaviourBase.Analytics.SendEvent("piggy_bank", data);
             }
         }
         else

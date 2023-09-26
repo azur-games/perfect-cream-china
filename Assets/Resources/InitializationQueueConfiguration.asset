@@ -13,10 +13,6 @@ MonoBehaviour:
   m_Name: InitializationQueueConfiguration
   m_EditorClassIdentifier: 
   serviceBindings:
-  - serviceClass: Modules.Analytics.AnalyticsManager, Modules.Analytics, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    servicePrefab: {fileID: 0}
-    serviceAsset: {fileID: 0}
   - serviceClass: Modules.General.SystemPopupService, Modules.General, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     servicePrefab: {fileID: 0}
@@ -34,28 +30,12 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     servicePrefab: {fileID: 0}
     serviceAsset: {fileID: 0}
-  - serviceClass: Modules.Analytics.AnalyticsProcessor, Modules.Analytics, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    servicePrefab: {fileID: 0}
-    serviceAsset: {fileID: 0}
-  - serviceClass: Modules.InAppPurchase.StoreSettings, Modules.InAppPurchase, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    servicePrefab: {fileID: 0}
-    serviceAsset: {fileID: 11400000, guid: a339c69983f5d5f46b43d726a867d561, type: 2}
   - serviceClass: Modules.General.Utilities.AdvertisingIdentifierService, Modules.General,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     servicePrefab: {fileID: 0}
     serviceAsset: {fileID: 0}
-  - serviceClass: Modules.InAppPurchase.StoreManager, Modules.InAppPurchase, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    servicePrefab: {fileID: 0}
-    serviceAsset: {fileID: 0}
   - serviceClass: SubscriptionManager, PerfectCream, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-    servicePrefab: {fileID: 0}
-    serviceAsset: {fileID: 0}
-  - serviceClass: Modules.AppsFlyer.PurchaseAnalyticsImplementor, Modules.AppsFlyer,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     servicePrefab: {fileID: 0}
     serviceAsset: {fileID: 0}
   - serviceClass: Modules.General.RemoteAvailabilityService, Modules.General, Version=0.0.0.0,
@@ -66,16 +46,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     servicePrefab: {fileID: 0}
     serviceAsset: {fileID: 0}
-  - serviceClass: Modules.Max.MaxDebuggerService, Modules.Max, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    servicePrefab: {fileID: 0}
-    serviceAsset: {fileID: 0}
   - serviceClass: Modules.Advertising.AdvertisingManagerPerfectCream, PerfectCream,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     servicePrefab: {fileID: 0}
-    serviceAsset: {fileID: 0}
-  - serviceClass: BoGD.UI.PERFECTCREAM.WindowPrivacyPerfectCream, PerfectCream, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    servicePrefab: {fileID: 1562690137479524700, guid: 6b92f133a952242bdb730f70019ad710,
-      type: 3}
     serviceAsset: {fileID: 0}

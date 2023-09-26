@@ -7,8 +7,6 @@ using UnityEngine.UI;
 using MoreMountains.NiceVibrations;
 using System.Collections.Generic;
 using BoGD;
-using Code;
-using Gadsme;
 
 public class OptionsPanel : MonoBehaviour
 {
@@ -40,8 +38,6 @@ public class OptionsPanel : MonoBehaviour
     [SerializeField] private Image _vibroIcon;
     [SerializeField] private Button _sound;
     [SerializeField] private Image _soundIcon;
-    [SerializeField] private Button _musicButton;
-    [SerializeField] private Image _musicButtonIcon;
 
     [SerializeField] private Button _restorePurchases;
     [SerializeField] private Button _noAds;
@@ -66,16 +62,15 @@ public class OptionsPanel : MonoBehaviour
             if (IsVibroEnabled)
                 MMVibrationManager.Haptic(HapticTypes.LightImpact);
 
-            gameObject.SetActive(false);
+            this.gameObject.SetActive(false);
 
             if (null != Env.Instance.Rooms.GameplayRoom)
             {
                 GameplayController.IsGameplayActive = true;
                 Env.Instance.Sound.PlayMusic(AudioKeys.Music.MusicGameplay);
             }
-            
+
             Env.Instance.SendPopup("settings", "click_button", "close");
-            GadsmeService.Instance.ChangeVideoBannersInteractivity(true);
         });
 
         _vibro.onClick.AddListener(() =>
@@ -98,7 +93,7 @@ public class OptionsPanel : MonoBehaviour
 
             if (Env.Instance.Rooms.CurrentRoom is MetagameRoom)
             {
-                // Env.Instance.Sound.PlayMusic(AudioKeys.Music.MusicMetagame);
+                Env.Instance.Sound.PlayMusic(AudioKeys.Music.MusicMetagame);
             }
 
             Env.Instance.Sound.PlaySound(AudioKeys.UI.Click);
@@ -107,13 +102,6 @@ public class OptionsPanel : MonoBehaviour
                 MMVibrationManager.Haptic(HapticTypes.LightImpact);
             Env.Instance.SendSettings(Env.Instance.Sound.IsSoundEnabled ? "sound_on" : "sound_off");
         });
-        
-        _musicButton.onClick.AddListener(() =>
-        {
-            UpdateMusicButtonState(!Env.Instance.Sound.isMusicEnabled);
-            Env.Instance.Sound.PlaySound(AudioKeys.UI.Click);
-            if (IsVibroEnabled) MMVibrationManager.Haptic(HapticTypes.LightImpact);
-        });
 
         bool inAppsEnabled = BalanceDataProvider.Instance.InAppsEnabled;
         if (Services.AdvertisingManagerSettings.AdvertisingInfo.IsNoAdsActive || !inAppsEnabled)
@@ -121,30 +109,30 @@ public class OptionsPanel : MonoBehaviour
 
         if (null != _restorePurchases)
         {
-            _restorePurchases.gameObject.SetActive(inAppsEnabled);
+            // _restorePurchases.gameObject.SetActive(inAppsEnabled);
 
-            _restorePurchases.onClick.AddListener(() =>
-            {
-                if (IsVibroEnabled)
-                    MMVibrationManager.Haptic(HapticTypes.LightImpact);
-
-                Env.Instance.Sound.PlaySound(AudioKeys.UI.Click);
-
-                if (Application.internetReachability == NetworkReachability.NotReachable)
-                {
-                    Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.Message);
-                    return;
-                }
-                loading.SetActive(true);
-                IStoreManager storeManager = Services.GetService<IStoreManager>();
-                storeManager.RestorePurchases(result =>
-                {
-                    loading.SetActive(false);
-                    Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.Message,
-                        message: ((result.IsSucceeded) ? ("label_purchases_restored".Translate()) : ("label_cannot_connect".Translate()))) ;
-                });
-                Env.Instance.SendSettings("restore_purchases");
-            });
+            // _restorePurchases.onClick.AddListener(() =>
+            // {
+            //     if (IsVibroEnabled)
+            //         MMVibrationManager.Haptic(HapticTypes.LightImpact);
+            //
+            //     Env.Instance.Sound.PlaySound(AudioKeys.UI.Click);
+            //
+            //     if (Application.internetReachability == NetworkReachability.NotReachable)
+            //     {
+            //         Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.Message);
+            //         return;
+            //     }
+            //     loading.SetActive(true);
+            //     IStoreManager storeManager = Services.GetService<IStoreManager>();
+            //     storeManager.RestorePurchases(result =>
+            //     {
+            //         loading.SetActive(false);
+            //         Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.Message,
+            //             message: ((result.IsSucceeded) ? ("label_purchases_restored".Translate()) : ("label_cannot_connect".Translate()))) ;
+            //     });
+            //     Env.Instance.SendSettings("restore_purchases");
+            // });
         }
         if (_removeSubscriptionButton != null)
         {
@@ -161,13 +149,13 @@ public class OptionsPanel : MonoBehaviour
 
     private void InitForTermsAndPrivacy()
     {
-        bool needToShowPrivacyButton = ((null != _termsAndPrivacy) && Services.GetService<IPrivacyManager>().IsPrivacyButtonAvailable);
+        bool needToShowPrivacyButton = ((null != _termsAndPrivacy));
         // bool needToShowPrivacyButton = ((null != _termsAndPrivacy) && true);
 
         if (needToShowPrivacyButton)
         {
-            _termsAndPrivacy.gameObject.SetActive(true);
-            _termsAndPrivacy.onClick.AddListener(OnTermsAndPrivacyButtonClick);
+            // _termsAndPrivacy.gameObject.SetActive(true);
+            // _termsAndPrivacy.onClick.AddListener(OnTermsAndPrivacyButtonClick);
 
             _backgroundImage.rectTransform.sizeDelta = new Vector2(_backgroundImage.rectTransform.sizeDelta.x, 1400.0f);
             _backgroundImage.transform.localPosition = new Vector3(0.0f, -43.76f, 0.0f);
@@ -177,7 +165,7 @@ public class OptionsPanel : MonoBehaviour
         }
         else
         {
-            if (null != _termsAndPrivacy) _termsAndPrivacy.gameObject.SetActive(false);
+            // if (null != _termsAndPrivacy) _termsAndPrivacy.gameObject.SetActive(false);
             if (null != _backgroundImage)
             {
                 _backgroundImage.rectTransform.sizeDelta = new Vector2(_backgroundImage.rectTransform.sizeDelta.x, 1200.0f);
@@ -194,24 +182,60 @@ public class OptionsPanel : MonoBehaviour
 
     private void OnTermsAndPrivacyButtonClick()
     {   
-        UserConsentManager.Instance.ShowGdprWithoutConsent();
-        
+        if (Application.internetReachability == NetworkReachability.NotReachable)
+        {
+            Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.Message);
+            return;
+        }
+        loading.SetActive(true);
+        #if UNITY_EDITOR
+            Scheduler.Instance.CallMethodWithDelay(this, () =>
+            {
+                loading.SetActive(false);
+                if (Random.value >= 0.5f)
+                {
+                    Services.GetService<IPrivacyManager>().GetTermsAndPolicyURI((bool success, string url) =>
+                    {
+                        loading.SetActive(false);
+                        if (success)
+                        {
+                            Application.OpenURL(url);
+                        }
+                    });
+                }
+                else
+                {
+                    Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.Message, message: "Something went wrong");
+                }
+            }, 2.0f);
+#else
+            Services.GetService<IPrivacyManager>().GetTermsAndPolicyURI((bool success, string url) =>
+            {
+                loading.SetActive(false);
+                if (success)
+                {
+                    Application.OpenURL(url);
+                }
+                else
+                {
+                    Env.Instance.UI.Messages.ShowSubscriptionPopup(SubscriptionBox.SubscriptionBoxType.Message, message: "Something went wrong");
+                }
+            });
+#endif
         Env.Instance.SendSettings("click_terms");
     }
+
 
     public void Show()
     {
         UpdateSoundColor();
         UpdateVibroColor();
-        UpdateMusicButtonState(Env.Instance.Sound.isMusicEnabled);
 
-        gameObject.SetActive(true);
+        this.gameObject.SetActive(true);
         if (_removeSubscriptionButton != null)
         {
-            _removeSubscriptionButton.gameObject.SetActive(Application.platform == RuntimePlatform.Android && ((SubscriptionManager)SubscriptionManager.Instance).IsSubscriptionActive);
+            // _removeSubscriptionButton.gameObject.SetActive(Application.platform == RuntimePlatform.Android && ((SubscriptionManager)SubscriptionManager.Instance).IsSubscriptionActive);
         }
-        
-        GadsmeService.Instance.ChangeVideoBannersInteractivity(false);
 
         Env.Instance.SendPopup("settings", "click_button", "show");
     }
@@ -224,28 +248,5 @@ public class OptionsPanel : MonoBehaviour
     private void UpdateVibroColor()
     {
         _vibroIcon.color = IsVibroEnabled ? _onColor : _offColor;
-    }
-
-    private void UpdateMusicButtonState(bool state)
-    {
-        Env.Instance.Sound.isMusicEnabled = state;
-        
-        if (state)
-        {
-            _musicButtonIcon.color = _onColor;
-            
-            if (Env.Instance.Rooms.CurrentRoom is MetagameRoom)
-                Env.Instance.Sound.PlayMusic(AudioKeys.Music.MusicMetagame);
-        }
-        else
-        {
-            _musicButtonIcon.color = _offColor;
-            
-            if (Env.Instance.Rooms.CurrentRoom is MetagameRoom)
-                Env.Instance.Sound.StopMusic();
-            
-        }
-        
-        Env.Instance.SendSettings(Env.Instance.Sound.isMusicEnabled ? "music_on" : "music_off");
     }
 }

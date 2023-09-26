@@ -35,13 +35,6 @@ namespace Modules.Advertising
             {
                 return;
             }
-            
-            analyticsTracker.SendAdAvailabilityCheck(
-                serviceInfo.advertisingService,
-                serviceInfo.controlledElement.AdModule,
-                isAdAvailable,
-                adShowingPlacement,
-                errorDescription);
         }
 
 

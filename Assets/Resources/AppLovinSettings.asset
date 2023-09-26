@@ -20,7 +20,7 @@ MonoBehaviour:
   - AndroidTarget: 1
     Id: ca-app-pub-7663884898922975~1644014309
   snapAppStoreAppId: 0
-  consentFlowEnabled: 0
+  consentFlowEnabled: 1
   consentFlowPrivacyPolicyUrl: https://aigames.ae/policy#h.hn0lb3lfd0ij
   consentFlowTermsOfServiceUrl: https://aigames.ae/policy#h.v7mztoso1wgw
   userTrackingUsageDescriptionEn: This only uses device info for more interesting

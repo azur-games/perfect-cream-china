@@ -1,21 +1,18 @@
-﻿using AbTest;
+﻿using System;
+using System.Collections.Generic;
+using AbTest;
+using BoGD;
 using DG.Tweening;
 using Modules.Advertising;
-using Modules.Analytics;
 using Modules.General;
 using Modules.General.Abstraction;
 using Modules.General.Abstraction.InAppPurchase;
-using Modules.InAppPurchase;
 using MoreMountains.NiceVibrations;
-using System;
-using System.Collections.Generic;
-using BoGD;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-[System.Serializable]
+[Serializable]
 public class LevelCompleteBox : UIMessageBox
 {
 	#region Nested types
@@ -237,7 +234,7 @@ public class LevelCompleteBox : UIMessageBox
 	private void OnEnable()
 	{
 		noThanksButton.onClick.AddListener(NoThanksButton_OnClick);
-		noAdsButton.onClick.AddListener(NoAdsButton_OnClick);
+		// noAdsButton.onClick.AddListener(NoAdsButton_OnClick);
 
 		Env.Instance.Inventory.OnShapeReceived += Inventory_OnShapeReceived;
 		chestsShow = false;
@@ -247,7 +244,7 @@ public class LevelCompleteBox : UIMessageBox
 	private void OnDisable()
 	{
 		noThanksButton.onClick.RemoveListener(NoThanksButton_OnClick);
-		noAdsButton.onClick.RemoveListener(NoAdsButton_OnClick);
+		// noAdsButton.onClick.RemoveListener(NoAdsButton_OnClick);
 
 		Env.Instance.Inventory.OnShapeReceived -= Inventory_OnShapeReceived;
 		chestsShow = false;
@@ -720,7 +717,7 @@ public class LevelCompleteBox : UIMessageBox
 		bool isCoinsBonusesEnabled = ShowAdsState != RewardedVideoShowingAdsState.None;
 		videoButton.gameObject.SetActive(isCoinsBonusesEnabled);
 
-		noAdsButton.gameObject.SetActive(false);
+		// noAdsButton.gameObject.SetActive(false);
 		noThanksButton.gameObject.SetActive(ShowAdsState != RewardedVideoShowingAdsState.FreeReward);
 
 		if (!isCoinsBonusesEnabled)
@@ -769,7 +766,7 @@ public class LevelCompleteBox : UIMessageBox
 			abTestData.inAppsEnabled;
 		bool isStarsBonusesEnabled = ShowAdsState != RewardedVideoShowingAdsState.None && !isNoAdsEnabled;
 
-		noAdsButton.gameObject.SetActive(isNoAdsEnabled);
+		// noAdsButton.gameObject.SetActive(isNoAdsEnabled);
 		videoButton.gameObject.SetActive(isStarsBonusesEnabled);
 		noThanksButton.gameObject.SetActive(ShowAdsState != RewardedVideoShowingAdsState.FreeReward ||
 											isNoAdsEnabled);
@@ -1010,11 +1007,6 @@ public class LevelCompleteBox : UIMessageBox
 		noAdsSpinner.Show();
 
 		onPurchasedCallbackEvent = OnRestorePurchaseCallback;
-		IAPsItemsHandler.Instance.NoAds.Purchase(purchaseItemResult =>
-		{
-			onPurchasedCallbackEvent?.Invoke(purchaseItemResult);
-			return true;
-		});
 	}
 
 	private Action<IPurchaseItemResult> onPurchasedCallbackEvent = null;

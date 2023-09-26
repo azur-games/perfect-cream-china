@@ -14,19 +14,19 @@ namespace Modules.General
 
         public void ShowPopupWithoutButtons(string title, string message)
         {
-            LLSystemPopupManager.ShowPopupWithoutButtons(title, message);
+
         }
 
 
         public void HidePopupWithoutButtons()
         {
-            LLSystemPopupManager.HidePopupWithoutButtons();
+
         }
 
 
         public void ShowPopUp(string title, string message, string buttonTitle, System.Action callback = null)
         {
-            LLSystemPopupManager.ShowPopUp(title, message, buttonTitle, callback);
+
         }
 
 
@@ -34,8 +34,7 @@ namespace Modules.General
             string secondButtonTitle, Action firstButtonCallback = null, Action secondButtonCallback = null,
             bool isVerticalLayout = true)
         {
-            LLSystemPopupManager.ShowPopUpWithTwoButtons(title, message, firstButtonTitle, secondButtonTitle,
-                firstButtonCallback, secondButtonCallback, isVerticalLayout);
+
         }
 
         #endregion
@@ -49,8 +48,6 @@ namespace Modules.General
             Action onCompleteCallback,
             Action<IInitializableService, InitializationStatus> onErrorCallback)
         {
-            LLSystemPopupManager.Initialize();
-
             onCompleteCallback?.Invoke();
         }
 

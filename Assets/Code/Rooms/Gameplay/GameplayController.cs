@@ -1,15 +1,11 @@
 ﻿using AbTest;
 using DG.Tweening;
 using Modules.Advertising;
-using Modules.Analytics;
 using Modules.General;
 using Modules.General.Abstraction;
 using MoreMountains.NiceVibrations;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using Code;
-using Modules.General.HelperClasses;
 using UnityEngine;
 
 
@@ -99,7 +95,10 @@ public class GameplayController : MonoBehaviour
 
     public static bool IsGameplayActive
     {
-        get => isGameplayActive;
+        get
+        {
+            return isGameplayActive;
+        }
         set
         {
             previousGameplayActiveValue = isGameplayActive;
@@ -181,7 +180,6 @@ public class GameplayController : MonoBehaviour
 
     public void CreateScene(LevelAsset levelAsset)
     {
-        GadsmeService.Instance.OnGamePhaseChange(Camera);
         _raycastMask = LayerMask.GetMask("Gameplay");
 
         _currentLevel = PrefabTools.Instantiate(spawnPoint, levelAsset);
@@ -546,7 +544,8 @@ public class GameplayController : MonoBehaviour
                         obstaclesCollisionCounter++;
                         if (obstaclesCollisionCounter >  BalanceDataProvider.Instance.GetNonFatalHitsNumber(_currentLevel))
                         {
-                            ProcessFatalObstacle();
+                            // ProcessFatalObstacle();
+                            ProcessNoFatalObstacle();
                         }
                         else
                         {
@@ -624,7 +623,6 @@ public class GameplayController : MonoBehaviour
             },
             () =>
             {
-                TrackLevelFinish(CommonEvents.LevelResult.Fail, false);
                 if (brokenSoundGuid.HasValue && Env.Instance.Sound.IsPlaybackActive(brokenSoundGuid.Value))
                     Env.Instance.Sound.StopSound(brokenSoundGuid.Value);
                 this.gameObject.GetComponentInChildren<SupplyAnimation>().StopFailAnimation();
@@ -757,10 +755,7 @@ public class GameplayController : MonoBehaviour
 
     private bool IsLotteryAvailable()
     {
-        bool result = AdvertisingManager.Instance.GetPlacementSettings(AdsPlacements.LOTTERY)
-                          .showAdsState != RewardedVideoShowingAdsState.None;
-        result &=  BalanceDataProvider.Instance.IsLotteryEnabled;
-        result &= AdvertisingManager.Instance.IsAdModuleByPlacementAvailable(AdModule.RewardedVideo, AdsPlacements.LOTTERY);
+        var result = BalanceDataProvider.Instance.IsLotteryEnabled;
         result &= (Env.Instance.Inventory.CurrentLevelIndex % BalanceDataProvider.Instance.LotteryFrequency == 0);
 
         return result;
@@ -769,8 +764,7 @@ public class GameplayController : MonoBehaviour
 
     private bool IsSingleChestAvailable()
     {
-        bool result = AdvertisingManager.Instance.GetPlacementSettings(AdsPlacements.CHEST)
-            .showAdsState != RewardedVideoShowingAdsState.None;
+        bool result = AdvertisingManager.Instance.GetPlacementSettings(AdsPlacements.CHEST).showAdsState != RewardedVideoShowingAdsState.None;
 
         result &= !IsFreeSingleChestReceived || AdvertisingManager.Instance.IsAdModuleByPlacementAvailable(AdModule.RewardedVideo, AdsPlacements.CHEST);
         result &= 3 > Env.Instance.Inventory.Keys;
@@ -793,27 +787,12 @@ public class GameplayController : MonoBehaviour
         CompleteLevel?.Invoke(mrcontext);
         
         var stars = Mathf.Max(PerfectsController.LevelStarsCount, CurrentLevelAsset.MinStarsCount);
-        var result = stars > 0 ? CommonEvents.LevelResult.Complete : CommonEvents.LevelResult.Fail;
-        TrackLevelFinish(result, true);
 
         Env.Instance.Inventory.CurrentLevelIndex++;
-        CustomPlayerPrefs.SetInt("CurrentDayLevelIndexData", CustomPlayerPrefs.GetInt("CurrentDayLevelIndexData") + 1);
         Env.Instance.Inventory.Save();
-        
-        AppsFlyerLevelCompletedEvent(new List<int>
-        {
-            5,10,15,25,35,50,75,100
-        });
     }
 
-    private void AppsFlyerLevelCompletedEvent(IEnumerable<int> targetLevels)
-    {
-        foreach (var level in targetLevels.Where(level => Env.Instance.Inventory.CurrentLevelIndex == level))
-        {
-            AppsFlyerSDK.AppsFlyer.sendEvent($"complete_level_{level}", null);
-        }
-    }
-    
+
     private void BreforeFinishPreparing()
     {
         Shape preLastShape = Conveyour.Shapes.Last();
@@ -1031,35 +1010,6 @@ public class GameplayController : MonoBehaviour
     private void TrackLevelStart()
     {
         _currentLevelStartTime = Time.realtimeSinceStartup;
-        CommonEvents.SendLevelStart(Env.Instance.Inventory.CurrentLevelIndex + 1);
-    }
-
-
-    public void TrackLevelFinish(CommonEvents.LevelResult result, bool complete)
-    {
-        int timeOnLevel = (int)(Time.realtimeSinceStartup - _currentLevelStartTime);
-        CommonEvents.SendLevelFinish(
-            Env.Instance.Inventory.CurrentLevelIndex + 1,
-            timeOnLevel,
-            result);
-
-        var stars = result == CommonEvents.LevelResult.Complete ? Mathf.Max(PerfectsController.LevelStarsCount, CurrentLevelAsset.MinStarsCount):0;
-        var res = complete? "win" : "lose";
-        var progress = (int)(ProgressWithOffset * 100);
-        var reward =  result == CommonEvents.LevelResult.Complete? CurrentLevelBucksReward : 0;
-        var mistakes = Mathf.Max(0, PerfectsController.TotalChunksCounter - PerfectsController.SuccessChunksCounter);
-        Env.Instance.SendFinish(res, stars, mistakes, progress, reward);
-    }
-
-    private void UpdateAdTimerAfterGadsmeClick(bool state)
-    {
-        if(state) return;
-        
-        if (GadsmeService.Instance.GadsmeVideoClicked)
-        {
-            AdvertisingManager.Instance.LastInterstitialShowDateTime = DateTime.Now;
-            GadsmeService.Instance.GadsmeVideoClicked = false;
-        }
     }
 
     #endregion
@@ -1088,7 +1038,7 @@ public class GameplayController : MonoBehaviour
 
     private void LLApplicationStateRegister_OnApplicationEnteredBackground(bool isEntered)
     {
-        IsGameplayActive = previousGameplayActiveValue;
+         IsGameplayActive = previousGameplayActiveValue;
     }
     
     #endregion

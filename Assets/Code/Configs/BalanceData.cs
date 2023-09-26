@@ -21,7 +21,7 @@ public class BalanceData : ScriptableObject
     public bool isCoinsBoxEnabled = true; // - turn off by default
     public bool isCoinsBoxRewardOnlyForVideo = false;
     public bool isCoinsBoxBubbleEnabled = true;
-    public int coinsBoxExchange = 5;
+    public int coinsBoxExchange = 10;
     public int coinsBoxPeriodicReward = 30;
     public int coinsBoxMaxAmount = 50;
     public int coinsBoxVideoMultiplier = 2;

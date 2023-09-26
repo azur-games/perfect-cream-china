@@ -1,8 +1,5 @@
 ﻿using Modules.General;
 using System.Collections.Generic;
-using Code;
-using Code.Configs;
-using Gadsme;
 using UnityEngine;
 
 public class Conveyor : MonoBehaviour
@@ -89,7 +86,6 @@ public class Conveyor : MonoBehaviour
         Colliders = new Dictionary<int, CollisionDetector>();
 
         CreateTape();
-        CreateGadsmeBillboards();
 
         keysOnTape = 0;
         coinsOnTape = 0;
@@ -129,33 +125,6 @@ public class Conveyor : MonoBehaviour
             segment.transform.localPosition = new Vector3(i, 0, 0);
             _tapeSegments.Add(segment.transform);
             Colliders.Add(segment.GetInstanceID(), CollisionDetector.GetAuto(segment));
-        }
-    }
-
-
-    private void CreateGadsmeBillboards()
-    {
-        if (Env.Instance.Inventory.CurrentLevelIndex == 0) return;
-
-        var gadsmeConfiguration = GadsmeService.Instance.Configuration;
-        var targetBillBoardType = Env.Instance.Inventory.CurrentLevelIndex % 2 == 0 ? BillBoardType.Video : BillBoardType.Banner;
-        var targetBillBoardObject = targetBillBoardType == BillBoardType.Video ? gadsmeConfiguration.GameplayVideoBillBoard : gadsmeConfiguration.GameplayBannerBillBoard;
-
-        for (var i = 0; i < _tapeSegments.Count; i++)
-        {
-            if (i % gadsmeConfiguration.NumberGaps != 0) continue;
-
-            var billBoard = Instantiate(targetBillBoardObject, _tapeSegments[i].transform).GetComponent<GadsmeBillBoard>();
-            billBoard.Constructor(targetBillBoardType);
-
-            if(targetBillBoardType == BillBoardType.Video)
-            {
-                GadsmeService.Instance.PlacementVideos.Add(billBoard.gadsmePlacementVideo);
-            }
-            else
-            {
-                GadsmeService.Instance.PlacementBanners.Add(billBoard.gadsmePlacementBanner);
-            }
         }
     }
 

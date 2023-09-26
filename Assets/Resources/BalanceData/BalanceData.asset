@@ -12,32 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03945b299944b81a5acc8375e1f29cf, type: 3}
   m_Name: BalanceData
   m_EditorClassIdentifier: 
-  isNeedObstacles: 1
-  isNeedShowKeysChests: 1
-  nonFatalHitsNumber: 1
   extraLevelsPeriod: 3
-  showSafeChestLevelsPeriod: 2
-  levelLengthStart: 150
-  levelLengthDelta: 1
-  levelLengthMax: 155
   feverModeChance: 0.415
   feverModeMinLevel: 1
   feverModeShapesMin: 5
   feverModeShapesMax: 8
+  isReceivedShapeHighlightingEnabled: 1
   isCoinsBoxEnabled: 1
   isCoinsBoxRewardOnlyForVideo: 0
   isCoinsBoxBubbleEnabled: 1
-  coinsBoxExchange: 5
+  coinsBoxExchange: 10
   coinsBoxPeriodicReward: 30
   coinsBoxMaxAmount: 50
   coinsBoxVideoMultiplier: 2
-  isReceivedShapeHighlightingEnabled: 1
   cafeUpgradeStartPrice: 50
   cafeUpgradeDeltaPrice: 75
   starsForDessertUnlock: 15
-  metagamePersBubblePeriod: 2
   ingameKeysChanceApear: 1
   ingameKeysCount: 1
+  isNeedShowKeysChests: 1
   ingameCoinsChanceApear: 1
   ingameCoinsCount: 1
   ingameCoinsMinLevel: 2

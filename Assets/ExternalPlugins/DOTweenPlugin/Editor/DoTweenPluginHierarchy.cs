@@ -3,19 +3,18 @@ using Modules.Hive.Editor;
 
 namespace Modules.DoTween.Editor
 {
-    public class DoTweenPluginHierarchy : PluginHierarchy
+    public class DoTweenPluginHierarchy
     {
         private static DoTweenPluginHierarchy instance;
         
         
         public static DoTweenPluginHierarchy Instance =>
             instance ?? (instance = new DoTweenPluginHierarchy("Modules.DOTween"));
+
+
+        public static string DoTweenSettingsDirectoryAssetPath => "";
         
         
-        public static string DoTweenSettingsDirectoryAssetPath => 
-            UnityPath.Combine(UnityPath.ExternalPluginsSettingsAssetPath, "DoTweenSettings");
-        
-        
-        private DoTweenPluginHierarchy(string mainAssemblyName) : base(mainAssemblyName) { }
+        private DoTweenPluginHierarchy(string mainAssemblyName) : base() { }
     }
 }

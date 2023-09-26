@@ -28,8 +28,7 @@ public class LLApplicationVersionComparator : MonoBehaviour
             #if UNITY_IOS && !UNITY_EDITOR
                 result = LLApplicationVersionComparatorIsCurrentGameVersionLatest();
             #elif UNITY_ANDROID && !UNITY_EDITOR
-                result = !LLActivity.IsNeedUpdate;
-            #endif
+#endif
 
             return result;
         }

@@ -42,7 +42,7 @@ public class GameplayRoomConfig : RoomConfig
 
     [Space]
     [Header("Rewards settings")]
-    [SerializeField] int baseLevelCoinsReward = 35;
+    [SerializeField] int baseLevelCoinsReward = 45;
     [SerializeField] int extraCoinsMultiplier = 5;
 
     [Space] 

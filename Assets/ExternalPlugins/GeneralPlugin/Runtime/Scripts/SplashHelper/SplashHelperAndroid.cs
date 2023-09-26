@@ -65,14 +65,6 @@ namespace Modules.General.Utilities
                 {
                     return;
                 }
-                
-                int splashType = LLAndroidJavaSingletone<Utilities>.CallStatic<int>(
-                    GetMetaDataMethodName,
-                    SplashMetaDataKey);
-                
-                SplashSize = SplashHelperUtility.CalculateSplashSize(
-                    new Vector2(result.width, result.height),
-                    splashType);
             }
         }
 

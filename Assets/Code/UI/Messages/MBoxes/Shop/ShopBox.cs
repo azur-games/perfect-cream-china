@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Modules.Advertising;
-using Modules.Analytics;
-using Modules.General.Abstraction;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using MoreMountains.NiceVibrations;
 using BoGD;
-using Code;
-using Gadsme;
-
+using Modules.Advertising;
+using Modules.General.Abstraction;
+using MoreMountains.NiceVibrations;
+using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 [Serializable]
 public class ShopBox : UIMessageBox
@@ -36,7 +33,7 @@ public class ShopBox : UIMessageBox
     [SerializeField] Sprite openNowButtonSpriteOff;
 
     [SerializeField]
-    private UnityEngine.EventSystems.EventSystem eventSystem = null;
+    private EventSystem eventSystem = null;
 
     bool isOpenButtonEnabled = true;
     bool isVideoButtonEnabled = true;
@@ -44,7 +41,6 @@ public class ShopBox : UIMessageBox
     private string valveNameAtStart;
     private string creamNameAtStart;
     private string creamSprinklingNameAtStart;
-    private GadsmePlacementVideo _gadsmePlacementVideo;
 
     #endregion
 
@@ -60,13 +56,11 @@ public class ShopBox : UIMessageBox
         tabsHandler.OnTabChanged += TabsHandler_OnTabChanged;
 
         Env.Instance.Inventory.OnBucksCountUpdated += Inventory_OnBucksCounterUpdated;
-
-        GadsmeService.Instance.ChangeVideoBannersInteractivity(false);
     }
+
 
     void OnDisable()
     {
-        GadsmeService.Instance.ChangeVideoBannersInteractivity(true);
         closeButton.onClick.RemoveListener(CloseButton_OnClick);
         openNowButton.onClick.RemoveListener(OpenNowButton_OnClick);
 
@@ -93,7 +87,7 @@ public class ShopBox : UIMessageBox
         creamSprinklingNameAtStart = Env.Instance.Inventory.CurrentConfiture;
 
         openNowButton.gameObject.SetActive(isOpenButtonEnabled);
-        watchAdButton.gameObject.SetActive(isVideoButtonEnabled);
+        // watchAdButton.gameObject.SetActive(isVideoButtonEnabled);
 
         if (isVideoButtonEnabled)
         {
@@ -121,7 +115,7 @@ public class ShopBox : UIMessageBox
         openNowPriceText.text = openPrice.ToString();
         watchAdPrizeText.text = "+" + videoReward;
 
-        watchAdButton.gameObject.SetActive(isVideoButtonEnabled);
+        // watchAdButton.gameObject.SetActive(isVideoButtonEnabled);
 
         bool isShapeProgressRequired = (tabsHandler.CurrentTab.assetsType == ContentAsset.AssetType.Shape);
         bool isOpenAvailable = (tabsHandler.CanOpenItem() && 

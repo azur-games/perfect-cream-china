@@ -73,7 +73,7 @@ MonoBehaviour:
   - CleaningLevel
   - PizzaLevel
   - BathroomLevel
-  baseLevelCoinsReward: 35
+  baseLevelCoinsReward: 45
   extraCoinsMultiplier: 5
   shapeTopTextPrefab: {fileID: 6157392079731231538, guid: f22b868180bf02c418212ab6b8b392b5,
     type: 3}

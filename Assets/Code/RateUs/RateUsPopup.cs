@@ -52,8 +52,6 @@ public class RateUsPopup : MonoBehaviour
     private int                 currentRateStars;
     private string              previousText;
     event Action                onClosePopup;
-    private GameObject _rateUsButton;
-    private const string RateUsButtonName = "ButtonRateUs";
 
     #endregion
 
@@ -71,7 +69,6 @@ public class RateUsPopup : MonoBehaviour
 
         closePopupButton.onClick.AddListener(ClosePopupButton_OnClick);
         rateStateButton.activeButton.onClick.AddListener(RateButton_OnClick);
-        _rateUsButton = GameObject.Find(RateUsButtonName);
     }
 
 
@@ -167,16 +164,14 @@ public class RateUsPopup : MonoBehaviour
         Debug.Log("currentRateStars = " + currentRateStars + "CountRateStarsToFeedback = " + CountRateStarsToFeedback);
         if (currentRateStars >= CountRateStarsToFeedback)
         {
+            Debug.Log("chek true");
 #if UNITY_ANDROID
             RateUsService.Instance.RateApp();
-            if(_rateUsButton != null) _rateUsButton.SetActive(false);
             #endif
         }
 
         ClosePopup();
         SendRate(currentRateStars);
-        
-        PlayerPrefs.SetInt("RateUsResult", currentRateStars);
     }
 
     private void SendRate(int rate)
@@ -184,7 +179,6 @@ public class RateUsPopup : MonoBehaviour
         Dictionary<string, object> data = new Dictionary<string, object>();
         data["show_reason"] = "new_player";
         data["rate_result"] = rate;
-        BoGD.MonoBehaviourBase.Analytics.SendEvent("rate_us", data);
     }
 
     #endregion

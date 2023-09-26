@@ -3,8 +3,6 @@ using Modules.General.InitializationQueue;
 using Modules.General.ServicesInitialization;
 using Modules.Hive.Ioc;
 using Modules.Hive;
-using Modules.HmsPlugin.InAppPurchase;
-using Modules.InAppPurchase;
 using System;
 using UnityEngine;
 
@@ -48,17 +46,12 @@ namespace Modules.HmsPlugin
 
         #endregion
 
-
-
+        
         #region Events handlers
 
         private void InitializationQueue_OnServicePreInit(object service)
         {
-            if (service is IPurchasingModuleProvider purchasingModuleImplementor)
-            {
-                InitializationQueue.Instance.OnServicePreInit -= InitializationQueue_OnServicePreInit;
-                purchasingModuleImplementor.CustomPurchasingModule = new HuaweiPurchasingModule();
-            }
+
         }
 
         #endregion

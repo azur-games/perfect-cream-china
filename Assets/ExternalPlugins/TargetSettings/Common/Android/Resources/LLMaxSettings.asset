@@ -22,9 +22,7 @@ MonoBehaviour:
   RewardedId: 0988a298ea96a833
   BannerPosition: 7
   PhoneBannerWidth: 320
-  PhoneBannerHeight: 50
   TabletBannerWidth: 728
-  TabletBannerHeight: 90
   EnableAdaptiveBanners: 0
   ForceBanners: 0
   ShouldStopAutoRefreshOnAdExpand: 1
@@ -37,10 +35,12 @@ MonoBehaviour:
   - FyberAdapter
   - GoogleAdapter
   - GoogleAdManagerAdapter
+  - HyprMXAdapter
   - InMobiAdapter
   - IronSourceAdapter
   - MintegralAdapter
   - MyTargetAdapter
+  - OguryPresageAdapter
   - SmaatoAdapter
   - TapjoyAdapter
   - UnityAdsAdapter

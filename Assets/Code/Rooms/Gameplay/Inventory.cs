@@ -63,7 +63,6 @@ public class Inventory
             _data.CurrentLevelIndex = value; 
         } 
     }
-
     public int CurrentLevelPickedUpCoins { get { return _data.CurrentLevelPickedUpCoins; } set { _data.CurrentLevelPickedUpCoins = value; } }
     public int CurrentLevelPickedUpKeys { get { return _data.CurrentLevelPickedUpKeys; } set { _data.CurrentLevelPickedUpKeys = value; } }
     public int CurrentLevelFeverCompletions { get { return _data.CurrentLevelFeverCompletions; } set { _data.CurrentLevelFeverCompletions = value; } }
@@ -209,7 +208,6 @@ public class Inventory
         data["category"] = category;
         data["item_id"] = itemId;
         data["value"] = amount;
-        BoGD.MonoBehaviourBase.Analytics.SendEvent("soft_currency", data);
     }
 
     public bool TrySpendBucks(int amount, Transform animationRoot = null, Action callback = null, string category = "", string itemId = "")
@@ -226,7 +224,6 @@ public class Inventory
         data["category"] = category;
         data["item_id"] = itemId;
         data["value"] = -amount;
-        BoGD.MonoBehaviourBase.Analytics.SendEvent("soft_currency", data);
 
         return true;
     }
@@ -288,7 +285,6 @@ public class Inventory
         {
             var data = new Dictionary<string, object>();
             data["action"] = "full";
-            BoGD.MonoBehaviourBase.Analytics.SendEvent("piggy_bank", data);
         }
     }
 
@@ -702,6 +698,5 @@ public class Inventory
 
         data["reason"] = reason;
         data["value"] = value;
-        MonoBehaviourBase.Analytics.SendEvent("customize", data);
     }
 }

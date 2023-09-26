@@ -29,8 +29,8 @@ namespace Modules.General
 
         #region Fields
 
-        private const string PrivacyPolicyUrl = "https://aigames.ae/policy#privacy";
-        private const string TermsOfUseUrl = "https://aigames.ae/policy#terms";
+        private const string PrivacyPolicyUrl = "https://aigames.ae/policy#h.hn0lb3lfd0ij";
+        private const string TermsOfUseUrl = "https://aigames.ae/policy#h.v7mztoso1wgw";
 
         private const string SubscriptionDescription =
             "Weekly Premium automatically renews for {0} per week after the 3-day free trial. Payment will be charged to your " +
@@ -272,27 +272,6 @@ namespace Modules.General
 
         public virtual void SubscriptionButton_OnClick(IStoreItem storeItem)
         {
-            if (CheckIfPopupNeeded(out string popupMessage) || storeItem == null)
-            {
-                PopupManager.Instance.ShowMessagePopup(message : popupMessage, messageHandler: transform);
-                return;
-            }
-            PurchaseProcess(true);
-
-            string placement = isStartSubscription ? SubscriptionPurchasePlacement.ApplicationStart : SubscriptionPurchasePlacement.ApplicationMainMenu;
-            DataStateService.Instance.Set("placement", placement, false);
-            
-            storeItem.Purchase(result =>
-            {
-                if (result.ResultCode == PurchaseItemResultCode.Ok)
-                {
-                    DataStateService.Instance.Set("placement", placement, true);
-                    Hide(SubscriptionPopupResult.SubscriptionPurchased);
-                }
-
-                PurchaseProcess(false);
-                return true;
-            });
         }
 
 

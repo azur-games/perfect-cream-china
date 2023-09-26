@@ -1,6 +1,5 @@
 ﻿using Modules.General.Abstraction;
 using System;
-using System.Collections.Generic;
 
 
 namespace Modules.Advertising
@@ -13,8 +12,8 @@ namespace Modules.Advertising
         public event Action<IAdvertisingService, AdModule, string> OnAdRequested;
         public event Action<IAdvertisingService, AdModule, int, AdActionResultType, string, string> OnAdRespond;
         public event Action<IAdvertisingService, AdModule, AdActionResultType, int, string, string> OnAdShow;
-        public event Action<IAdvertisingService, AdModule, AdActionResultType, int, string, string, Dictionary<string, object>> OnAdStarted;
-        public event Action<IAdvertisingService, AdModule, AdActionResultType, string, string, string, string, Dictionary<string, object>> OnAdHide;
+        public event Action<IAdvertisingService, AdModule, AdActionResultType, int, string, string> OnAdStarted;
+        public event Action<IAdvertisingService, AdModule, AdActionResultType, string, string, string, string> OnAdHide;
         public event Action<IAdvertisingService, AdModule, string> OnAdClick;
         public event Action<IAdvertisingService, AdModule, int, string> OnAdExpire;
 
@@ -58,10 +57,8 @@ namespace Modules.Advertising
         }
 
 
-        public virtual void Invoke_OnAdRespond(int delay, 
-            AdActionResultType responseResultType,
-            string errorDescription, 
-            string adIdentifier)
+        public virtual void Invoke_OnAdRespond(int delay, AdActionResultType responseResultType,
+            string errorDescription, string adIdentifier)
         {
             OnAdRespond?.Invoke(advertisingService, AdModule, delay, responseResultType, errorDescription,
                 adIdentifier);
@@ -74,15 +71,16 @@ namespace Modules.Advertising
             OnAdShow?.Invoke(advertisingService, AdModule, responseResultType, delay, errorDescription, adIdentifier);
         }
 
-        public virtual void Invoke_OnAdStarted(AdActionResultType responseResultType, int delay, string errorDescription, string adIdentifier, Dictionary<string, object> data = null)
+        public virtual void Invoke_OnAdStarted(AdActionResultType responseResultType, int delay,
+            string errorDescription, string adIdentifier)
         {
-            OnAdStarted?.Invoke(advertisingService, AdModule, responseResultType, delay, errorDescription, adIdentifier, data);
+            OnAdStarted?.Invoke(advertisingService, AdModule, responseResultType, delay, errorDescription, adIdentifier);
         }
 
         public virtual void Invoke_OnAdHide(AdActionResultType responseResultType, string errorDescription,
-            string adIdentifier, string adPlacement, string result, Dictionary<string, object> data = null)
+            string adIdentifier, string adPlacement, string result)
         {
-            OnAdHide?.Invoke(advertisingService, AdModule, responseResultType, errorDescription, adIdentifier, adPlacement, result, data);
+            OnAdHide?.Invoke(advertisingService, AdModule, responseResultType, errorDescription, adIdentifier, adPlacement, result);
         }
 
 

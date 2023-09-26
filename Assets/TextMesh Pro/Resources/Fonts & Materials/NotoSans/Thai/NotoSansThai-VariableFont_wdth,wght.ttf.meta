@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 057fd78ff9be9054a9cbe85003fc21ef
+guid: 95141ac2a522ab347b910d4414f5ea87
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Noto Sans Thai
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 057fd78ff9be9054a9cbe85003fc21ef, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

@@ -16,9 +16,6 @@ namespace Modules.General
         private static IAdvertisingManagerSettings advertisingManagerSettings;
         private static IStatisticsManager statisticsManager;
         private static IAtTrackingManager atTrackingManager;
-        private static IAnalyticsManager analyticsManager;
-        private static IAnalyticsProcessor analyticsProcessor;
-        private static IAnalyticsManagerSettings analyticsManagerSettings;
         private static IPrivacyManager privacyManager;
         private static ISystemPopupService systemPopupService;
         private static IEventsSamplingService eventsSamplingService;
@@ -47,15 +44,6 @@ namespace Modules.General
 
         public static IAtTrackingManager AtTrackingManager =>
             atTrackingManager ?? (atTrackingManager = GetService<IAtTrackingManager>());
-
-        public static IAnalyticsManager AnalyticsManager =>
-            analyticsManager ?? (analyticsManager = GetService<IAnalyticsManager>());
-
-        public static IAnalyticsProcessor AnalyticsProcessor =>
-            analyticsProcessor ?? (analyticsProcessor = GetService<IAnalyticsProcessor>());
-
-        public static IAnalyticsManagerSettings AnalyticsManagerSettings =>
-            analyticsManagerSettings ?? (analyticsManagerSettings = GetService<IAnalyticsManagerSettings>());
 
         public static IPrivacyManager PrivacyManager =>
             privacyManager ?? (privacyManager = GetService<IPrivacyManager>());

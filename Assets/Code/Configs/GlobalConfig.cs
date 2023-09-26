@@ -16,7 +16,6 @@ public class GlobalConfig : ScriptableObject
     [SerializeField] string baseContentLibraryPath = null;
     [SerializeField] bool srDebuggerEnabled = true;
     [SerializeField] GameObject soundManager = null;
-    [SerializeField] private GameObject _gadsmeServiceGameObject;
 
     #endregion
 
@@ -94,8 +93,6 @@ public class GlobalConfig : ScriptableObject
             return soundManager;
         }
     }
-
-    public GameObject GadsmeServiceGameObject => _gadsmeServiceGameObject;
 
     #endregion
 

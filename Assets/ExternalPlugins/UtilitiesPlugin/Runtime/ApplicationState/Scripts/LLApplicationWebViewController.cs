@@ -22,11 +22,6 @@ public class LLApplicationWebViewController : MonoBehaviour
 
     public static void ShowUrlInApplication(string url, string title)
     {
-        #if UNITY_IOS && !UNITY_EDITOR 
-        LLApplicationWebViewControllerShow(url, title);
-        #elif UNITY_ANDROID && !UNITY_EDITOR
-        Application.OpenURL(url);
-        #endif
     }
 
     #endregion

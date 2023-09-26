@@ -16,7 +16,7 @@ namespace Modules.General.HelperClasses
         public string assetGUID;
     
     
-        [NonSerialized] string fullPath = null;
+        [SerializeField] string fullPath = null;
         [NonSerialized] string resourcePath = null;
         [NonSerialized] string name = null;
         [NonSerialized] string streamingAssetPath = null;

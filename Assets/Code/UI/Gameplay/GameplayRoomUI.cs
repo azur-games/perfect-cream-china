@@ -8,7 +8,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using BoGD;
-using Code;
 
 
 public class GameplayRoomUI : MonoBehaviour
@@ -126,7 +125,6 @@ public class GameplayRoomUI : MonoBehaviour
         };
 
         AdvertisingManager.Instance.OnAdClick += AdvertisingManager_OnAdClick;
-        GadsmeService.Instance.GadsmeClickedCallback += GadsmeBannerClick;
         LLApplicationStateRegister.OnApplicationEnteredBackground += LLApplicationStateRegister_OnApplicationEnteredBackground;
 
         Env.Instance.SendStart();
@@ -159,7 +157,6 @@ public class GameplayRoomUI : MonoBehaviour
     private void OnDestroy()
     {
         AdvertisingManager.Instance.OnAdClick -= AdvertisingManager_OnAdClick;
-        GadsmeService.Instance.GadsmeClickedCallback -= GadsmeBannerClick;
         LLApplicationStateRegister.OnApplicationEnteredBackground -= LLApplicationStateRegister_OnApplicationEnteredBackground;
         Env.Instance.Rooms.GameplayRoom.Controller.PerfectsController.OnChunkFinishedAction -= GameplayController_OnChunkFinished;
         Env.Instance.Rooms.GameplayRoom.Controller.OnCreamLost -= GameplayController_OnCreamLost;
@@ -487,12 +484,6 @@ public class GameplayRoomUI : MonoBehaviour
             GameplayController.IsGameplayActive = false;
             _optionsPanel.Show();
         }
-    }
-
-    private void GadsmeBannerClick()
-    {
-        GameplayController.IsGameplayActive = false;
-        _optionsPanel.Show();
     }
 
     #endregion

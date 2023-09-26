@@ -7,7 +7,6 @@ using UnityEngine;
 using UnityEngine.Audio;
 using System.Linq;
 
-
 public class SoundManager : SingletonMonoBehaviour<SoundManager>
 {
     #region Helper types
@@ -27,6 +26,9 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     {
         public MusicCategory category;
         public SoundConfigsContainer itemsContainer;
+
+        public List<AssetLink> soundLinks;
+        // public SoundLinksConfiguration customLinks;
         public AudioMixerGroup categoryMixerGroup;
     }
 
@@ -747,7 +749,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
             LinksDictionary srcDictionary = new LinksDictionary();
 
-            currentContainer.itemsContainer.SoundConfigsAssetsLink.ForEach((link) =>
+            currentContainer.soundLinks.ForEach((link) =>
             {
                 if (!link.IsNull() && !string.IsNullOrEmpty(link.Name) && !srcDictionary.ContainsKey(link.Name))
                 {

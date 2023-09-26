@@ -1,18 +1,15 @@
 ﻿using System.Collections.Generic;
+using BoGD;
+using DG.Tweening;
+using Modules.General;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
-using Modules.Advertising;
-using Modules.Analytics;
-using Modules.General;
-using Modules.General.Abstraction;
-using BoGD;
 
 public class SingleChestBox : UIMessageBox
 {
     [SerializeField] private List<ParticleSystem> _particleSystems;
     [SerializeField] private DOTweenAnimation _shineAnimation;
-    [SerializeField] private VideoButton _openForAd;
+    [SerializeField] private Button _openForAd;
     [SerializeField] private Button _freeOpenButton;
     [SerializeField] private Button _noThanks;
 
@@ -58,7 +55,8 @@ public class SingleChestBox : UIMessageBox
     {
         base.Awake();
 
-        _openForAd.Init(AdModule.RewardedVideo, "single_chest", VideoButton_OnClick);
+        // _openForAd.Init(AdModule.RewardedVideo, "single_chest", VideoButton_OnClick);
+        _openForAd.onClick.AddListener(VideoButton_OnClick);
 
         _noThanks.onClick.AddListener(() =>
         {
@@ -99,6 +97,7 @@ public class SingleChestBox : UIMessageBox
 
     public void Init(ContentAsset asset, MetagameRoomContext mrContext, bool isFree = false)
     {
+        // var freeOpen = false;
         this.mrContext = mrContext;
         _prize = asset;
 
@@ -176,7 +175,6 @@ public class SingleChestBox : UIMessageBox
             data["lootbox_id"] = "single";
             data["lootbox_count"] = 1;
             data["reward"] = _prize.Name.ToLower().Replace(' ', '_');
-            BoGD.MonoBehaviourBase.Analytics.SendEvent("open_lootbox", data);
 
             Env.Instance.Inventory.Delivery.ApplyPrize(_prize);
 
@@ -240,39 +238,11 @@ public class SingleChestBox : UIMessageBox
 
     void VideoButton_OnClick()
     {
+        if (Env.Instance.Inventory.Bucks < 500) return;
+        
+        Env.Instance.Inventory.TrySpendBucks(500);
         Env.Instance.Sound.PlaySound(AudioKeys.UI.Click);
-
-        AdvertisingManager.Instance.TryShowAdByModule(AdModule.RewardedVideo, 
-            "single_chest", (resultType) =>
-        {
-            switch (resultType)
-            {
-                case AdActionResultType.Success:
-                    OpenChest();
-                    break;
-
-                case AdActionResultType.NoInternet:
-                    Env.Instance.UI.Messages.ShowInfoBox("label_no_video".Translate(), () =>
-                    {
-                        Env.Instance.UI.Overlay.Set(this, new Color(0.1607f, 0.5921f, 0.9568f, 1.0f), (overlay) =>
-                        {
-                            overlay.Close();
-
-                            Close();
-                        });
-                    });
-                    break;
-
-                default:
-                    Env.Instance.UI.Overlay.Set(this, new Color(0.1607f, 0.5921f, 0.9568f, 1.0f), (overlay) =>
-                    {
-                        overlay.Close();
-
-                        Close();
-                    });
-                    break;
-            }
-        });
+        OpenChest();
     }
     
     #endregion

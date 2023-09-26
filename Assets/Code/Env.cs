@@ -2,7 +2,6 @@
 using Modules.General;
 using Modules.General.Abstraction.InAppPurchase;
 using System.Collections.Generic;
-using Code;
 using UnityEngine;
 
 
@@ -171,7 +170,6 @@ public class Env
         {
             data[pair.Key] = pair.Value;
         }
-        MonoBehaviourBase.Analytics.SendEvent("level_start", data);
         timeStart = Time.time;
     }
 
@@ -183,7 +181,6 @@ public class Env
         data["level_result"] = levelResult;
         data["soft_reward"] = softReward;
         //data["stars_reward"] = starsReward;
-        MonoBehaviourBase.Analytics.SendEvent("result_window", data);
     }
 
     public void SendFinish(string result, int stars, int mistakes, int progress, int reward)
@@ -206,7 +203,6 @@ public class Env
         data["stars"] = stars;
         data["mistakes"] = mistakes;
         data["continue"] = continues;
-        MonoBehaviourBase.Analytics.SendEvent("level_finish", data);
         PlayerPrefs.SetString("analytics", "");
 
         continues = 0;
@@ -218,8 +214,7 @@ public class Env
         data["level_count"] = dataLevelCount.Value;
         data["payer"] = payerPrefs.Value;
         data["soft_balance"] = Instance == null ? 0 : Instance.Inventory.Bucks;
-        data["subscription"] = Instance == null || Services.GetService<IStoreManager>() == null ? "unknown" : IAPsItemsHandler.Instance.WeeklySubscription.IsPurchased ? IAPsItemsHandler.Instance.WeeklySubscription.Identifier : "none";
-        data["playtime"] = GameTimer.Instance.PlayTime;
+        data["subscription"] = "none"; 
         return data;
     }
 
@@ -229,21 +224,18 @@ public class Env
         dictionary["pop_up_id"] = id;
         dictionary["show_reason"] = reason;
         dictionary["result"] = result;
-        MonoBehaviourBase.Analytics.SendEvent("pop_up", dictionary);
     }
 
     public void SendSettings(string action)
     {
         Dictionary<string, object> dictionary = new Dictionary<string, object>();
         dictionary["action"] = action;
-        MonoBehaviourBase.Analytics.SendEvent("settings", dictionary);
     }
 
     public void SendWindow(string id)
     {
         Dictionary<string, object> dictionary = new Dictionary<string, object>();
         dictionary["window_id"] = id;
-        MonoBehaviourBase.Analytics.SendEvent("open_window", dictionary);
     }
 
     public static void SendTechnical(int step, string id)
@@ -251,7 +243,6 @@ public class Env
         Dictionary<string, object> dictionary = new Dictionary<string, object>();
         dictionary["step_name"] = (step <= 9 ? "0" : "") + step + "_" + id;
         dictionary["first_start"] = dataTechnicalStep.Value < step;
-        MonoBehaviourBase.Analytics.SendEvent("technical", dictionary);
 
         if (step > dataTechnicalStep.Value)
         {

@@ -2,7 +2,7 @@ using Modules.Hive.Editor;
 
 namespace Modules.HmsPlugin.Editor
 {
-    public class HmsPluginHierarchy : PluginHierarchy
+    public class HmsPluginHierarchy
     {
         #region Fields
 
@@ -18,14 +18,13 @@ namespace Modules.HmsPlugin.Editor
             instance ?? (instance = new HmsPluginHierarchy("Modules.HmsPlugin"));
 
         
-        public string HmsPath =>
-            UnityPath.Combine(RootAssetPath, "ExternalDependencies", "hms-unity-plugin");
+        public string HmsPath => "";
 
 
-        public string AarPath => UnityPath.Combine(HmsPath, "Plugins", "Android", "app-debug.aar");
+        public string AarPath => "";
         
         
-        public string DllPath => UnityPath.Combine(HmsPath, "Huawei", "Dlls", "HuaweiMobileServices.dll");
+        public string DllPath => "";
 
         #endregion
 
@@ -33,7 +32,7 @@ namespace Modules.HmsPlugin.Editor
 
         #region Class lifecycle
 
-        public HmsPluginHierarchy(string mainAssemblyName) : base(mainAssemblyName) { }
+        public HmsPluginHierarchy(string mainAssemblyName) : base() { }
 
         #endregion
     }

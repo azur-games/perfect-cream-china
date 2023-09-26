@@ -20,9 +20,7 @@ namespace Modules.General
                     {
                         #if UNITY_IOS && !UNITY_EDITOR 
                             LLApplicationStateRegisterInit(ApplicationChangedState);
-                        #elif UNITY_ANDROID && !UNITY_EDITOR
-                            LLActivity.OnChangeVisibleState += ApplicationChangedState;
-                        #endif
+#endif
     
                         isInitialized = true;
                     }

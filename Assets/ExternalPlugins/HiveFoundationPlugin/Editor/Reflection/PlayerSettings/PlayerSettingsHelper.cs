@@ -273,52 +273,14 @@ namespace Modules.Hive.Editor.Reflection
         // Works only for one-line properties
         private static string GetPropertyDirectlyFromFile(string propertyName)
         {
-            ApplyChanges();
-            AssetDatabase.SaveAssets();
-            AssetDatabase.Refresh();
-            
-            string content;
-            using (FileStream fileStream = new FileStream(UnityPath.ProjectSettingsPath, FileMode.Open))
-            using (StreamReader streamReader = new StreamReader(fileStream))
-            {
-                content = streamReader.ReadToEnd();
-            }
-            
-            return Regex.Match(content, $"(?<={propertyName}:).*").Value.Trim();
+            return "";
         }
         
         
         // Works only for one-line properties
         private static void SetPropertyDirectlyToFile(string propertyName, string propertyValue)
         {
-            ApplyChanges();
-            
-            // It's necessary before modifying it as usual file
-            AssetDatabase.SaveAssets();
-            AssetDatabase.Refresh();
-            
-            string content;
-            using (FileStream fileStream = new FileStream(UnityPath.ProjectSettingsPath, FileMode.Open))
-            using (StreamReader streamReader = new StreamReader(fileStream))
-            {
-                content = streamReader.ReadToEnd();
-            }
-            
-            content = Regex.Replace(
-                content, 
-                $"{propertyName}.*", 
-                $"{propertyName}: {propertyValue}");
-                        
-            using (FileStream fileStream = new FileStream(UnityPath.ProjectSettingsPath, FileMode.Create))
-            using (StreamWriter streamWriter = new StreamWriter(fileStream))
-            {
-                streamWriter.Write(content);
-            }
-            
-            AssetDatabase.Refresh();
-            AssetDatabase.SaveAssets();
-            
-            UpdateSerializedObject();
+
         }
 
         #endregion
@@ -354,15 +316,7 @@ namespace Modules.Hive.Editor.Reflection
 
         internal static void LogPropertiesToFile(string path)
         {
-            if (string.IsNullOrEmpty(path))
-            {
-                path = UnityPath.Combine(Application.dataPath, "PlayerSettings.txt");
-            }
 
-            using (var sw = File.CreateText(path))
-            {
-                LogProperties(sw);
-            }
         }
 
         

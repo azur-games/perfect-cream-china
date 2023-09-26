@@ -1,18 +1,21 @@
-﻿using DG.Tweening;
+﻿using System.Collections.Generic;
+using BoGD;
+using DG.Tweening;
 using Modules.Advertising;
-using Modules.Analytics;
+using Modules.General;
 using Modules.General.Abstraction;
 using MoreMountains.NiceVibrations;
-using System.Collections.Generic;
-using Modules.General;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using BoGD;
-
 
 public class ChestsBox : UIMessageBox
 {
     [SerializeField] private VideoButton _openForAd;
+    [SerializeField] private Button _buyKeysButton;
+    [SerializeField] private GameObject _buyKeysButtonLock;
+    [SerializeField] private TextMeshProUGUI _priceText;
+    [SerializeField] private int _price;
     [SerializeField] private Button _noThanks;
     
     [SerializeField] private CanvasGroup _noThanksGroup;
@@ -74,6 +77,21 @@ public class ChestsBox : UIMessageBox
         }
 
         UpdatePanels();
+        
+        _buyKeysButton.onClick.AddListener((() =>
+        {
+            if (Env.Instance.Inventory.Bucks >= _price)
+            {
+                Env.Instance.Inventory.TrySpendBucks(_price);
+                
+                const int keysRewardCount = 3;
+                advertisementViewed = true;
+                Env.Instance.Inventory.AddKeys(keysRewardCount);
+                UpdatePanels();
+                CheckBuyButtonAvailable();
+            }
+            
+        }));
     }
 
 
@@ -132,6 +150,14 @@ public class ChestsBox : UIMessageBox
 
         sequence.SetAutoKill(true).SetTarget(this).Play();
         chestCount = 0;
+        _priceText.text = _price.ToString();
+        
+        CheckBuyButtonAvailable();
+    }
+
+    private void CheckBuyButtonAvailable()
+    {
+        _buyKeysButtonLock.SetActive(Env.Instance.Inventory.Bucks < _price);
     }
 
     private bool inInterstitialProgress = false;
@@ -217,6 +243,8 @@ public class ChestsBox : UIMessageBox
                 }
             });
         }
+        
+        CheckBuyButtonAvailable();
     }
 
     private void CloseSelf()
@@ -244,30 +272,30 @@ public class ChestsBox : UIMessageBox
     {
         Env.Instance.Sound.PlaySound(AudioKeys.UI.Click);
 
-        AdvertisingManager.Instance.TryShowAdByModule(AdModule.RewardedVideo,
-            "multiple_chests", (resultType) =>
-            {
-                switch (resultType)
-                {
-                    case AdActionResultType.Success:
-                        int keysRewardCount = 3;
-                        advertisementViewed = true;
-                        Env.Instance.Inventory.AddKeys(keysRewardCount);
-                        
-                        break;
-
-                    case AdActionResultType.NoInternet:
-                        Env.Instance.UI.Messages.ShowInfoBox("label_no_video".Translate(), () => { });
-                        break;
-                }
-
-                UpdatePanels();
-            });
+        // AdvertisingManager.Instance.TryShowAdByModule(AdModule.RewardedVideo,
+        //     "multiple_chests", (resultType) =>
+        //     {
+        //         switch (resultType)
+        //         {
+        //             case AdActionResultType.Success:
+        //                 int keysRewardCount = 3;
+        //                 advertisementViewed = true;
+        //                 Env.Instance.Inventory.AddKeys(keysRewardCount);
+        //                 
+        //                 break;
+        //
+        //             case AdActionResultType.NoInternet:
+        //                 Env.Instance.UI.Messages.ShowInfoBox("label_no_video".Translate(), () => { });
+        //                 break;
+        //         }
+        //
+        //         UpdatePanels();
+        //     });
     }
 
     private void SubscribeAskPanel()
     {
-        _openForAd.Init(AdModule.RewardedVideo, "multiple_chests", WatchAdButtonClick);
+        // _openForAd.Init(AdModule.RewardedVideo, "multiple_chests", WatchAdButtonClick);
 
         _noThanks.onClick.AddListener(() =>
         {
@@ -344,13 +372,12 @@ public class ChestsBox : UIMessageBox
         }
         else
         {
-            int prizeCoins = Random.Range(2, 10) * 5;
+            int prizeCoins = Random.Range(2, 20) * 5;
             prize = "soft_" + prizeCoins;
             _chests[chestIndex].Open(prizeCoins, () =>
             {
                 if (OptionsPanel.IsVibroEnabled)
                     MMVibrationManager.Haptic(HapticTypes.LightImpact);
-                
                 Env.Instance.Inventory.AddBucks(
                     prizeCoins, 
                     _chests[chestIndex].CoinsRoot, 
@@ -368,8 +395,7 @@ public class ChestsBox : UIMessageBox
         Dictionary<string, object> data = new Dictionary<string, object>();
         data["lootbox_id"] = "keys";
         data["lootbox_count"] = chestCount;
-        data["reward"] = prize.ToLower().Replace(' ', '_'); 
-        BoGD.MonoBehaviourBase.Analytics.SendEvent("open_lootbox", data);
+        data["reward"] = prize.ToLower().Replace(' ', '_');
     }
 
 

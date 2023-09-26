@@ -191,7 +191,7 @@ namespace HmsPlugin
             if (appDebugAar != null)
                 appDebugAar.SetCompatibleWithPlatform(BuildTarget.Android, pluginEnabled);
 
-            HMSEditorUtils.HandleAssemblyDefinitions(pluginEnabled);
+            // HMSEditorUtils.HandleAssemblyDefinitions(pluginEnabled);
         }
 
         private void OnBuildError(string condition, string stackTrace, LogType type)
@@ -199,7 +199,7 @@ namespace HmsPlugin
             if (type == LogType.Error)
             {
                 Application.logMessageReceived -= OnBuildError;
-                HMSEditorUtils.HandleAssemblyDefinitions(true);
+                // HMSEditorUtils.HandleAssemblyDefinitions(true);
             }
         }
     }

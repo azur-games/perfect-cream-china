@@ -14,6 +14,8 @@ namespace Modules.Advertising
     {
         #region Fields
 
+        private DateTime lastInterstitialShowDateTime = DateTime.MinValue;
+
         private IAdvertisingNecessaryInfo advertisingNecessaryInfo;
         private IInGameAdvertisingAbTestData inGameAdvertisingAbTestData;
         private AdsRewardedVideoPlacementsController adsRewardedVideoPlacementsController;
@@ -117,12 +119,23 @@ namespace Modules.Advertising
 
 
         private float InactivityTime => InactivityTimer.HasFoundInstance ? InactivityTimer.Instance.InactivityTime : 0;
-        
-		public bool IsInterstitialDelayEnded => (DateTime.Now - LastInterstitialShowDateTime).TotalSeconds >= InGameAdvertisingAbTestData.delayBetweenInterstitials;
 
-        public DateTime LastInterstitialShowDateTime { get; set; } = DateTime.MinValue;
 
-        #endregion
+       // private bool IsInterstitialDelayEnded => (DateTime.Now - lastInterstitialShowDateTime).TotalSeconds >=
+       //                                          InGameAdvertisingAbTestData.delayBetweenInterstitials;
+       //
+		public bool IsInterstitialDelayEnded
+		{
+			get
+            {
+                return (DateTime.Now - lastInterstitialShowDateTime).TotalSeconds >=
+                                 InGameAdvertisingAbTestData.delayBetweenInterstitials;
+            }
+
+		}
+
+
+		#endregion
 
 
 
@@ -310,17 +323,16 @@ namespace Modules.Advertising
             string errorDescription,
             string adIdentifier, 
             string advertisingPlacement,
-            string result,
-            Dictionary<string, object> data = null)
+            string result)
         {
-            base.Controller_OnAdHide(adModule, responseResultType, errorDescription, adIdentifier, advertisingPlacement, result, data);
+            base.Controller_OnAdHide(adModule, responseResultType, errorDescription, adIdentifier, advertisingPlacement, result);
 
             switch (adModule)
             {
                 case AdModule.Interstitial:
                 case AdModule.RewardedVideo:
                     // According to technical document.
-                    LastInterstitialShowDateTime = DateTime.Now;
+                    lastInterstitialShowDateTime = DateTime.Now;
 
                     SoundManager?.SetBlocked(false, typeof(AdvertisingManager).ToString());
 

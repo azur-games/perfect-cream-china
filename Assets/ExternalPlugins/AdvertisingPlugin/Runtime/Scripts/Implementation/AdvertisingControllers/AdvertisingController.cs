@@ -17,12 +17,10 @@ namespace Modules.Advertising
         public event Action<AdModule, int, AdActionResultType, string, string> OnAdRespond;
 
         public event Action<AdModule, AdActionResultType, int, string, string, string> OnAdShow;
-        public event Action<AdModule, AdActionResultType, int, string, string, string, Dictionary<string, object>> OnAdStarted;
-        public event Action<AdModule, AdActionResultType, string, string, string, string, Dictionary<string, object>> OnAdHide;
+        public event Action<AdModule, AdActionResultType, int, string, string, string> OnAdStarted;
+        public event Action<AdModule, AdActionResultType, string, string, string, string> OnAdHide;
         public event Action<AdModule, string, string> OnAdClick;
 
-        internal AdAnalyticsTracker analyticsTracker;
-        
         protected string advertisingPlacement = "EMPTY_PLACEMENT";
         protected Action<AdActionResultType> advertisingHideCallback;
 
@@ -46,25 +44,6 @@ namespace Modules.Advertising
 
 
         #region Methods
-
-        public void Initialize(IAdvertisingService[] advertisingServices, AdAnalyticsTracker adAnalyticsTracker)
-        {
-            analyticsTracker = adAnalyticsTracker;
-            
-            foreach (IAdvertisingService advertisingService in advertisingServices)
-            {
-                List<IEventAds> adsImplementors =
-                    advertisingService.SupportedAdsModules.Where((implementor => implementor is T)).ToList();
-
-                if (adsImplementors.Count > 0)
-                {
-                    IEventAds implementor = adsImplementors.First();
-                    advertisingService.OnServiceInitialized += Service_OnServiceInitialized;
-                    SubscribeOnServiceEvents(implementor as T);
-                }
-            }
-        }
-
 
         protected virtual void SubscribeOnServiceEvents(T service)
         {
@@ -114,14 +93,7 @@ namespace Modules.Advertising
             string adIdentifier, 
             float revenue)
         {
-            analyticsTracker.SendImpressionDataReceive(
-                    service, 
-                    adModule, 
-                    impressionJsonData, 
-                    adIdentifier, 
-                    revenue);
-            
-            #if !UNITY_EDITOR
+#if !UNITY_EDITOR
                 CustomDebug.Log($"On {service.ServiceName} ImpressionDataReceive: " +
                             $"AdType = {adModule}; AdId = {adIdentifier};");
             #endif
@@ -147,18 +119,7 @@ namespace Modules.Advertising
                 }
             }
 
-            if (!string.Equals(service.ServiceName, "crosspromo"))
-            {
-                analyticsTracker.SendAdRespond(
-                    service,
-                    adModule,
-                    delay,
-                    responseResultType,
-                    errorDescription,
-                    adIdentifier);
-            }
-
-            #if !UNITY_EDITOR
+#if !UNITY_EDITOR
                 CustomDebug.Log($"On {service.ServiceName} AdRespond: AdType = {adModule}; " +
                             $"AdId = {adIdentifier}; Result = {responseResultType}; " +
                             $"Error: {errorDescription}; Delay = {delay}");
@@ -178,12 +139,7 @@ namespace Modules.Advertising
             AdModule adModule, 
             string adIdentifier)
         {
-            analyticsTracker.SendAdRequested(
-                service, 
-                adModule,
-                adIdentifier);
-            
-            #if !UNITY_EDITOR
+#if !UNITY_EDITOR
                 CustomDebug.Log($"On {service.ServiceName} AdRequested: " +
                             $"AdType = {adModule}; AdId = {adIdentifier}");
             #endif
@@ -196,13 +152,7 @@ namespace Modules.Advertising
             int delay, 
             string adIdentifier)
         {
-            analyticsTracker.SendAdExpire(
-                service, 
-                adModule,
-                delay,
-                adIdentifier);
-            
-            #if !UNITY_EDITOR
+#if !UNITY_EDITOR
                 CustomDebug.Log($"On {service.ServiceName} AdExpire: " +
                             $"AdType = {adModule}; AdId = {adIdentifier}; Delay = {delay}");
             #endif
@@ -216,8 +166,7 @@ namespace Modules.Advertising
             string errorDescription, 
             string adIdentifier, 
             string advertisingPlacement,
-            string result,
-            Dictionary<string, object> data = null)
+            string result)
         {
             IsShowing = false;
             
@@ -231,9 +180,7 @@ namespace Modules.Advertising
                 responseResultType, 
                 errorDescription, 
                 adIdentifier,
-                advertisingPlacement, 
-                result,
-                data);
+                advertisingPlacement, result);
 
             advertisingHideCallback?.Invoke(responseResultType);
         }
@@ -244,8 +191,7 @@ namespace Modules.Advertising
             AdActionResultType responseResultType,
             int delay,
             string errorDescription,
-            string adIdentifier,
-            Dictionary<string, object> data = null)
+            string adIdentifier)
         {
             OnAdStarted?.Invoke(
                 adModule,
@@ -253,8 +199,7 @@ namespace Modules.Advertising
                 delay,
                 errorDescription,
                 adIdentifier,
-                advertisingPlacement,
-                data);
+                advertisingPlacement);
         }
 
 
@@ -267,17 +212,6 @@ namespace Modules.Advertising
             string errorDescription, 
             string adIdentifier)
         {
-            if (!string.Equals(service.ServiceName, "crosspromo"))
-            {
-                analyticsTracker.SendAdShow(
-                    service,
-                    adModule,
-                    responseResultType,
-                    delay,
-                    errorDescription,
-                    adIdentifier,
-                    advertisingPlacement);
-            }
 
             if (responseResultType == AdActionResultType.Error)
             {
@@ -306,16 +240,8 @@ namespace Modules.Advertising
             AdModule adModule,
             string adIdentifier)
         {
-            if (!string.Equals(service.ServiceName, "crosspromo"))
-            {
-                analyticsTracker.SendAdClick(
-                    service,
-                    adModule,
-                    adIdentifier,
-                    advertisingPlacement);
-            }
 
-            #if !UNITY_EDITOR
+#if !UNITY_EDITOR
                 CustomDebug.Log($"On {service.ServiceName} AdClick: AdType = {adModule}; " +
                                 $"AdId = {adIdentifier};");
             #endif

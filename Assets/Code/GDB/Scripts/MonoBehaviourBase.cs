@@ -44,18 +44,7 @@ namespace BoGD
                 return localizator;
             }
         }
-        private static IAnalytics analytics = null;
-        public static IAnalytics Analytics
-        {
-            get
-            {
-                if (analytics == null)
-                {
-                    analytics = StaticType.Analytics.Instance<IAnalytics>();
-                }
-                return analytics;
-            }
-        }
+        
         public static string GetUniqueID()
         {            
             return System.Guid.NewGuid().ToString();
